@@ -1,7 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:lab64_SAM32-cache
-LIBS:Adafruit Feather M0 WiFi-cache
-LIBS:featherM0_SD-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1079,11 +1077,7 @@ $EndComp
 Wire Wire Line
 	5050 5650 4900 5650
 Wire Wire Line
-	4900 5650 4900 4000
-Wire Wire Line
 	4900 4000 4300 4000
-Wire Wire Line
-	4800 4100 4800 5750
 Wire Wire Line
 	4800 5750 5050 5750
 Wire Wire Line
@@ -1374,4 +1368,52 @@ NoConn ~ 9550 5600
 NoConn ~ 9550 5700
 Text Notes 5300 4350 0    79   ~ 0
 WROOM ESP32
+Wire Wire Line
+	4800 4100 4800 5750
+Wire Wire Line
+	4800 5750 4550 5750
+Wire Wire Line
+	4550 5750 4550 6750
+Connection ~ 4800 5750
+Wire Wire Line
+	4900 5650 4350 5650
+$Comp
+L Adafruit_Feather_M4_Express-eagle-import:RESISTOR_4PACK_NO R?
+U 2 0 5BD27649
+P 4350 6950
+AR Path="/5BCFDB7D/5BD27649" Ref="R?"  Part="2" 
+AR Path="/5BD27649" Ref="R?"  Part="2" 
+F 0 "R?" H 4350 7050 50  0000 C CNN
+F 1 "0" H 4350 6950 40  0000 C CNB
+F 2 "Adafruit Feather M4 Express:RESPACK_4X0603_NO" H 4350 6950 50  0001 C CNN
+F 3 "" H 4350 6950 50  0001 C CNN
+	2    4350 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Adafruit_Feather_M4_Express-eagle-import:RESISTOR_4PACK_NO R?
+U 2 0 5BD2E8CF
+P 4550 6950
+AR Path="/5BCFDB7D/5BD2E8CF" Ref="R?"  Part="2" 
+AR Path="/5BD2E8CF" Ref="R?"  Part="2" 
+F 0 "R?" H 4550 7050 50  0000 C CNN
+F 1 "0" H 4550 6950 40  0000 C CNB
+F 2 "Adafruit Feather M4 Express:RESPACK_4X0603_NO" H 4550 6950 50  0001 C CNN
+F 3 "" H 4550 6950 50  0001 C CNN
+	2    4550 6950
+	0    1    1    0   
+$EndComp
+Connection ~ 4900 5650
+Wire Wire Line
+	4900 4000 4900 5650
+Wire Wire Line
+	4350 5650 4350 6750
+Wire Wire Line
+	4950 3650 4950 3700
+Wire Wire Line
+	4950 3700 4300 3700
+Wire Wire Line
+	4950 3150 4950 3200
+Wire Wire Line
+	4950 3200 4300 3200
 $EndSCHEMATC
