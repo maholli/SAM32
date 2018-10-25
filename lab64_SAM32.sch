@@ -35,8 +35,8 @@ Wire Wire Line
 Text Label 7800 3150 0    10   ~ 0
 GND
 Wire Wire Line
-	2250 2600 3100 2600
-Text Label 2400 2600 2    70   ~ 0
+	2350 2600 3100 2600
+Text Label 2650 2600 2    70   ~ 0
 AREF
 Wire Wire Line
 	10300 2550 10400 2550
@@ -67,12 +67,8 @@ Connection ~ 7800 2350
 Text Label 7800 2650 0    10   ~ 0
 VBUS
 Wire Wire Line
-	9200 2950 9400 2950
-Wire Wire Line
-	9400 2950 9400 2650
-Wire Wire Line
 	9400 2650 9500 2650
-Text Label 9250 3050 0    70   ~ 0
+Text Label 9400 2650 0    47   ~ 0
 EN
 Wire Wire Line
 	8100 2550 8900 2550
@@ -87,8 +83,8 @@ U 1 0 5BD0AF5C
 P 8900 2950
 AR Path="/5BCFDB7D/5BD0AF5C" Ref="C?"  Part="1" 
 AR Path="/5BD0AF5C" Ref="C10"  Part="1" 
-F 0 "C10" V 8810 2999 50  0000 C CNN
-F 1 "10µF" V 8990 2999 50  0000 C CNN
+F 0 "C10" H 8750 3050 50  0000 C CNN
+F 1 "10µF" H 8750 2950 50  0000 C CNN
 F 2 "Adafruit Feather M4 Express:0805-NO" H 8900 2950 50  0001 C CNN
 F 3 "" H 8900 2950 50  0001 C CNN
 	1    8900 2950
@@ -175,14 +171,14 @@ $EndComp
 $Comp
 L lab64_SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import C?
 U 1 0 5BD0AF8F
-P 2050 2600
+P 2150 2600
 AR Path="/5BCFDB7D/5BD0AF8F" Ref="C?"  Part="1" 
 AR Path="/5BD0AF8F" Ref="C3"  Part="1" 
-F 0 "C3" V 1960 2649 50  0000 C CNN
-F 1 "1uF" V 2140 2649 50  0000 C CNN
-F 2 "Adafruit Feather M4 Express:0603-NO" H 2050 2600 50  0001 C CNN
-F 3 "" H 2050 2600 50  0001 C CNN
-	1    2050 2600
+F 0 "C3" V 2060 2649 50  0000 C CNN
+F 1 "1uF" V 2240 2649 50  0000 C CNN
+F 2 "Adafruit Feather M4 Express:0603-NO" H 2150 2600 50  0001 C CNN
+F 3 "" H 2150 2600 50  0001 C CNN
+	1    2150 2600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -201,27 +197,27 @@ $EndComp
 $Comp
 L lab64_SAM32-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import C?
 U 1 0 5BD0AFB6
-P 4550 1700
+P 5250 1700
 AR Path="/5BCFDB7D/5BD0AFB6" Ref="C?"  Part="1" 
 AR Path="/5BD0AFB6" Ref="C5"  Part="1" 
-F 0 "C5" V 4460 1749 50  0000 C CNN
-F 1 "10uF" V 4640 1749 50  0000 C CNN
-F 2 "Adafruit Feather M4 Express:0805-NO" H 4550 1700 50  0001 C CNN
-F 3 "" H 4550 1700 50  0001 C CNN
-	1    4550 1700
+F 0 "C5" H 5200 1850 50  0000 C CNN
+F 1 "10uF" H 5200 1650 50  0000 C CNN
+F 2 "Adafruit Feather M4 Express:0805-NO" H 5250 1700 50  0001 C CNN
+F 3 "" H 5250 1700 50  0001 C CNN
+	1    5250 1700
 	1    0    0    -1  
 $EndComp
 $Comp
 L lab64_SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import C?
 U 1 0 5BD0AFC9
-P 5150 1700
+P 5050 1700
 AR Path="/5BCFDB7D/5BD0AFC9" Ref="C?"  Part="1" 
 AR Path="/5BD0AFC9" Ref="C9"  Part="1" 
-F 0 "C9" V 5060 1749 50  0000 C CNN
-F 1 "1uF" V 5240 1749 50  0000 C CNN
-F 2 "Adafruit Feather M4 Express:0603-NO" H 5150 1700 50  0001 C CNN
-F 3 "" H 5150 1700 50  0001 C CNN
-	1    5150 1700
+F 0 "C9" H 5000 1850 50  0000 C CNN
+F 1 "1uF" H 5000 1650 50  0000 C CNN
+F 2 "Adafruit Feather M4 Express:0603-NO" H 5050 1700 50  0001 C CNN
+F 3 "" H 5050 1700 50  0001 C CNN
+	1    5050 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -230,8 +226,8 @@ U 1 0 5BD0AFD0
 P 4850 1700
 AR Path="/5BCFDB7D/5BD0AFD0" Ref="C?"  Part="1" 
 AR Path="/5BD0AFD0" Ref="C7"  Part="1" 
-F 0 "C7" V 4760 1749 50  0000 C CNN
-F 1 "1uF" V 4940 1749 50  0000 C CNN
+F 0 "C7" H 4800 1850 50  0000 C CNN
+F 1 "1uF" H 4800 1650 50  0000 C CNN
 F 2 "Adafruit Feather M4 Express:0603-NO" H 4850 1700 50  0001 C CNN
 F 3 "" H 4850 1700 50  0001 C CNN
 	1    4850 1700
@@ -321,7 +317,7 @@ P 8750 1400
 AR Path="/5BCFDB7D/5BD0C00D" Ref="U?"  Part="1" 
 AR Path="/5BD0C00D" Ref="U4"  Part="1" 
 F 0 "U4" H 8700 1400 42  0000 L BNN
-F 1 "MCP73831T-2ACI/OT" H 8350 900 42  0000 L BNN
+F 1 "MCP73831T-2ACI/OT" H 8400 900 42  0000 L BNN
 F 2 "Adafruit Feather M4 Express:SOT23-5" H 8750 1400 50  0001 C CNN
 F 3 "" H 8750 1400 50  0001 C CNN
 	1    8750 1400
@@ -356,36 +352,36 @@ $EndComp
 $Comp
 L lab64_SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import #U$?
 U 1 0 5BD0C048
-P 1450 2850
+P 1700 2500
 AR Path="/5BCFDB7D/5BD0C048" Ref="#U$?"  Part="1" 
 AR Path="/5BD0C048" Ref="#U$04"  Part="1" 
-F 0 "#U$04" H 1450 2850 50  0001 C CNN
-F 1 "VBAT" H 1390 2890 42  0000 L BNN
-F 2 "" H 1450 2850 50  0001 C CNN
-F 3 "" H 1450 2850 50  0001 C CNN
-	1    1450 2850
+F 0 "#U$04" H 1700 2500 50  0001 C CNN
+F 1 "VBAT" H 1600 2500 42  0000 L BNN
+F 2 "" H 1700 2500 50  0001 C CNN
+F 3 "" H 1700 2500 50  0001 C CNN
+	1    1700 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import #GND?
 U 1 0 5BD0C04E
-P 1750 3650
+P 1700 3450
 AR Path="/5BCFDB7D/5BD0C04E" Ref="#GND?"  Part="1" 
 AR Path="/5BD0C04E" Ref="#GND02"  Part="1" 
-F 0 "#GND02" H 1750 3650 50  0001 C CNN
-F 1 "GND" H 1650 3550 59  0000 L BNN
-F 2 "" H 1750 3650 50  0001 C CNN
-F 3 "" H 1750 3650 50  0001 C CNN
-	1    1750 3650
+F 0 "#GND02" H 1700 3450 50  0001 C CNN
+F 1 "GND" H 1600 3350 59  0000 L BNN
+F 2 "" H 1700 3450 50  0001 C CNN
+F 3 "" H 1700 3450 50  0001 C CNN
+	1    1700 3450
 	1    0    0    -1  
 $EndComp
-Text Notes 8400 2000 0    59   ~ 0
+Text Notes 8400 2000 0    49   ~ 0
 10K  = 100mA
-Text Notes 8400 2100 0    59   ~ 0
+Text Notes 8400 2100 0    49   ~ 0
 5.0K  = 200mA
-Text Notes 8400 2200 0    59   ~ 0
+Text Notes 8400 2200 0    49   ~ 0
 2.0K  = 500mA
-Text Notes 8400 2300 0    59   ~ 0
+Text Notes 8400 2300 0    49   ~ 0
 1.0K  = 1000mA
 Text Notes 8200 700  0    79   ~ 0
 BATTERY CHARGING
@@ -404,12 +400,10 @@ F 3 "" H 2450 5350 50  0001 C CNN
 $EndComp
 Text Label 2750 1950 0    59   ~ 0
 ~RESET
-Connection ~ 2100 1500
 Wire Wire Line
 	4300 2000 4700 2000
 Wire Wire Line
 	4700 2000 4700 2100
-Connection ~ 4700 2000
 $Comp
 L lab64_SAM32-rescue:TESTPOINTROUND1.5MM-Adafruit_Feather_M4_Express-eagle-import TP?
 U 1 0 5BD13AF1
@@ -439,41 +433,41 @@ $EndComp
 $Comp
 L lab64_SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import C?
 U 1 0 5BD13B19
-P 2100 1700
+P 2050 1600
 AR Path="/5BCFDB7D/5BD13B19" Ref="C?"  Part="1" 
 AR Path="/5BD13B19" Ref="C4"  Part="1" 
-F 0 "C4" V 2010 1749 50  0000 C CNN
-F 1 "1uF" V 2190 1749 50  0000 C CNN
-F 2 "Adafruit Feather M4 Express:0603-NO" H 2100 1700 50  0001 C CNN
-F 3 "" H 2100 1700 50  0001 C CNN
-	1    2100 1700
+F 0 "C4" V 1960 1649 50  0000 C CNN
+F 1 "1uF" V 2140 1649 50  0000 C CNN
+F 2 "Adafruit Feather M4 Express:0603-NO" H 2050 1600 50  0001 C CNN
+F 3 "" H 2050 1600 50  0001 C CNN
+	1    2050 1600
 	1    0    0    1   
 $EndComp
 $Comp
 L lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import #U$?
 U 1 0 5BD13B20
-P 2100 2050
+P 2050 1900
 AR Path="/5BCFDB7D/5BD13B20" Ref="#U$?"  Part="1" 
 AR Path="/5BD13B20" Ref="#U$05"  Part="1" 
-F 0 "#U$05" H 2100 2050 50  0001 C CNN
-F 1 "GND" H 2000 1950 59  0000 L BNN
-F 2 "" H 2100 2050 50  0001 C CNN
-F 3 "" H 2100 2050 50  0001 C CNN
-	1    2100 2050
+F 0 "#U$05" H 2050 1900 50  0001 C CNN
+F 1 "GND" H 1950 1800 59  0000 L BNN
+F 2 "" H 2050 1900 50  0001 C CNN
+F 3 "" H 2050 1900 50  0001 C CNN
+	1    2050 1900
 	-1   0    0    -1  
 $EndComp
 $Comp
 L lab64_SAM32-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import C?
 U 1 0 5BD13B57
-P 4800 2100
+P 4850 2000
 AR Path="/5BCFDB7D/5BD13B57" Ref="C?"  Part="1" 
 AR Path="/5BD13B57" Ref="C6"  Part="1" 
-F 0 "C6" V 4700 2150 50  0000 C CNN
-F 1 "10uF" V 4650 2150 50  0000 C CNN
-F 2 "Adafruit Feather M4 Express:0805-NO" H 4800 2100 50  0001 C CNN
-F 3 "" H 4800 2100 50  0001 C CNN
-	1    4800 2100
-	0    1    -1   0   
+F 0 "C6" H 4750 2050 50  0000 C CNN
+F 1 "10uF" H 4750 2150 50  0000 C CNN
+F 2 "Adafruit Feather M4 Express:0805-NO" H 4850 2000 50  0001 C CNN
+F 3 "" H 4850 2000 50  0001 C CNN
+	1    4850 2000
+	1    0    0    1   
 $EndComp
 $Comp
 L lab64_SAM32-rescue:INDUCTOR-Adafruit_Feather_M4_Express-eagle-import L?
@@ -491,15 +485,15 @@ $EndComp
 $Comp
 L lab64_SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import C?
 U 1 0 5BD13B6B
-P 5050 2000
+P 5050 2100
 AR Path="/5BCFDB7D/5BD13B6B" Ref="C?"  Part="1" 
 AR Path="/5BD13B6B" Ref="C8"  Part="1" 
-F 0 "C8" H 4950 2050 50  0000 C CNN
-F 1 "1uF" H 4950 1950 50  0000 C CNN
-F 2 "Adafruit Feather M4 Express:0603-NO" H 5050 2000 50  0001 C CNN
-F 3 "" H 5050 2000 50  0001 C CNN
-	1    5050 2000
-	0    -1   1    0   
+F 0 "C8" H 4950 2150 50  0000 C CNN
+F 1 "1uF" H 4950 2050 50  0000 C CNN
+F 2 "Adafruit Feather M4 Express:0603-NO" H 5050 2100 50  0001 C CNN
+F 3 "" H 5050 2100 50  0001 C CNN
+	1    5050 2100
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10800 6150 10800 6250
@@ -532,7 +526,7 @@ L lab64_SAM32-rescue:+3V3-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32
 U 1 0 5BD3CC61
 P 10800 4500
 F 0 "#+3V07" H 10800 4500 50  0001 C CNN
-F 1 "+3V3" V 10700 4300 59  0000 L BNN
+F 1 "+3V3" H 10700 4550 59  0000 L BNN
 F 2 "" H 10800 4500 50  0001 C CNN
 F 3 "" H 10800 4500 50  0001 C CNN
 	1    10800 4500
@@ -559,74 +553,56 @@ $EndComp
 $Comp
 L lab64_SAM32-rescue:GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue #GND?
 U 1 0 5BD44DCD
-P 850 5250
+P 1650 5450
 AR Path="/5BD3B1CE/5BD44DCD" Ref="#GND?"  Part="1" 
 AR Path="/5BD44DCD" Ref="#GND01"  Part="1" 
-F 0 "#GND01" H 850 5250 50  0001 C CNN
-F 1 "GND" H 750 5150 59  0000 L BNN
-F 2 "" H 850 5250 50  0001 C CNN
-F 3 "" H 850 5250 50  0001 C CNN
-	1    850  5250
+F 0 "#GND01" H 1650 5450 50  0001 C CNN
+F 1 "GND" H 1550 5350 59  0000 L BNN
+F 2 "" H 1650 5450 50  0001 C CNN
+F 3 "" H 1650 5450 50  0001 C CNN
+	1    1650 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L lab64_SAM32-rescue:VBUS-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue #U$?
 U 1 0 5BD44DD3
-P 850 4750
+P 1650 4650
 AR Path="/5BD3B1CE/5BD44DD3" Ref="#U$?"  Part="1" 
 AR Path="/5BD44DD3" Ref="#U$01"  Part="1" 
-F 0 "#U$01" H 850 4750 50  0001 C CNN
-F 1 "VBUS" H 790 4790 42  0000 L BNN
-F 2 "" H 850 4750 50  0001 C CNN
-F 3 "" H 850 4750 50  0001 C CNN
-	1    850  4750
+F 0 "#U$01" H 1650 4650 50  0001 C CNN
+F 1 "VBUS" H 1590 4690 42  0000 L BNN
+F 2 "" H 1650 4650 50  0001 C CNN
+F 3 "" H 1650 4650 50  0001 C CNN
+	1    1650 4650
 	1    0    0    -1  
 $EndComp
-$Comp
-L lab64_SAM32-rescue:10118194-0001LF-10118194-0001LF-lab64_SAM32-rescue J?
-U 1 1 5BD44DDE
-P 1350 5050
-AR Path="/5BD3B1CE/5BD44DDE" Ref="J?"  Part="1" 
-AR Path="/5BD44DDE" Ref="J1"  Part="1" 
-F 0 "J1" H 1350 5050 50  0000 C CNN
-F 1 "10118194-0001LF" H 1350 4800 50  0000 C CNN
-F 2 "10118194-0001LF:FRAMATOME_10118194-0001LF" H 1350 5050 50  0001 L BNN
-F 3 "Amphenol FCI" H 1350 5050 50  0001 L BNN
-F 4 "Micro Usb, 2.0 Type b, Rcpt, Smt" H 1350 5050 50  0001 L BNN "Field4"
-F 5 "10118194-0001LF" H 1350 5050 50  0001 L BNN "Field5"
-F 6 "None" H 1350 5050 50  0001 L BNN "Field6"
-F 7 "None" H 1350 5050 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 1350 5050 50  0001 L BNN "Field8"
-	1    1350 5050
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	850  4850 850  4950
+	1650 4750 1650 4850
 Text Label 6350 3950 1    59   ~ 0
 RESET
 Text Label 6650 3950 1    59   ~ 0
 GPIO0
 Wire Wire Line
-	6400 3250 6150 3150
+	6400 3350 6150 3150
 Wire Wire Line
 	5350 3000 5650 3000
-Text Label 4750 3400 0    59   ~ 0
+Text Label 5000 3400 0    59   ~ 0
 RTS
 Wire Wire Line
-	6400 3200 6150 3250
-Text Label 4750 3500 0    59   ~ 0
+	6400 3150 6150 3250
+Text Label 5000 3500 0    59   ~ 0
 DTR
 $Comp
 L lab64_SAM32-rescue:TRANSISTOR_NPNSOT23-3-Adafruit_HUZZAH32_ESP32_Feather-eagle-import Q?
 U 1 0 5BD750CF
-P 6300 3450
+P 6300 3500
 AR Path="/5BCFDB41/5BD750CF" Ref="Q?"  Part="1" 
 AR Path="/5BD750CF" Ref="Q2"  Part="1" 
-F 0 "Q2" H 6150 3350 59  0000 L BNN
-F 1 "mmbt2222" H 6500 3350 59  0001 L BNN
-F 2 "Adafruit HUZZAH32 ESP32 Feather:SOT23-3" H 6300 3450 50  0001 C CNN
-F 3 "" H 6300 3450 50  0001 C CNN
-	1    6300 3450
+F 0 "Q2" H 6150 3400 59  0000 L BNN
+F 1 "mmbt2222" H 5950 3550 39  0000 L BNN
+F 2 "Adafruit HUZZAH32 ESP32 Feather:SOT23-3" H 6300 3500 50  0001 C CNN
+F 3 "" H 6300 3500 50  0001 C CNN
+	1    6300 3500
 	1    0    0    1   
 $EndComp
 $Comp
@@ -636,36 +612,10 @@ P 6300 3000
 AR Path="/5BCFDB41/5BD750D6" Ref="Q?"  Part="1" 
 AR Path="/5BD750D6" Ref="Q1"  Part="1" 
 F 0 "Q1" H 6150 3050 59  0000 L BNN
-F 1 "mmbt2222" H 6700 3050 59  0001 L BNN
+F 1 "mmbt2222" H 5950 2950 39  0000 L CNN
 F 2 "Adafruit HUZZAH32 ESP32 Feather:SOT23-3" H 6300 3000 50  0001 C CNN
 F 3 "" H 6300 3000 50  0001 C CNN
 	1    6300 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L lab64_SAM32-rescue:RESISTOR_4PACK-Adafruit_HUZZAH32_ESP32_Feather-eagle-import R?
-U 2 0 5BD750EF
-P 5850 3000
-AR Path="/5BCFDB41/5BD750EF" Ref="R?"  Part="2" 
-AR Path="/5BD750EF" Ref="R8"  Part="2" 
-F 0 "R8" H 5850 3100 50  0000 C CNN
-F 1 "10K" H 5850 3000 40  0000 C CNB
-F 2 "Adafruit HUZZAH32 ESP32 Feather:RESPACK_4X0603" H 5850 3000 50  0001 C CNN
-F 3 "" H 5850 3000 50  0001 C CNN
-	2    5850 3000
-	-1   0    0    1   
-$EndComp
-$Comp
-L lab64_SAM32-rescue:RESISTOR_4PACK-Adafruit_HUZZAH32_ESP32_Feather-eagle-import R?
-U 4 0 5BD750F6
-P 5850 3500
-AR Path="/5BCFDB41/5BD750F6" Ref="R?"  Part="4" 
-AR Path="/5BD750F6" Ref="R8"  Part="4" 
-F 0 "R8" H 5850 3600 50  0000 C CNN
-F 1 "10K" H 5850 3500 40  0000 C CNB
-F 2 "Adafruit HUZZAH32 ESP32 Feather:RESPACK_4X0603" H 5850 3500 50  0001 C CNN
-F 3 "" H 5850 3500 50  0001 C CNN
-	4    5850 3500
 	1    0    0    -1  
 $EndComp
 Text Label 2850 5050 0    50   ~ 0
@@ -717,22 +667,6 @@ Wire Wire Line
 Connection ~ 4400 1800
 Wire Wire Line
 	4400 1800 4400 1700
-$Comp
-L lab64_SAM32-rescue:ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue U2
-U 1 1 5BD7190E
-P 3700 3300
-F 0 "U2" H 3850 5350 50  0000 C CNN
-F 1 "ATSAMD51J20A-AU" H 3850 5250 50  0000 C CNN
-F 2 "QFP50P1200X1200X120-64N" H 3700 3300 50  0001 L BNN
-F 3 "Microchip" H 3700 3300 50  0001 L BNN
-F 4 "120MHZ 1024KB Flash 64 TQFP PKG inTray 85CTemp, 64 TQFP 10x10x1mm TRAY" H 3700 3300 50  0001 L BNN "Field4"
-F 5 "TQFP-64 Microchip" H 3700 3300 50  0001 L BNN "Field5"
-F 6 "None" H 3700 3300 50  0001 L BNN "Field6"
-F 7 "ATSAMD51J20A-AU" H 3700 3300 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 3700 3300 50  0001 L BNN "Field8"
-	1    3700 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3100 1500 2750 1500
 Wire Wire Line
@@ -757,29 +691,18 @@ $EndComp
 $Comp
 L lab64_SAM32-rescue:SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import SW?
 U 1 0 5BD0BFF9
-P 1900 1500
+P 1350 1500
 AR Path="/5BCFDB7D/5BD0BFF9" Ref="SW?"  Part="1" 
 AR Path="/5BD0BFF9" Ref="SW1"  Part="1" 
-F 0 "SW1" V 1650 1400 42  0000 L BNN
-F 1 "KMR2" H 1825 1250 42  0000 L BNN
-F 2 "Adafruit Feather M4 Express:BTN_KMR2_4.6X2.8" H 1900 1500 50  0001 C CNN
-F 3 "" H 1900 1500 50  0001 C CNN
-	1    1900 1500
+F 0 "SW1" H 1300 1350 42  0000 L BNN
+F 1 "KMR2" H 1275 1250 42  0000 L BNN
+F 2 "Adafruit Feather M4 Express:BTN_KMR2_4.6X2.8" H 1350 1500 50  0001 C CNN
+F 3 "" H 1350 1500 50  0001 C CNN
+	1    1350 1500
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 1500 1700 1600
-Wire Wire Line
-	2100 1600 2100 1500
-Connection ~ 2100 1600
-Wire Wire Line
-	2100 1950 2100 1900
-Wire Wire Line
-	2100 1900 1700 1900
-Wire Wire Line
-	1700 1900 1700 1600
-Connection ~ 2100 1900
-Connection ~ 1700 1600
+	1150 1500 1150 1600
 Wire Wire Line
 	4300 4700 4350 4700
 Wire Wire Line
@@ -818,7 +741,7 @@ F 3 "" H 4350 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 3250 6150 3250
+	5450 3250 6150 3250
 Wire Wire Line
 	5350 3150 6150 3150
 Wire Wire Line
@@ -880,9 +803,9 @@ F 3 "" H 1400 2500 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	1650 2700 1650 2400
+	1550 2700 1550 2400
 Wire Wire Line
-	1650 2400 3100 2400
+	1550 2400 3100 2400
 Wire Wire Line
 	1000 2300 1000 2700
 Connection ~ 1000 2700
@@ -930,9 +853,9 @@ $EndComp
 Text Label 2850 5150 0    50   ~ 0
 LED1
 Wire Wire Line
-	1850 5050 2150 5050
+	1650 5050 2150 5050
 Wire Wire Line
-	1850 4950 1900 4950
+	1650 4950 1900 4950
 Wire Wire Line
 	1900 6050 1900 4950
 Connection ~ 1900 4950
@@ -948,7 +871,7 @@ Wire Wire Line
 	1900 6050 1700 6050
 Text Notes 1050 5850 0    79   ~ 0
 ESD PROT.
-Text Notes 1050 4750 0    79   ~ 0
+Text Notes 800  4650 0    79   ~ 0
 USB CONN.
 Wire Wire Line
 	2450 5450 2450 6550
@@ -969,8 +892,6 @@ Wire Wire Line
 	3100 1950 2450 1950
 Wire Wire Line
 	2450 1950 2450 1500
-Wire Wire Line
-	2450 1500 2100 1500
 Wire Wire Line
 	2450 1200 2600 1200
 Wire Wire Line
@@ -996,27 +917,18 @@ F 3 "" H 10700 900 50  0001 C CNN
 	1    10700 900 
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	4400 1500 4550 1500
-Wire Wire Line
-	4550 1500 4850 1500
-Connection ~ 4550 1500
-Wire Wire Line
-	4850 1500 5150 1500
 Connection ~ 4850 1500
-Wire Wire Line
-	4550 1800 4850 1800
 $Comp
 L lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import #U$?
 U 1 0 5CDFD672
-P 5150 2250
+P 5250 2300
 AR Path="/5BCFDB7D/5CDFD672" Ref="#U$?"  Part="1" 
 AR Path="/5CDFD672" Ref="#U$08"  Part="1" 
-F 0 "#U$08" H 5150 2250 50  0001 C CNN
-F 1 "GND" H 5050 2150 59  0000 L BNN
-F 2 "" H 5150 2250 50  0001 C CNN
-F 3 "" H 5150 2250 50  0001 C CNN
-	1    5150 2250
+F 0 "#U$08" H 5250 2300 50  0001 C CNN
+F 1 "GND" H 5150 2200 59  0000 L BNN
+F 2 "" H 5250 2300 50  0001 C CNN
+F 3 "" H 5250 2300 50  0001 C CNN
+	1    5250 2300
 	-1   0    0    -1  
 $EndComp
 Text Notes 4650 1400 0    59   ~ 0
@@ -1055,8 +967,6 @@ Wire Wire Line
 Connection ~ 7800 2200
 Wire Wire Line
 	7800 2200 7800 1300
-Wire Wire Line
-	9450 2450 9450 2550
 Connection ~ 9450 2550
 NoConn ~ 10300 2750
 NoConn ~ 9600 5350
@@ -1065,8 +975,8 @@ NoConn ~ 9600 5750
 NoConn ~ 9600 5850
 Text Notes 5450 4900 0    79   ~ 0
 WROOM ESP32
-Text Label 1750 2900 0    60   ~ 0
-V_DIV_BATT
+Text Label 2400 2900 0    60   ~ 0
+VBATT
 $Comp
 L lab64_SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #+3V?
 U 1 0 5BDA8860
@@ -1084,39 +994,39 @@ Text Label 2850 2300 0    60   ~ 0
 XTAL1
 Text Label 2850 2400 0    60   ~ 0
 XTAL2
-Text Notes 2150 3950 0    59   ~ 0
+Text Notes 2250 3950 0    59   ~ 0
 PCCD0
-Text Notes 2150 4050 0    59   ~ 0
+Text Notes 2250 4050 0    59   ~ 0
 PCCD1
-Text Notes 2150 4150 0    59   ~ 0
+Text Notes 2250 4150 0    59   ~ 0
 PCCD2
-Text Notes 2150 4250 0    59   ~ 0
+Text Notes 2250 4250 0    59   ~ 0
 PCCD3
-Text Notes 2150 4350 0    59   ~ 0
+Text Notes 2250 4350 0    59   ~ 0
 PCCD4
-Text Notes 2150 4450 0    59   ~ 0
+Text Notes 2250 4450 0    59   ~ 0
 PCCD5
-Text Notes 2150 4550 0    59   ~ 0
+Text Notes 2250 4550 0    59   ~ 0
 PCCD6
-Text Notes 2150 4650 0    59   ~ 0
+Text Notes 2250 4650 0    59   ~ 0
 PCCD7
 Wire Wire Line
 	4300 3800 4400 3800
 Text Notes 5000 4150 0    59   ~ 0
 UART\nCOM5
-Text Notes 2050 4700 1    59   ~ 0
+Text Notes 2200 4450 1    59   ~ 0
 CAMERA INTERFACE
 Wire Notes Line
 	5250 4150 4000 4150
 Wire Notes Line
 	4000 4150 4000 3950
-Text Notes 2150 3700 0    59   ~ 0
+Text Notes 2250 3700 0    59   ~ 0
 PCCCLK
 Wire Wire Line
 	3100 3700 3000 3700
-Text Notes 2150 3600 0    59   ~ 0
+Text Notes 2250 3600 0    59   ~ 0
 PCCDEN2
-Text Notes 2150 3500 0    59   ~ 0
+Text Notes 2250 3500 0    59   ~ 0
 PCCDEN1
 Wire Wire Line
 	3000 4100 3100 4100
@@ -1141,27 +1051,13 @@ Wire Notes Line
 Wire Notes Line
 	3400 3450 3400 4700
 Wire Notes Line
-	3400 4700 1950 4700
+	3400 4700 2050 4700
 Wire Notes Line
-	1950 4700 1950 3850
-Wire Notes Line
-	3250 3850 3250 3700
-Wire Notes Line
-	3250 3700 1950 3700
-Wire Notes Line
-	1950 3700 1950 3400
-Wire Notes Line
-	1950 3400 2900 3400
-Wire Notes Line
-	1950 3850 3250 3850
+	2050 3400 2900 3400
 Text Notes 3850 4000 0    35   ~ 0
 TC6
 Text Notes 3850 4100 0    35   ~ 0
 TC6
-Text Notes 3850 3200 0    35   ~ 0
-TC4
-Text Notes 3850 3300 0    35   ~ 0
-TC4
 Connection ~ 5350 3150
 Wire Wire Line
 	3000 2800 3100 2800
@@ -1170,7 +1066,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 2300 3100 2300
 Wire Wire Line
-	1400 2700 1650 2700
+	1400 2700 1550 2700
 Text GLabel 3000 2500 0    59   BiDi ~ 0
 DAC0
 Text GLabel 3000 2800 0    59   BiDi ~ 0
@@ -1218,18 +1114,14 @@ SDA
 Text GLabel 3000 2700 0    59   BiDi ~ 0
 SCL
 Wire Wire Line
-	1750 3100 1750 2900
-Wire Wire Line
-	1750 2900 3100 2900
-NoConn ~ 1850 5150
+	2300 2900 3100 2900
+NoConn ~ 1650 5150
 Connection ~ 1400 2300
 Connection ~ 1400 2700
 Wire Wire Line
 	1300 2700 1400 2700
 Wire Wire Line
 	1300 2300 1400 2300
-Wire Wire Line
-	1450 2950 1450 3100
 Wire Notes Line
 	5250 3950 5250 4150
 Text GLabel 9500 4950 0    59   Output ~ 0
@@ -1243,11 +1135,7 @@ SD_CS
 Text Notes 7950 4850 0    59   ~ 0
 ESP\nJTAG
 Wire Notes Line
-	6650 4600 8200 4600
-Wire Notes Line
 	8200 4600 8200 4900
-Wire Notes Line
-	8200 4900 6650 4900
 Wire Wire Line
 	1000 2700 1000 3500
 Wire Wire Line
@@ -1255,12 +1143,9 @@ Wire Wire Line
 Text GLabel 4400 3900 2    59   Output ~ 0
 SD_CS
 Wire Wire Line
-	6500 3650 6500 2800
+	6500 3650 6500 2850
 Wire Wire Line
-	6400 2800 6500 2800
-Wire Wire Line
-	4700 2000 4850 2000
-Connection ~ 4700 2100
+	6400 2850 6500 2850
 Wire Wire Line
 	4300 2400 7200 2400
 Wire Wire Line
@@ -1290,20 +1175,20 @@ $EndComp
 $Comp
 L Device:R_US R1
 U 1 1 5C02C9DB
-P 1600 3100
-F 0 "R1" V 1550 2950 50  0000 C CNN
-F 1 "100K" V 1550 3200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 1640 3090 50  0001 C CNN
-F 3 "~" H 1600 3100 50  0001 C CNN
-	1    1600 3100
-	0    -1   -1   0   
+P 1700 2850
+F 0 "R1" H 1550 2900 50  0000 C CNN
+F 1 "100K" H 1550 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 1740 2840 50  0001 C CNN
+F 3 "~" H 1700 2850 50  0001 C CNN
+	1    1700 2850
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R5
 U 1 1 5C02CA8D
 P 2750 1350
-F 0 "R5" V 2700 1200 50  0000 C CNN
-F 1 "10K" V 2700 1450 50  0000 C CNN
+F 0 "R5" H 2650 1400 50  0000 C CNN
+F 1 "10K" H 2650 1300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 2790 1340 50  0001 C CNN
 F 3 "~" H 2750 1350 50  0001 C CNN
 	1    2750 1350
@@ -1324,8 +1209,8 @@ $Comp
 L Device:R_US R14
 U 1 1 5C02CC5C
 P 7800 2900
-F 0 "R14" V 7750 2750 50  0000 C CNN
-F 1 "100K" V 7750 3000 50  0000 C CNN
+F 0 "R14" H 7650 2950 50  0000 C CNN
+F 1 "100K" H 7650 2850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 7840 2890 50  0001 C CNN
 F 3 "~" H 7800 2900 50  0001 C CNN
 	1    7800 2900
@@ -1334,13 +1219,13 @@ $EndComp
 $Comp
 L Device:R_US R16
 U 1 1 5C042500
-P 9200 2800
-F 0 "R16" V 9150 2650 50  0000 C CNN
-F 1 "10K" V 9150 2900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 9240 2790 50  0001 C CNN
-F 3 "~" H 9200 2800 50  0001 C CNN
-	1    9200 2800
-	1    0    0    -1  
+P 9250 2650
+F 0 "R16" V 9350 2600 50  0000 C CNN
+F 1 "10K" V 9450 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 9290 2640 50  0001 C CNN
+F 3 "~" H 9250 2650 50  0001 C CNN
+	1    9250 2650
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R17
@@ -1356,18 +1241,18 @@ $EndComp
 Wire Wire Line
 	8150 1900 8150 1800
 Wire Wire Line
-	8900 2550 9200 2550
+	8900 2550 9100 2550
 Wire Wire Line
-	9200 2650 9200 2550
-Connection ~ 9200 2550
+	9100 2650 9100 2550
+Connection ~ 9100 2550
 Wire Wire Line
-	9200 2550 9450 2550
+	9100 2550 9450 2550
 $Comp
 L Device:R_US R3
 U 1 1 5C06E313
 P 2450 1350
-F 0 "R3" V 2400 1200 50  0000 C CNN
-F 1 "10K" V 2400 1450 50  0000 C CNN
+F 0 "R3" H 2300 1400 50  0000 C CNN
+F 1 "10K" H 2300 1300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 2490 1340 50  0001 C CNN
 F 3 "~" H 2450 1350 50  0001 C CNN
 	1    2450 1350
@@ -1380,31 +1265,16 @@ Wire Wire Line
 $Comp
 L Device:R_US R2
 U 1 1 5C08F158
-P 1750 3400
-F 0 "R2" V 1700 3250 50  0000 C CNN
-F 1 "100K" V 1700 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 1790 3390 50  0001 C CNN
-F 3 "~" H 1750 3400 50  0001 C CNN
-	1    1750 3400
+P 1700 3200
+F 0 "R2" H 1550 3250 50  0000 C CNN
+F 1 "100K" H 1550 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 1740 3190 50  0001 C CNN
+F 3 "~" H 1700 3200 50  0001 C CNN
+	1    1700 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 3250 1750 3100
-Connection ~ 1750 3100
-Wire Wire Line
-	5150 1800 5150 2000
-Wire Wire Line
-	4850 1800 5150 1800
-Connection ~ 4850 1800
-Connection ~ 5150 1800
-Wire Wire Line
-	5150 2000 5150 2100
-Connection ~ 5150 2000
-Wire Wire Line
-	5000 2100 5150 2100
-Connection ~ 5150 2100
-Wire Wire Line
-	5150 2100 5150 2150
+	4850 1800 5050 1800
 $Comp
 L Device:R_US R4
 U 1 1 5C152BF9
@@ -1456,9 +1326,7 @@ Text GLabel 3000 3100 0    60   BiDi ~ 0
 AIN2
 Text GLabel 3000 3200 0    60   BiDi ~ 0
 AIN3
-Text Notes 2550 3150 0    35   ~ 0
-ADC1
-Text Notes 4750 3050 0    35   ~ 0
+Text Notes 4700 3100 0    59   ~ 0
 ADC1
 Text GLabel 3000 3300 0    60   BiDi ~ 0
 D19
@@ -1649,15 +1517,13 @@ $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5BEA78F4
 P 4950 5200
-F 0 "J2" V 4823 5280 50  0000 L CNN
-F 1 "Conn_01x02" V 4914 5280 50  0000 L CNN
+F 0 "J2" V 4950 5300 50  0000 L CNN
+F 1 "Conn_01x02" V 5050 4950 50  0000 L CNN
 F 2 "Connectors:PINHEAD1-2" H 4950 5200 50  0001 C CNN
 F 3 "~" H 4950 5200 50  0001 C CNN
 	1    4950 5200
 	0    1    1    0   
 $EndComp
-Text Notes 4150 4800 0    59   ~ 0
-PLACE\nCLOSE\nTO ESP
 $Comp
 L Device:R_US R6
 U 1 1 5BEA78FE
@@ -1723,7 +1589,7 @@ IO36
 Text GLabel 5000 6150 0    60   BiDi ~ 0
 IO39
 Wire Wire Line
-	7150 5550 7350 5550
+	7150 5550 7250 5550
 Wire Wire Line
 	4850 4350 4850 4650
 Wire Wire Line
@@ -1739,22 +1605,20 @@ Wire Wire Line
 	4800 4350 4850 4350
 Connection ~ 4850 4350
 Wire Wire Line
-	5650 3500 5500 3500
+	5650 3500 5450 3500
 Wire Wire Line
-	6200 3450 6200 3500
+	6200 3500 5950 3500
 Wire Wire Line
-	6200 3500 6050 3500
+	5450 3250 5450 3500
+Connection ~ 5450 3500
 Wire Wire Line
-	5500 3250 5500 3500
-Connection ~ 5500 3500
-Wire Wire Line
-	5500 3500 4300 3500
+	5450 3500 4300 3500
 Wire Wire Line
 	4300 3400 5350 3400
 Wire Wire Line
 	5350 3400 5350 3150
 Wire Wire Line
-	6050 3000 6200 3000
+	5950 3000 6200 3000
 Wire Wire Line
 	7900 4850 7900 3650
 Wire Wire Line
@@ -1817,11 +1681,11 @@ Wire Wire Line
 Wire Wire Line
 	7100 2500 4300 2500
 Wire Wire Line
-	7700 4650 7700 3950
+	7700 4650 7700 3850
 Wire Wire Line
-	7700 3950 7000 3950
+	7700 3850 7000 3850
 Wire Wire Line
-	7000 3950 7000 2600
+	7000 3850 7000 2600
 Wire Wire Line
 	7000 2600 4300 2600
 Text Label 7800 4450 1    60   ~ 0
@@ -1832,6 +1696,179 @@ Text Label 4400 2500 0    60   ~ 0
 TCK
 Text Label 4400 2600 0    60   ~ 0
 TDI
-Text Notes 4650 5350 0    79   ~ 16
-FIX\nFOOTPRINT
+$Comp
+L 10118194-0001LF:10118194-0001LF J?
+U 1 1 5BD4F36A
+P 1150 5050
+F 0 "J?" H 1200 5050 50  0000 C CNN
+F 1 "10118194-0001LF" H 1150 4700 50  0000 C CNN
+F 2 "FRAMATOME_10118194-0001LF" H 1150 5050 50  0001 L BNN
+F 3 "Amphenol FCI" H 1150 5050 50  0001 L BNN
+F 4 "Micro Usb, 2.0 Type b, Rcpt, Smt" H 1150 5050 50  0001 L BNN "Field4"
+F 5 "10118194-0001LF" H 1150 5050 50  0001 L BNN "Field5"
+F 6 "None" H 1150 5050 50  0001 L BNN "Field6"
+F 7 "None" H 1150 5050 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 1150 5050 50  0001 L BNN "Field8"
+	1    1150 5050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5250 1650 5350
+Wire Wire Line
+	2050 1500 1550 1500
+$Comp
+L lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import #U$?
+U 1 0 5BE0AD46
+P 1150 1900
+AR Path="/5BCFDB7D/5BE0AD46" Ref="#U$?"  Part="1" 
+AR Path="/5BE0AD46" Ref="#U$?"  Part="1" 
+F 0 "#U$?" H 1150 1900 50  0001 C CNN
+F 1 "GND" H 1050 1800 59  0000 L BNN
+F 2 "" H 1150 1900 50  0001 C CNN
+F 3 "" H 1150 1900 50  0001 C CNN
+	1    1150 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1600 1150 1800
+Connection ~ 1150 1600
+Wire Wire Line
+	1550 1600 1550 1500
+Connection ~ 1550 1500
+Text Notes 1200 1250 0    59   ~ 0
+RESET
+Connection ~ 2050 1500
+Wire Wire Line
+	2050 1500 2450 1500
+Wire Wire Line
+	2050 2600 1950 2600
+$Comp
+L Device:R_US R?
+U 1 1 5BE54B27
+P 5800 3000
+F 0 "R?" V 5900 3100 50  0000 C CNN
+F 1 "10K" V 5750 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5840 2990 50  0001 C CNN
+F 3 "~" H 5800 3000 50  0001 C CNN
+	1    5800 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5BE54BE6
+P 5800 3500
+F 0 "R?" V 5900 3600 50  0000 C CNN
+F 1 "10K" V 5750 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5840 3490 50  0001 C CNN
+F 3 "~" H 5800 3500 50  0001 C CNN
+	1    5800 3500
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	6500 4900 6500 4600
+Wire Notes Line
+	6500 4600 8200 4600
+Wire Notes Line
+	6500 4900 8200 4900
+Wire Wire Line
+	9450 2450 9450 2550
+Wire Wire Line
+	1700 2600 1700 2700
+Wire Wire Line
+	2300 2900 2300 3050
+Wire Wire Line
+	2300 3050 1700 3050
+Wire Wire Line
+	1700 3000 1700 3050
+Connection ~ 1700 3050
+Text Notes 3850 2500 0    35   ~ 0
+TC7
+Text Notes 3850 2400 0    35   ~ 0
+TC7
+$Comp
+L lab64_SAM32-rescue:ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue U2
+U 1 1 5BD7190E
+P 3700 3300
+F 0 "U2" H 3850 5350 50  0000 C CNN
+F 1 "ATSAMD51J20A-AU" H 3850 5250 50  0000 C CNN
+F 2 "QFP50P1200X1200X120-64N" H 3700 3300 50  0001 L BNN
+F 3 "Microchip" H 3700 3300 50  0001 L BNN
+F 4 "120MHZ 1024KB Flash 64 TQFP PKG inTray 85CTemp, 64 TQFP 10x10x1mm TRAY" H 3700 3300 50  0001 L BNN "Field4"
+F 5 "TQFP-64 Microchip" H 3700 3300 50  0001 L BNN "Field5"
+F 6 "None" H 3700 3300 50  0001 L BNN "Field6"
+F 7 "ATSAMD51J20A-AU" H 3700 3300 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 3700 3300 50  0001 L BNN "Field8"
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3650 2750 3650 3050
+Wire Notes Line
+	3650 3050 2700 3050
+Wire Notes Line
+	2700 3050 2700 3250
+Wire Notes Line
+	2700 3250 4000 3250
+Wire Notes Line
+	4000 3250 4000 3350
+Wire Notes Line
+	4000 3350 4950 3350
+Wire Notes Line
+	4950 3350 4950 2750
+Wire Notes Line
+	3650 2750 4950 2750
+Wire Notes Line
+	2050 3400 2050 4700
+Text Notes 3800 4250 0    35   ~ 0
+CAN Tx
+Text Notes 3800 4350 0    35   ~ 0
+CAN Rx
+$Comp
+L lab64_SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import C?
+U 1 0 5C0E1C57
+P 4650 1700
+AR Path="/5BCFDB7D/5C0E1C57" Ref="C?"  Part="1" 
+AR Path="/5C0E1C57" Ref="C?"  Part="1" 
+F 0 "C?" H 4600 1850 50  0000 C CNN
+F 1 "0.1uF" H 4600 1650 50  0000 C CNN
+F 2 "Adafruit Feather M4 Express:0603-NO" H 4650 1700 50  0001 C CNN
+F 3 "" H 4650 1700 50  0001 C CNN
+	1    4650 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1500 4850 1500
+Wire Wire Line
+	4850 1800 4650 1800
+Connection ~ 4850 1800
+Wire Wire Line
+	4700 2000 4700 1900
+Wire Wire Line
+	4700 1900 4850 1900
+Connection ~ 4700 2000
+Wire Wire Line
+	5050 2200 5250 2200
+Connection ~ 5250 2200
+Connection ~ 4850 1900
+Wire Wire Line
+	5050 1900 5250 1900
+Wire Wire Line
+	5250 1900 5250 2200
+Connection ~ 5050 1900
+Connection ~ 5050 2200
+Wire Wire Line
+	4850 2200 5050 2200
+Wire Wire Line
+	4850 1900 5050 1900
+Wire Wire Line
+	4850 1500 5050 1500
+Connection ~ 5050 1500
+Connection ~ 5050 1800
+Wire Wire Line
+	5050 1800 5250 1800
+Wire Wire Line
+	5050 1500 5250 1500
+Connection ~ 4650 1500
+Wire Wire Line
+	4400 1500 4650 1500
 $EndSCHEMATC
