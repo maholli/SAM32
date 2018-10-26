@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 10118194-0001LF_10118194-0001LF
+# 10118194-0001LF:10118194-0001LF
 #
-DEF 10118194-0001LF_10118194-0001LF J 0 40 Y Y 1 L N
+DEF 10118194-0001LF:10118194-0001LF J 0 40 Y Y 1 L N
 F0 "J" -50 350 50 H V L BNN
-F1 "10118194-0001LF_10118194-0001LF" -350 -400 50 H V L BNN
+F1 "10118194-0001LF:10118194-0001LF" -350 -400 50 H V L BNN
 F2 "FRAMATOME_10118194-0001LF" 0 0 50 H I L BNN
 F3 "Amphenol FCI" 0 0 50 H I L BNN
 F4 "Micro Usb, 2.0 Type b, Rcpt, Smt" 0 0 50 H I L BNN
@@ -26,11 +26,11 @@ X GND 5 -500 -200 200 R 40 40 0 0 W
 ENDDRAW
 ENDDEF
 #
-# Adafruit_Feather_M4_Express-eagle-import_CON_JST_PH_2PIN
+# Adafruit_Feather_M4_Express-eagle-import:CON_JST_PH_2PIN
 #
-DEF Adafruit_Feather_M4_Express-eagle-import_CON_JST_PH_2PIN X 0 40 Y Y 1 L N
+DEF Adafruit_Feather_M4_Express-eagle-import:CON_JST_PH_2PIN X 0 40 Y Y 1 L N
 F0 "X" -250 225 59 H V L BNN
-F1 "Adafruit_Feather_M4_Express-eagle-import_CON_JST_PH_2PIN" -250 -200 59 H V L BNN
+F1 "Adafruit_Feather_M4_Express-eagle-import:CON_JST_PH_2PIN" -250 -200 59 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -43,11 +43,11 @@ X 2 2 -100 0 100 R 50 0 1 0 P I
 ENDDRAW
 ENDDEF
 #
-# Adafruit_HUZZAH32_ESP32_Feather-eagle-import_ESP32_WROOM32_SKINNY
+# Adafruit_HUZZAH32_ESP32_Feather-eagle-import:ESP32_WROOM32_SKINNY
 #
-DEF ~Adafruit_HUZZAH32_ESP32_Feather-eagle-import_ESP32_WROOM32_SKINNY X 0 40 Y Y 1 L N
+DEF ~Adafruit_HUZZAH32_ESP32_Feather-eagle-import:ESP32_WROOM32_SKINNY X 0 40 Y Y 1 L N
 F0 "X" 0 0 50 H I C CNN
-F1 "Adafruit_HUZZAH32_ESP32_Feather-eagle-import_ESP32_WROOM32_SKINNY" 0 0 50 H I C CNN
+F1 "Adafruit_HUZZAH32_ESP32_Feather-eagle-import:ESP32_WROOM32_SKINNY" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -96,11 +96,24 @@ X GND P$1 0 -1100 200 U 0 50 1 0 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_01x02
+# Adafruit_HUZZAH32_ESP32_Feather-eagle-import:MOUNTINGHOLE2.5
 #
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+DEF ~Adafruit_HUZZAH32_ESP32_Feather-eagle-import:MOUNTINGHOLE2.5 ~ 0 40 Y Y 1 L N
+F0 "" 0 0 50 H I C CNN
+F1 "Adafruit_HUZZAH32_ESP32_Feather-eagle-import:MOUNTINGHOLE2.5" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 75 1 0 10 N
+C 0 0 100 1 0 10 N
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic:Conn_01x02
+#
+DEF Connector_Generic:Conn_01x02 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F1 "Connector_Generic:Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -115,11 +128,103 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_US
+# Connector_Generic:Conn_01x14
 #
-DEF Device_R_US R 0 0 N Y 1 F N
+DEF Connector_Generic:Conn_01x14 J 0 40 Y N 1 F N
+F0 "J" 0 700 50 H V C CNN
+F1 "Connector_Generic:Conn_01x14" 0 -800 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -695 0 -705 1 1 6 N
+S -50 -595 0 -605 1 1 6 N
+S -50 -495 0 -505 1 1 6 N
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 405 0 395 1 1 6 N
+S -50 505 0 495 1 1 6 N
+S -50 605 0 595 1 1 6 N
+S -50 650 50 -750 1 1 10 f
+X Pin_1 1 -200 600 150 R 50 50 1 1 P
+X Pin_10 10 -200 -300 150 R 50 50 1 1 P
+X Pin_11 11 -200 -400 150 R 50 50 1 1 P
+X Pin_12 12 -200 -500 150 R 50 50 1 1 P
+X Pin_13 13 -200 -600 150 R 50 50 1 1 P
+X Pin_14 14 -200 -700 150 R 50 50 1 1 P
+X Pin_2 2 -200 500 150 R 50 50 1 1 P
+X Pin_3 3 -200 400 150 R 50 50 1 1 P
+X Pin_4 4 -200 300 150 R 50 50 1 1 P
+X Pin_5 5 -200 200 150 R 50 50 1 1 P
+X Pin_6 6 -200 100 150 R 50 50 1 1 P
+X Pin_7 7 -200 0 150 R 50 50 1 1 P
+X Pin_8 8 -200 -100 150 R 50 50 1 1 P
+X Pin_9 9 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic:Conn_01x17
+#
+DEF Connector_Generic:Conn_01x17 J 0 40 Y N 1 F N
+F0 "J" 0 900 50 H V C CNN
+F1 "Connector_Generic:Conn_01x17" 0 -900 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -795 0 -805 1 1 6 N
+S -50 -695 0 -705 1 1 6 N
+S -50 -595 0 -605 1 1 6 N
+S -50 -495 0 -505 1 1 6 N
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 405 0 395 1 1 6 N
+S -50 505 0 495 1 1 6 N
+S -50 605 0 595 1 1 6 N
+S -50 705 0 695 1 1 6 N
+S -50 805 0 795 1 1 6 N
+S -50 850 50 -850 1 1 10 f
+X Pin_1 1 -200 800 150 R 50 50 1 1 P
+X Pin_10 10 -200 -100 150 R 50 50 1 1 P
+X Pin_11 11 -200 -200 150 R 50 50 1 1 P
+X Pin_12 12 -200 -300 150 R 50 50 1 1 P
+X Pin_13 13 -200 -400 150 R 50 50 1 1 P
+X Pin_14 14 -200 -500 150 R 50 50 1 1 P
+X Pin_15 15 -200 -600 150 R 50 50 1 1 P
+X Pin_16 16 -200 -700 150 R 50 50 1 1 P
+X Pin_17 17 -200 -800 150 R 50 50 1 1 P
+X Pin_2 2 -200 700 150 R 50 50 1 1 P
+X Pin_3 3 -200 600 150 R 50 50 1 1 P
+X Pin_4 4 -200 500 150 R 50 50 1 1 P
+X Pin_5 5 -200 400 150 R 50 50 1 1 P
+X Pin_6 6 -200 300 150 R 50 50 1 1 P
+X Pin_7 7 -200 200 150 R 50 50 1 1 P
+X Pin_8 8 -200 100 150 R 50 50 1 1 P
+X Pin_9 9 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device:R_US
+#
+DEF Device:R_US R 0 0 N Y 1 F N
 F0 "R" 100 0 50 V V C CNN
-F1 "Device_R_US" -100 0 50 V V C CNN
+F1 "Device:R_US" -100 0 50 V V C CNN
 F2 "" 40 -10 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -136,11 +241,233 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_+3V3-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue
+# SMD_Headers:NPPC_0.100in_2ROW
 #
-DEF lab64_SAM32-rescue_+3V3-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue #+3V3 0 40 Y Y 1 L P
+DEF SMD_Headers:NPPC_0.100in_2ROW J 0 40 Y Y 14 F N
+F0 "J" -25 420 60 H V C CNN
+F1 "SMD_Headers:NPPC_0.100in_2ROW" -35 -430 60 H V C CNN
+F2 "" -35 -340 60 V I C CNN
+F3 "" -35 -340 60 V I C CNN
+DRAW
+S -150 350 150 -350 0 1 0 N
+S -135 335 -65 270 0 1 0 N
+S -135 -265 -65 -330 1 1 0 N
+S -135 -165 -65 -230 1 1 0 N
+S -135 -65 -65 -130 1 1 0 N
+S -135 35 -65 -30 1 1 0 N
+S -135 135 -65 70 1 1 0 N
+S -135 235 -65 170 1 1 0 N
+S 65 -265 135 -330 1 1 0 N
+S 65 -165 135 -230 1 1 0 N
+S 65 -65 135 -130 1 1 0 N
+S 65 35 135 -30 1 1 0 N
+S 65 135 135 70 1 1 0 N
+S 65 235 135 170 1 1 0 N
+S 65 335 135 270 1 1 0 N
+X ~ 1 -250 300 98 R 59 59 1 0 B
+X ~ 10 250 -100 98 L 59 59 1 0 B
+X ~ 11 250 0 98 L 59 59 1 0 B
+X ~ 12 250 100 98 L 59 59 1 0 B
+X ~ 13 250 200 98 L 59 59 1 0 B
+X ~ 14 250 300 98 L 59 59 1 0 B
+X ~ 2 -250 200 98 R 59 59 1 0 B
+X ~ 3 -255 100 98 R 59 59 1 0 B
+X ~ 4 -255 0 98 R 59 59 1 0 B
+X ~ 5 -255 -100 98 R 59 59 1 0 B
+X ~ 6 -255 -200 98 R 59 59 1 0 B
+X ~ 7 -255 -300 98 R 59 59 1 0 B
+X ~ 8 250 -300 98 L 59 59 1 0 B
+X ~ 9 250 -200 98 L 59 59 1 0 B
+X ~ 1-UB -250 300 98 R 59 59 2 0 B
+X ~ 10-UB 250 -100 98 L 59 59 2 0 B
+X ~ 11-UB 250 0 98 L 59 59 2 0 B
+X ~ 12-UB 250 100 98 L 59 59 2 0 B
+X ~ 13-UB 250 200 98 L 59 59 2 0 B
+X ~ 14-UB 250 300 98 L 59 59 2 0 B
+X ~ 2-UB -250 200 98 R 59 59 2 0 B
+X ~ 3-UB -255 100 98 R 59 59 2 0 B
+X ~ 4-UB -255 0 98 R 59 59 2 0 B
+X ~ 5-UB -255 -100 98 R 59 59 2 0 B
+X ~ 6-UB -255 -200 98 R 59 59 2 0 B
+X ~ 7-UB -255 -300 98 R 59 59 2 0 B
+X ~ 8-UB 250 -300 98 L 59 59 2 0 B
+X ~ 9-UB 250 -200 98 L 59 59 2 0 B
+X ~ 1-UC -250 300 98 R 59 59 3 0 B
+X ~ 10-UC 250 -100 98 L 59 59 3 0 B
+X ~ 11-UC 250 0 98 L 59 59 3 0 B
+X ~ 12-UC 250 100 98 L 59 59 3 0 B
+X ~ 13-UC 250 200 98 L 59 59 3 0 B
+X ~ 14-UC 250 300 98 L 59 59 3 0 B
+X ~ 2-UC -250 200 98 R 59 59 3 0 B
+X ~ 3-UC -255 100 98 R 59 59 3 0 B
+X ~ 4-UC -255 0 98 R 59 59 3 0 B
+X ~ 5-UC -255 -100 98 R 59 59 3 0 B
+X ~ 6-UC -255 -200 98 R 59 59 3 0 B
+X ~ 7-UC -255 -300 98 R 59 59 3 0 B
+X ~ 8-UC 250 -300 98 L 59 59 3 0 B
+X ~ 9-UC 250 -200 98 L 59 59 3 0 B
+X ~ 1-UD -250 300 98 R 59 59 4 0 B
+X ~ 10-UD 250 -100 98 L 59 59 4 0 B
+X ~ 11-UD 250 0 98 L 59 59 4 0 B
+X ~ 12-UD 250 100 98 L 59 59 4 0 B
+X ~ 13-UD 250 200 98 L 59 59 4 0 B
+X ~ 14-UD 250 300 98 L 59 59 4 0 B
+X ~ 2-UD -250 200 98 R 59 59 4 0 B
+X ~ 3-UD -255 100 98 R 59 59 4 0 B
+X ~ 4-UD -255 0 98 R 59 59 4 0 B
+X ~ 5-UD -255 -100 98 R 59 59 4 0 B
+X ~ 6-UD -255 -200 98 R 59 59 4 0 B
+X ~ 7-UD -255 -300 98 R 59 59 4 0 B
+X ~ 8-UD 250 -300 98 L 59 59 4 0 B
+X ~ 9-UD 250 -200 98 L 59 59 4 0 B
+X ~ 1-UE -250 300 98 R 59 59 5 0 B
+X ~ 10-UE 250 -100 98 L 59 59 5 0 B
+X ~ 11-UE 250 0 98 L 59 59 5 0 B
+X ~ 12-UE 250 100 98 L 59 59 5 0 B
+X ~ 13-UE 250 200 98 L 59 59 5 0 B
+X ~ 14-UE 250 300 98 L 59 59 5 0 B
+X ~ 2-UE -250 200 98 R 59 59 5 0 B
+X ~ 3-UE -255 100 98 R 59 59 5 0 B
+X ~ 4-UE -255 0 98 R 59 59 5 0 B
+X ~ 5-UE -255 -100 98 R 59 59 5 0 B
+X ~ 6-UE -255 -200 98 R 59 59 5 0 B
+X ~ 7-UE -255 -300 98 R 59 59 5 0 B
+X ~ 8-UE 250 -300 98 L 59 59 5 0 B
+X ~ 9-UE 250 -200 98 L 59 59 5 0 B
+X ~ 1-UF -250 300 98 R 59 59 6 0 B
+X ~ 10-UF 250 -100 98 L 59 59 6 0 B
+X ~ 11-UF 250 0 98 L 59 59 6 0 B
+X ~ 12-UF 250 100 98 L 59 59 6 0 B
+X ~ 13-UF 250 200 98 L 59 59 6 0 B
+X ~ 14-UF 250 300 98 L 59 59 6 0 B
+X ~ 2-UF -250 200 98 R 59 59 6 0 B
+X ~ 3-UF -255 100 98 R 59 59 6 0 B
+X ~ 4-UF -255 0 98 R 59 59 6 0 B
+X ~ 5-UF -255 -100 98 R 59 59 6 0 B
+X ~ 6-UF -255 -200 98 R 59 59 6 0 B
+X ~ 7-UF -255 -300 98 R 59 59 6 0 B
+X ~ 8-UF 250 -300 98 L 59 59 6 0 B
+X ~ 9-UF 250 -200 98 L 59 59 6 0 B
+X ~ 1-UG -250 300 98 R 59 59 7 0 B
+X ~ 10-UG 250 -100 98 L 59 59 7 0 B
+X ~ 11-UG 250 0 98 L 59 59 7 0 B
+X ~ 12-UG 250 100 98 L 59 59 7 0 B
+X ~ 13-UG 250 200 98 L 59 59 7 0 B
+X ~ 14-UG 250 300 98 L 59 59 7 0 B
+X ~ 2-UG -250 200 98 R 59 59 7 0 B
+X ~ 3-UG -255 100 98 R 59 59 7 0 B
+X ~ 4-UG -255 0 98 R 59 59 7 0 B
+X ~ 5-UG -255 -100 98 R 59 59 7 0 B
+X ~ 6-UG -255 -200 98 R 59 59 7 0 B
+X ~ 7-UG -255 -300 98 R 59 59 7 0 B
+X ~ 8-UG 250 -300 98 L 59 59 7 0 B
+X ~ 9-UG 250 -200 98 L 59 59 7 0 B
+X ~ 1-UH -250 300 98 R 59 59 8 0 B
+X ~ 10-UH 250 -100 98 L 59 59 8 0 B
+X ~ 11-UH 250 0 98 L 59 59 8 0 B
+X ~ 12-UH 250 100 98 L 59 59 8 0 B
+X ~ 13-UH 250 200 98 L 59 59 8 0 B
+X ~ 14-UH 250 300 98 L 59 59 8 0 B
+X ~ 2-UH -250 200 98 R 59 59 8 0 B
+X ~ 3-UH -255 100 98 R 59 59 8 0 B
+X ~ 4-UH -255 0 98 R 59 59 8 0 B
+X ~ 5-UH -255 -100 98 R 59 59 8 0 B
+X ~ 6-UH -255 -200 98 R 59 59 8 0 B
+X ~ 7-UH -255 -300 98 R 59 59 8 0 B
+X ~ 8-UH 250 -300 98 L 59 59 8 0 B
+X ~ 9-UH 250 -200 98 L 59 59 8 0 B
+X ~ 1-UI -250 300 98 R 59 59 9 0 B
+X ~ 10-UI 250 -100 98 L 59 59 9 0 B
+X ~ 11-UI 250 0 98 L 59 59 9 0 B
+X ~ 12-UI 250 100 98 L 59 59 9 0 B
+X ~ 13-UI 250 200 98 L 59 59 9 0 B
+X ~ 14-UI 250 300 98 L 59 59 9 0 B
+X ~ 2-UI -250 200 98 R 59 59 9 0 B
+X ~ 3-UI -255 100 98 R 59 59 9 0 B
+X ~ 4-UI -255 0 98 R 59 59 9 0 B
+X ~ 5-UI -255 -100 98 R 59 59 9 0 B
+X ~ 6-UI -255 -200 98 R 59 59 9 0 B
+X ~ 7-UI -255 -300 98 R 59 59 9 0 B
+X ~ 8-UI 250 -300 98 L 59 59 9 0 B
+X ~ 9-UI 250 -200 98 L 59 59 9 0 B
+X ~ 1-UJ -250 300 98 R 59 59 10 0 B
+X ~ 10-UJ 250 -100 98 L 59 59 10 0 B
+X ~ 11-UJ 250 0 98 L 59 59 10 0 B
+X ~ 12-UJ 250 100 98 L 59 59 10 0 B
+X ~ 13-UJ 250 200 98 L 59 59 10 0 B
+X ~ 14-UJ 250 300 98 L 59 59 10 0 B
+X ~ 2-UJ -250 200 98 R 59 59 10 0 B
+X ~ 3-UJ -255 100 98 R 59 59 10 0 B
+X ~ 4-UJ -255 0 98 R 59 59 10 0 B
+X ~ 5-UJ -255 -100 98 R 59 59 10 0 B
+X ~ 6-UJ -255 -200 98 R 59 59 10 0 B
+X ~ 7-UJ -255 -300 98 R 59 59 10 0 B
+X ~ 8-UJ 250 -300 98 L 59 59 10 0 B
+X ~ 9-UJ 250 -200 98 L 59 59 10 0 B
+X ~ 1-UK -250 300 98 R 59 59 11 0 B
+X ~ 10-UK 250 -100 98 L 59 59 11 0 B
+X ~ 11-UK 250 0 98 L 59 59 11 0 B
+X ~ 12-UK 250 100 98 L 59 59 11 0 B
+X ~ 13-UK 250 200 98 L 59 59 11 0 B
+X ~ 14-UK 250 300 98 L 59 59 11 0 B
+X ~ 2-UK -250 200 98 R 59 59 11 0 B
+X ~ 3-UK -255 100 98 R 59 59 11 0 B
+X ~ 4-UK -255 0 98 R 59 59 11 0 B
+X ~ 5-UK -255 -100 98 R 59 59 11 0 B
+X ~ 6-UK -255 -200 98 R 59 59 11 0 B
+X ~ 7-UK -255 -300 98 R 59 59 11 0 B
+X ~ 8-UK 250 -300 98 L 59 59 11 0 B
+X ~ 9-UK 250 -200 98 L 59 59 11 0 B
+X ~ 1-UL -250 300 98 R 59 59 12 0 B
+X ~ 10-UL 250 -100 98 L 59 59 12 0 B
+X ~ 11-UL 250 0 98 L 59 59 12 0 B
+X ~ 12-UL 250 100 98 L 59 59 12 0 B
+X ~ 13-UL 250 200 98 L 59 59 12 0 B
+X ~ 14-UL 250 300 98 L 59 59 12 0 B
+X ~ 2-UL -250 200 98 R 59 59 12 0 B
+X ~ 3-UL -255 100 98 R 59 59 12 0 B
+X ~ 4-UL -255 0 98 R 59 59 12 0 B
+X ~ 5-UL -255 -100 98 R 59 59 12 0 B
+X ~ 6-UL -255 -200 98 R 59 59 12 0 B
+X ~ 7-UL -255 -300 98 R 59 59 12 0 B
+X ~ 8-UL 250 -300 98 L 59 59 12 0 B
+X ~ 9-UL 250 -200 98 L 59 59 12 0 B
+X ~ 1-UM -250 300 98 R 59 59 13 0 B
+X ~ 10-UM 250 -100 98 L 59 59 13 0 B
+X ~ 11-UM 250 0 98 L 59 59 13 0 B
+X ~ 12-UM 250 100 98 L 59 59 13 0 B
+X ~ 13-UM 250 200 98 L 59 59 13 0 B
+X ~ 14-UM 250 300 98 L 59 59 13 0 B
+X ~ 2-UM -250 200 98 R 59 59 13 0 B
+X ~ 3-UM -255 100 98 R 59 59 13 0 B
+X ~ 4-UM -255 0 98 R 59 59 13 0 B
+X ~ 5-UM -255 -100 98 R 59 59 13 0 B
+X ~ 6-UM -255 -200 98 R 59 59 13 0 B
+X ~ 7-UM -255 -300 98 R 59 59 13 0 B
+X ~ 8-UM 250 -300 98 L 59 59 13 0 B
+X ~ 9-UM 250 -200 98 L 59 59 13 0 B
+X ~ 1-UN -250 300 98 R 59 59 14 0 B
+X ~ 10-UN 250 -100 98 L 59 59 14 0 B
+X ~ 11-UN 250 0 98 L 59 59 14 0 B
+X ~ 12-UN 250 100 98 L 59 59 14 0 B
+X ~ 13-UN 250 200 98 L 59 59 14 0 B
+X ~ 14-UN 250 300 98 L 59 59 14 0 B
+X ~ 2-UN -250 200 98 R 59 59 14 0 B
+X ~ 3-UN -255 100 98 R 59 59 14 0 B
+X ~ 4-UN -255 0 98 R 59 59 14 0 B
+X ~ 5-UN -255 -100 98 R 59 59 14 0 B
+X ~ 6-UN -255 -200 98 R 59 59 14 0 B
+X ~ 7-UN -255 -300 98 R 59 59 14 0 B
+X ~ 8-UN 250 -300 98 L 59 59 14 0 B
+X ~ 9-UN 250 -200 98 L 59 59 14 0 B
+ENDDRAW
+ENDDEF
+#
+# lab64_SAM32-rescue:+3V3-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue
+#
+DEF lab64_SAM32-rescue:+3V3-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue #+3V3 0 40 Y Y 1 L P
 F0 "#+3V3" 0 0 50 H I C CNN
-F1 "lab64_SAM32-rescue_+3V3-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue" -100 -200 59 V V L BNN
+F1 "lab64_SAM32-rescue:+3V3-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue" -100 -200 59 V V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -150,11 +477,11 @@ X +3V3 1 0 -100 100 U 0 0 1 0 W
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue
+# lab64_SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue
 #
-DEF lab64_SAM32-rescue_+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #+3V3 0 40 Y Y 1 L P
+DEF lab64_SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #+3V3 0 40 Y Y 1 L P
 F0 "#+3V3" 0 0 50 H I C CNN
-F1 "lab64_SAM32-rescue_+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue" -100 -200 59 V V L BNN
+F1 "lab64_SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue" -100 -200 59 V V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -164,11 +491,11 @@ X +3V3 1 0 -100 100 U 0 0 1 0 W
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_503182-1853-503182-1853-lab64_SAM32-rescue
+# lab64_SAM32-rescue:503182-1853-503182-1853-lab64_SAM32-rescue
 #
-DEF lab64_SAM32-rescue_503182-1853-503182-1853-lab64_SAM32-rescue J 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:503182-1853-503182-1853-lab64_SAM32-rescue J 0 40 Y Y 1 L N
 F0 "J" -401 826 50 H V L BNN
-F1 "lab64_SAM32-rescue_503182-1853-503182-1853-lab64_SAM32-rescue" -400 -900 50 H V L BNN
+F1 "lab64_SAM32-rescue:503182-1853-503182-1853-lab64_SAM32-rescue" -400 -900 50 H V L BNN
 F2 "MOLEX_503182-1853" 0 0 50 H I L BNN
 F3 "Molex, LLC" 0 0 50 H I L BNN
 F4 "Conn Micro SD Card SKT 8 POS 1.09mm Solder RA SMD Embossed T/R 0.5A/Contact" 0 0 50 H I L BNN
@@ -199,11 +526,11 @@ X SWITCH_TERM SW_T -600 -300 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue
+# lab64_SAM32-rescue:ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue
 #
-DEF lab64_SAM32-rescue_ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue U 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue U 0 40 Y Y 1 L N
 F0 "U" -501 1906 50 H V L BNN
-F1 "lab64_SAM32-rescue_ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue" -501 -2003 50 H V L BNN
+F1 "lab64_SAM32-rescue:ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue" -501 -2003 50 H V L BNN
 F2 "QFP50P1200X1200X120-64N" 0 0 50 H I L BNN
 F3 "Microchip" 0 0 50 H I L BNN
 F4 "120MHZ 1024KB Flash 64 TQFP PKG inTray 85CTemp, 64 TQFP 10x10x1mm TRAY" 0 0 50 H I L BNN
@@ -283,11 +610,11 @@ X PB06 9 600 300 100 L 40 40 0 0 B
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import C 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import C 0 40 Y Y 1 L N
 F0 "C" -90 49 50 V V C CNN
-F1 "lab64_SAM32-rescue_CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import" 90 49 50 V V C CNN
+F1 "lab64_SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import" 90 49 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -300,11 +627,11 @@ X 2 2 0 -100 100 U 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import C 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import C 0 40 Y Y 1 L N
 F0 "C" -90 49 50 V V C CNN
-F1 "lab64_SAM32-rescue_CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import" 90 49 50 V V C CNN
+F1 "lab64_SAM32-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import" 90 49 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -317,11 +644,11 @@ X 2 2 0 -100 100 U 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_DIODE-SCHOTTKYSOD-123-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:DIODE-SCHOTTKYSOD-123-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_DIODE-SCHOTTKYSOD-123-Adafruit_Feather_M4_Express-eagle-import D 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:DIODE-SCHOTTKYSOD-123-Adafruit_Feather_M4_Express-eagle-import D 0 40 Y Y 1 L N
 F0 "D" 0 100 42 H V C CNN
-F1 "lab64_SAM32-rescue_DIODE-SCHOTTKYSOD-123-Adafruit_Feather_M4_Express-eagle-import" 0 -98 42 H V C CNN
+F1 "lab64_SAM32-rescue:DIODE-SCHOTTKYSOD-123-Adafruit_Feather_M4_Express-eagle-import" 0 -98 42 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -337,11 +664,11 @@ X C C 100 0 100 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue
+# lab64_SAM32-rescue:GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue
 #
-DEF lab64_SAM32-rescue_GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue #GND 0 40 Y Y 1 L P
+DEF lab64_SAM32-rescue:GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue #GND 0 40 Y Y 1 L P
 F0 "#GND" 0 0 50 H I C CNN
-F1 "lab64_SAM32-rescue_GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue" -100 -100 59 H V L BNN
+F1 "lab64_SAM32-rescue:GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue" -100 -100 59 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -350,11 +677,11 @@ X GND 1 0 100 100 D 0 0 1 0 W
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_GND-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_GND-Adafruit_Feather_M4_Express-eagle-import #GND 0 40 Y Y 1 L P
+DEF lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import #GND 0 40 Y Y 1 L P
 F0 "#GND" 0 0 50 H I C CNN
-F1 "lab64_SAM32-rescue_GND-Adafruit_Feather_M4_Express-eagle-import" -100 -100 59 H V L BNN
+F1 "lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import" -100 -100 59 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -363,11 +690,11 @@ X GND 1 0 100 100 D 0 0 1 0 W
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_INDUCTOR-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:INDUCTOR-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_INDUCTOR-Adafruit_Feather_M4_Express-eagle-import L 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:INDUCTOR-Adafruit_Feather_M4_Express-eagle-import L 0 40 Y Y 1 L N
 F0 "L" 0 100 42 H V C CNN
-F1 "lab64_SAM32-rescue_INDUCTOR-Adafruit_Feather_M4_Express-eagle-import" 0 -60 42 H V C CNN
+F1 "lab64_SAM32-rescue:INDUCTOR-Adafruit_Feather_M4_Express-eagle-import" 0 -60 42 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -382,11 +709,11 @@ X 2 P$2 200 0 100 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import D 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import D 0 40 Y Y 1 L N
 F0 "D" -50 175 42 H V C CNN
-F1 "lab64_SAM32-rescue_LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import" -50 -110 42 H V C CNN
+F1 "lab64_SAM32-rescue:LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import" -50 -110 42 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -403,51 +730,43 @@ P 2 1 0 0 0 125 -37 112 N
 P 2 1 0 0 12 112 37 87 N
 P 2 1 0 0 37 87 50 125 N
 P 2 1 0 0 50 125 12 112 N
-X A A -200 0 100 R 0 0 1 0 P
-X C C 100 0 100 L 0 0 1 0 P
+X ~ 1 -200 0 100 R 0 0 1 0 P
+X ~ 2 100 0 100 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_MAX3202EETT+T-symbols-lab64_SAM32-rescue
+# lab64_SAM32-rescue:MAX3202EETT+T-symbols-lab64_SAM32-rescue
 #
-DEF lab64_SAM32-rescue_MAX3202EETT+T-symbols-lab64_SAM32-rescue U 0 10 Y Y 1 F N
+DEF lab64_SAM32-rescue:MAX3202EETT+T-symbols-lab64_SAM32-rescue U 0 10 Y Y 1 F N
 F0 "U" 0 400 60 H V C CNN
-F1 "lab64_SAM32-rescue_MAX3202EETT+T-symbols-lab64_SAM32-rescue" 0 300 60 H V C CNN
-F2 "21-0137I_T1033-1" 0 240 60 H I C CNN
-F3 "" -200 150 60 H V C CNN
-$FPLIST
- 21-0137I_T1033-1
- 21-0137I_T1033-1-M
- 21-0137I_T1033-1-L
-$ENDFPLIST
+F1 "lab64_SAM32-rescue:MAX3202EETT+T-symbols-lab64_SAM32-rescue" 0 300 60 H V C CNN
+F2 "21-0137I_T1033-1" 0 200 60 H I C CNN
+F3 "" -450 100 60 H V C CNN
 DRAW
-P 2 1 0 5 0 -300 500 -300 N
-P 2 1 0 5 0 200 0 -300 N
-P 2 1 0 5 470 150 512 130 N
-P 2 1 0 5 470 150 512 170 N
-P 2 1 0 5 500 -300 500 200 N
-P 2 1 0 5 500 200 0 200 N
-P 2 1 0 5 532 130 573 150 N
-P 2 1 0 5 532 170 573 150 N
-P 2 1 0 5 568 -270 527 -250 N
-P 2 1 0 5 568 -230 527 -250 N
-P 2 1 0 5 630 -250 588 -270 N
-P 2 1 0 5 630 -250 588 -230 N
-X VCC 1 -200 150 197 R 59 59 1 0 W
-X NC 2 -200 50 197 R 59 59 1 0 N
-X IO1 3 650 150 197 L 59 59 1 0 B
-X GND 4 -200 -150 197 R 59 59 1 0 W
-X NC 5 -200 -50 197 R 59 59 1 0 N
-X IO2 6 700 -250 197 L 59 59 1 0 B
-X 7 7 -200 -250 197 R 59 59 1 0 U
+P 2 1 0 5 -250 -350 250 -350 N
+P 2 1 0 5 -250 150 -250 -350 N
+P 2 1 0 5 250 -350 250 150 N
+P 2 1 0 5 250 150 -250 150 N
+P 2 1 0 5 270 -50 312 -70 N
+P 2 1 0 5 270 -50 312 -30 N
+P 2 1 0 5 318 -270 277 -250 N
+P 2 1 0 5 318 -230 277 -250 N
+P 2 1 0 5 332 -70 373 -50 N
+P 2 1 0 5 332 -30 373 -50 N
+P 2 1 0 5 380 -250 338 -270 N
+P 2 1 0 5 380 -250 338 -230 N
+X IO1 1 450 -50 197 L 59 59 1 0 B
+X GND 2 -450 -250 197 R 59 59 1 0 W
+X VCC 3 -450 -50 197 R 59 59 1 0 W
+X IO2 4 450 -250 197 L 59 59 1 0 B
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_MCP73831_2-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:MCP73831_2-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_MCP73831_2-Adafruit_Feather_M4_Express-eagle-import U 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:MCP73831_2-Adafruit_Feather_M4_Express-eagle-import U 0 40 Y Y 1 L N
 F0 "U" -400 450 42 H V L BNN
-F1 "lab64_SAM32-rescue_MCP73831_2-Adafruit_Feather_M4_Express-eagle-import" -400 -500 42 H V L BNN
+F1 "lab64_SAM32-rescue:MCP73831_2-Adafruit_Feather_M4_Express-eagle-import" -400 -500 42 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -475,11 +794,11 @@ X PROG 5 500 0 100 L 50 50 1 0 I
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_MOSFET-P-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:MOSFET-P-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_MOSFET-P-Adafruit_Feather_M4_Express-eagle-import Q 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:MOSFET-P-Adafruit_Feather_M4_Express-eagle-import Q 0 40 Y Y 1 L N
 F0 "Q" 110 15 42 H V L BNN
-F1 "lab64_SAM32-rescue_MOSFET-P-Adafruit_Feather_M4_Express-eagle-import" 110 -75 42 H V L BNN
+F1 "lab64_SAM32-rescue:MOSFET-P-Adafruit_Feather_M4_Express-eagle-import" 110 -75 42 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -514,11 +833,11 @@ X D 3 0 -200 100 U 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import SW 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import SW 0 40 Y Y 1 L N
 F0 "SW" -100 250 42 H V L BNN
-F1 "lab64_SAM32-rescue_SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import" -100 -200 42 H V L BNN
+F1 "lab64_SAM32-rescue:SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import" -100 -200 42 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -542,24 +861,11 @@ X S1 B' 200 -100 100 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_TESTPOINTROUND1.5MM-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:TRANSISTOR_NPNSOT23-3-Adafruit_HUZZAH32_ESP32_Feather-eagle-import
 #
-DEF lab64_SAM32-rescue_TESTPOINTROUND1.5MM-Adafruit_Feather_M4_Express-eagle-import TP 0 40 Y Y 1 L N
-F0 "TP" 0 220 42 V V L CNN
-F1 "lab64_SAM32-rescue_TESTPOINTROUND1.5MM-Adafruit_Feather_M4_Express-eagle-import" 65 220 42 V V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 0 150 50 1 0 10 N
-X P$1 P$1 0 0 100 U 0 0 1 0 U
-ENDDRAW
-ENDDEF
-#
-# lab64_SAM32-rescue_TRANSISTOR_NPNSOT23-3-Adafruit_HUZZAH32_ESP32_Feather-eagle-import
-#
-DEF lab64_SAM32-rescue_TRANSISTOR_NPNSOT23-3-Adafruit_HUZZAH32_ESP32_Feather-eagle-import Q 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:TRANSISTOR_NPNSOT23-3-Adafruit_HUZZAH32_ESP32_Feather-eagle-import Q 0 40 Y Y 1 L N
 F0 "Q" 200 0 59 H V L BNN
-F1 "lab64_SAM32-rescue_TRANSISTOR_NPNSOT23-3-Adafruit_HUZZAH32_ESP32_Feather-eagle-import" 200 -100 59 H V L BNN
+F1 "lab64_SAM32-rescue:TRANSISTOR_NPNSOT23-3-Adafruit_HUZZAH32_ESP32_Feather-eagle-import" 200 -100 59 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -580,11 +886,11 @@ X C 3 100 150 49 D 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_VBAT-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_VBAT-Adafruit_Feather_M4_Express-eagle-import ~ 0 40 Y Y 1 L P
+DEF lab64_SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import ~ 0 40 Y Y 1 L P
 F0 "" 0 0 50 H I C CNN
-F1 "lab64_SAM32-rescue_VBAT-Adafruit_Feather_M4_Express-eagle-import" -60 40 42 H V L BNN
+F1 "lab64_SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import" -60 40 42 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -594,39 +900,11 @@ X VBAT 1 0 -100 100 U 0 0 1 0 W
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_VBUS-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue
+# lab64_SAM32-rescue:VREG_SOT23-5-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_VBUS-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue ~ 0 40 Y Y 1 L P
-F0 "" 0 0 50 H I C CNN
-F1 "lab64_SAM32-rescue_VBUS-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue" -60 40 42 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 0 0 -50 -50 0 0 N
-P 2 1 0 0 0 0 50 -50 N
-X VBUS 1 0 -100 100 U 0 0 1 0 W
-ENDDRAW
-ENDDEF
-#
-# lab64_SAM32-rescue_VBUS-Adafruit_Feather_M4_Express-eagle-import
-#
-DEF lab64_SAM32-rescue_VBUS-Adafruit_Feather_M4_Express-eagle-import ~ 0 40 Y Y 1 L P
-F0 "" 0 0 50 H I C CNN
-F1 "lab64_SAM32-rescue_VBUS-Adafruit_Feather_M4_Express-eagle-import" -60 40 42 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 0 0 -50 -50 0 0 N
-P 2 1 0 0 0 0 50 -50 N
-X VBUS 1 0 -100 100 U 0 0 1 0 W
-ENDDRAW
-ENDDEF
-#
-# lab64_SAM32-rescue_VREG_SOT23-5-Adafruit_Feather_M4_Express-eagle-import
-#
-DEF lab64_SAM32-rescue_VREG_SOT23-5-Adafruit_Feather_M4_Express-eagle-import U 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:VREG_SOT23-5-Adafruit_Feather_M4_Express-eagle-import U 0 40 Y Y 1 L N
 F0 "U" -300 240 42 H V L BNN
-F1 "lab64_SAM32-rescue_VREG_SOT23-5-Adafruit_Feather_M4_Express-eagle-import" -300 -300 42 H V L BNN
+F1 "lab64_SAM32-rescue:VREG_SOT23-5-Adafruit_Feather_M4_Express-eagle-import" -300 -300 42 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -642,11 +920,11 @@ X OUT 5 400 100 100 L 50 50 1 0 W
 ENDDRAW
 ENDDEF
 #
-# lab64_SAM32-rescue_XTAL-3.2X1.5-Adafruit_Feather_M4_Express-eagle-import
+# lab64_SAM32-rescue:XTAL-3.2X1.5-Adafruit_Feather_M4_Express-eagle-import
 #
-DEF lab64_SAM32-rescue_XTAL-3.2X1.5-Adafruit_Feather_M4_Express-eagle-import X 0 40 Y Y 1 L N
+DEF lab64_SAM32-rescue:XTAL-3.2X1.5-Adafruit_Feather_M4_Express-eagle-import X 0 40 Y Y 1 L N
 F0 "X" -100 150 50 H V L BNN
-F1 "lab64_SAM32-rescue_XTAL-3.2X1.5-Adafruit_Feather_M4_Express-eagle-import" -150 -200 50 H V L BNN
+F1 "lab64_SAM32-rescue:XTAL-3.2X1.5-Adafruit_Feather_M4_Express-eagle-import" -150 -200 50 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -658,6 +936,21 @@ P 2 1 0 0 50 100 -50 100 N
 P 2 1 0 0 100 100 100 -100 N
 X P$1 P$1 -200 0 100 R 0 0 1 0 U
 X P$2 P$2 200 0 100 L 0 0 1 0 U
+ENDDRAW
+ENDDEF
+#
+# power:VUSB
+#
+DEF power:VUSB #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power:VUSB" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X VUSB 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
