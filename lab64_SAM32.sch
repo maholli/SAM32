@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:lab64_SAM32-cache
-LIBS:Adafruit HUZZAH32 ESP32 Feather-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -44,7 +43,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 2550 10700 2550
 Wire Wire Line
-	10700 2550 10700 1000
+	10700 2550 10700 1050
 Wire Wire Line
 	10700 2550 10700 2750
 Wire Wire Line
@@ -603,9 +602,7 @@ Connection ~ 4400 1800
 Wire Wire Line
 	4400 1800 4400 1700
 Wire Wire Line
-	3100 1500 2650 1500
-Wire Wire Line
-	3100 1600 2750 1600
+	3100 1500 2700 1500
 Text Label 2850 1500 0    50   ~ 0
 SWCLK
 Text Label 2850 1600 0    50   ~ 0
@@ -817,19 +814,19 @@ Wire Wire Line
 	2150 5050 3100 5050
 Connection ~ 2550 1200
 Wire Wire Line
-	2550 1200 2650 1200
+	2550 1200 2700 1200
 NoConn ~ 15350 18150
 $Comp
 L lab64_SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #+3V?
 U 1 0 5CCC6F9B
-P 10700 900
+P 10700 950
 AR Path="/5BCFDB7D/5CCC6F9B" Ref="#+3V?"  Part="1" 
 AR Path="/5CCC6F9B" Ref="#+3V06"  Part="1" 
-F 0 "#+3V06" H 10700 900 50  0001 C CNN
-F 1 "+3V3" H 10600 950 59  0000 L BNN
-F 2 "" H 10700 900 50  0001 C CNN
-F 3 "" H 10700 900 50  0001 C CNN
-	1    10700 900 
+F 0 "#+3V06" H 10700 950 50  0001 C CNN
+F 1 "+3V3" H 10550 1000 59  0000 L BNN
+F 2 "" H 10700 950 50  0001 C CNN
+F 3 "" H 10700 950 50  0001 C CNN
+	1    10700 950 
 	-1   0    0    -1  
 $EndComp
 Connection ~ 4850 1500
@@ -1091,12 +1088,12 @@ $EndComp
 $Comp
 L Device:R_US R5
 U 1 1 5C02CA8D
-P 2650 1350
-F 0 "R5" H 2750 1400 50  0000 C CNN
-F 1 "10K" H 2750 1300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 2690 1340 50  0001 C CNN
-F 3 "~" H 2650 1350 50  0001 C CNN
-	1    2650 1350
+P 2700 1350
+F 0 "R5" H 2800 1400 50  0000 C CNN
+F 1 "10K" H 2800 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2740 1340 50  0001 C CNN
+F 3 "~" H 2700 1350 50  0001 C CNN
+	1    2700 1350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1416,47 +1413,6 @@ NoConn ~ 5150 5750
 NoConn ~ 5150 5850
 NoConn ~ 5150 5950
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5BEA78F4
-P 4950 5200
-F 0 "J2" V 4950 5300 50  0000 L CNN
-F 1 "Conn_01x02" V 5050 4950 50  0000 L CNN
-F 2 "Connectors:PINHEAD1-2" H 4950 5200 50  0001 C CNN
-F 3 "~" H 4950 5200 50  0001 C CNN
-	1    4950 5200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R6
-U 1 1 5BEA78FE
-P 4850 4800
-F 0 "R6" V 4800 4650 50  0000 C CNN
-F 1 "0" V 4800 4900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 4890 4790 50  0001 C CNN
-F 3 "~" H 4850 4800 50  0001 C CNN
-	1    4850 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R7
-U 1 1 5BEA7905
-P 4950 4800
-F 0 "R7" V 4900 4650 50  0000 C CNN
-F 1 "0" V 4900 4900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 4990 4790 50  0001 C CNN
-F 3 "~" H 4950 4800 50  0001 C CNN
-	1    4950 4800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4850 4950 4850 5000
-Wire Wire Line
-	4950 4950 4950 5000
-Wire Wire Line
-	4850 4350 5150 4350
-Wire Wire Line
-	4950 4450 5150 4450
-$Comp
 L lab64_SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #+3V?
 U 1 0 5BEDF373
 P 6050 3850
@@ -1493,19 +1449,9 @@ IO39
 Wire Wire Line
 	7150 5550 7250 5550
 Wire Wire Line
-	4850 4350 4850 4650
-Wire Wire Line
-	4950 4450 4950 4650
-Wire Wire Line
-	4950 4450 4700 4450
-Wire Wire Line
 	4700 4450 4700 4100
-Connection ~ 4950 4450
 Wire Wire Line
 	4800 4000 4800 4350
-Wire Wire Line
-	4800 4350 4850 4350
-Connection ~ 4850 4350
 Wire Wire Line
 	5650 3500 5450 3500
 Wire Wire Line
@@ -1528,44 +1474,29 @@ Wire Wire Line
 Wire Wire Line
 	7200 3650 7200 2400
 $Comp
-L Adafruit_Feather_M4_Express-eagle-import:CON_JST_PH_2PIN J4
-U 1 1 5C24D2A5
-P 10050 1250
-F 0 "J4" H 10128 1353 59  0000 L CNN
-F 1 "CON_JST_PH_2PIN" H 9000 1250 59  0001 L CNN
-F 2 "Adafruit HUZZAH32 ESP32 Feather:JSTPH2" H 10050 1250 50  0001 C CNN
-F 3 "" H 10050 1250 50  0001 C CNN
-	1    10050 1250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10150 1250 10150 1050
-Wire Wire Line
-	10150 1350 10150 1600
-$Comp
 L lab64_SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import #U$?
 U 1 0 5C269BEE
-P 10150 950
+P 10200 950
 AR Path="/5BCFDB7D/5C269BEE" Ref="#U$?"  Part="1" 
 AR Path="/5C269BEE" Ref="#U$0101"  Part="1" 
-F 0 "#U$0101" H 10150 950 50  0001 C CNN
-F 1 "VBAT" H 10090 990 42  0000 L BNN
-F 2 "" H 10150 950 50  0001 C CNN
-F 3 "" H 10150 950 50  0001 C CNN
-	1    10150 950 
+F 0 "#U$0101" H 10200 950 50  0001 C CNN
+F 1 "VBAT" H 10140 990 42  0000 L BNN
+F 2 "" H 10200 950 50  0001 C CNN
+F 3 "" H 10200 950 50  0001 C CNN
+	1    10200 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import #U$?
 U 1 0 5C269CFD
-P 10150 1700
+P 10200 1700
 AR Path="/5BCFDB7D/5C269CFD" Ref="#U$?"  Part="1" 
 AR Path="/5C269CFD" Ref="#U$0102"  Part="1" 
-F 0 "#U$0102" H 10150 1700 50  0001 C CNN
-F 1 "GND" H 10050 1600 59  0000 L BNN
-F 2 "" H 10150 1700 50  0001 C CNN
-F 3 "" H 10150 1700 50  0001 C CNN
-	1    10150 1700
+F 0 "#U$0102" H 10200 1700 50  0001 C CNN
+F 1 "GND" H 10100 1600 59  0000 L BNN
+F 2 "" H 10200 1700 50  0001 C CNN
+F 3 "" H 10200 1700 50  0001 C CNN
+	1    10200 1700
 	1    0    0    -1  
 $EndComp
 Text Notes 9800 700  0    79   ~ 0
@@ -1892,20 +1823,6 @@ PROG
 Wire Wire Line
 	5250 1800 5250 2200
 $Comp
-L Connector_Generic:Conn_01x02 J6
-U 1 1 5BF725C8
-P 2750 1800
-F 0 "J6" V 2669 1880 50  0000 L CNN
-F 1 "Conn_01x02" V 2714 1880 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2750 1800 50  0001 C CNN
-F 3 "~" H 2750 1800 50  0001 C CNN
-	1    2750 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2650 1500 2650 1600
-Connection ~ 2650 1500
-$Comp
 L Connector_Generic:Conn_01x17 J7
 U 1 1 5BFAEBA9
 P 3100 6300
@@ -1927,4 +1844,25 @@ F 3 "~" H 4900 7050 50  0001 C CNN
 	1    4900 7050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3100 1600 2700 1600
+Wire Wire Line
+	10200 1050 10200 1300
+$Comp
+L Adafruit_Feather_M0_Adalogger-eagle-import:CON_JST_PH_2PINSH2 J4
+U 1 1 5BE0D3BF
+P 10300 1300
+F 0 "J4" H 10200 1120 59  0000 C CNN
+F 1 "CON_JST_PH_2PINSH2" H 10200 1581 59  0001 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical" H 10300 1300 50  0001 C CNN
+F 3 "" H 10300 1300 50  0001 C CNN
+	1    10300 1300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10200 1400 10200 1600
+Wire Wire Line
+	4800 4350 5150 4350
+Wire Wire Line
+	4700 4450 5150 4450
 $EndSCHEMATC

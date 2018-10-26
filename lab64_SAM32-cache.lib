@@ -26,11 +26,11 @@ X GND 5 -500 -200 200 R 40 40 0 0 W
 ENDDRAW
 ENDDEF
 #
-# Adafruit_Feather_M4_Express-eagle-import:CON_JST_PH_2PIN
+# Adafruit_Feather_M0_Adalogger-eagle-import:CON_JST_PH_2PINSH2
 #
-DEF Adafruit_Feather_M4_Express-eagle-import:CON_JST_PH_2PIN X 0 40 Y Y 1 L N
+DEF Adafruit_Feather_M0_Adalogger-eagle-import:CON_JST_PH_2PINSH2 X 0 40 Y Y 1 L N
 F0 "X" -250 225 59 H V L BNN
-F1 "Adafruit_Feather_M4_Express-eagle-import:CON_JST_PH_2PIN" -250 -200 59 H V L BNN
+F1 "Adafruit_Feather_M0_Adalogger-eagle-import:CON_JST_PH_2PINSH2" -250 -200 59 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -106,25 +106,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 C 0 0 75 1 0 10 N
 C 0 0 100 1 0 10 N
-ENDDRAW
-ENDDEF
-#
-# Connector_Generic:Conn_01x02
-#
-DEF Connector_Generic:Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
