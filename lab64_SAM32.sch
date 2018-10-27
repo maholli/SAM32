@@ -424,8 +424,8 @@ AR Path="/5BCFDB7D/5BD13B64" Ref="L?"  Part="1"
 AR Path="/5BD13B64" Ref="L2"  Part="1" 
 F 0 "L2" H 4500 2200 42  0000 C CNN
 F 1 "10uH" H 4500 2040 42  0000 C CNN
-F 2 "Adafruit Feather M4 Express:INDUCTOR_1007" H 4500 2100 50  0001 C CNN
-F 3 "" H 4500 2100 50  0001 C CNN
+F 2 "Inductor_SMD:L_0806_2016Metric" H 4500 2100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_vls201610hbx-1_en.pdf" H 4500 2100 50  0001 C CNN
 	1    4500 2100
 	-1   0    0    -1  
 $EndComp
@@ -601,12 +601,6 @@ Wire Wire Line
 Connection ~ 4400 1800
 Wire Wire Line
 	4400 1800 4400 1700
-Wire Wire Line
-	3100 1500 2700 1500
-Text Label 2850 1500 0    50   ~ 0
-SWCLK
-Text Label 2850 1600 0    50   ~ 0
-SWDIO
 $Comp
 L lab64_SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #+3V?
 U 1 0 5C1A91F5
@@ -814,7 +808,7 @@ Wire Wire Line
 	2150 5050 3100 5050
 Connection ~ 2550 1200
 Wire Wire Line
-	2550 1200 2700 1200
+	2550 1200 2650 1200
 NoConn ~ 15350 18150
 $Comp
 L lab64_SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #+3V?
@@ -1088,12 +1082,12 @@ $EndComp
 $Comp
 L Device:R_US R5
 U 1 1 5C02CA8D
-P 2700 1350
-F 0 "R5" H 2800 1400 50  0000 C CNN
-F 1 "10K" H 2800 1300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 2740 1340 50  0001 C CNN
-F 3 "~" H 2700 1350 50  0001 C CNN
-	1    2700 1350
+P 2650 1350
+F 0 "R5" H 2750 1400 50  0000 C CNN
+F 1 "10K" H 2750 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2690 1340 50  0001 C CNN
+F 3 "~" H 2650 1350 50  0001 C CNN
+	1    2650 1350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1681,7 +1675,6 @@ Wire Wire Line
 Connection ~ 4700 2000
 Wire Wire Line
 	5050 2200 5250 2200
-Connection ~ 5250 2200
 Connection ~ 4850 1900
 Connection ~ 5050 2200
 Wire Wire Line
@@ -1809,8 +1802,6 @@ Text Label 1950 3050 0    60   ~ 0
 VBAT_MES
 Text Label 9300 1400 0    10   ~ 0
 PROG
-Wire Wire Line
-	5250 1800 5250 2200
 $Comp
 L Connector_Generic:Conn_01x17 J7
 U 1 1 5BFAEBA9
@@ -1822,8 +1813,6 @@ F 3 "~" H 5950 1500 50  0001 C CNN
 	1    5950 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 1600 2700 1600
 Wire Wire Line
 	10200 1050 10200 1300
 $Comp
@@ -1910,15 +1899,193 @@ Text GLabel 4050 6700 2    60   BiDi ~ 0
 IO27
 Wire Wire Line
 	4050 6700 3950 6700
+Text GLabel 5550 1000 0    60   BiDi ~ 0
+D41
+Text GLabel 5550 900  0    60   BiDi ~ 0
+D42
+Text GLabel 5550 800  0    60   BiDi ~ 0
+D43
+Text GLabel 5550 700  0    60   BiDi ~ 0
+D44
+Wire Wire Line
+	5750 700  5550 700 
+Wire Wire Line
+	5550 800  5750 800 
+Wire Wire Line
+	5750 900  5550 900 
+Wire Wire Line
+	5750 1000 5550 1000
+Text GLabel 5550 1400 0    60   BiDi ~ 0
+D35
+Text GLabel 5550 1300 0    60   BiDi ~ 0
+D36
+Text GLabel 5550 1200 0    60   BiDi ~ 0
+D37
+Text GLabel 5550 1100 0    60   BiDi ~ 0
+D38
+Text GLabel 5550 1700 0    60   BiDi ~ 0
+D29
+Text GLabel 5550 1600 0    60   BiDi ~ 0
+D30
+Text GLabel 5550 1500 0    60   BiDi ~ 0
+D31
+Wire Wire Line
+	5750 1100 5550 1100
+Wire Wire Line
+	5750 1200 5550 1200
+Wire Wire Line
+	5750 1300 5550 1300
+Wire Wire Line
+	5750 1400 5550 1400
+Wire Wire Line
+	5750 1500 5550 1500
+Wire Wire Line
+	5750 1600 5550 1600
+Wire Wire Line
+	5750 1700 5550 1700
+Text GLabel 5550 1800 0    59   Output ~ 0
+SCK
+Text GLabel 5550 1900 0    59   Output ~ 0
+MOSI
+Text GLabel 5550 2000 0    59   Input ~ 0
+MISO
+Wire Wire Line
+	5550 1800 5750 1800
+Wire Wire Line
+	5550 1900 5750 1900
+Wire Wire Line
+	5550 2000 5750 2000
+Text GLabel 5550 2100 0    60   Output ~ 0
+SCL
+Text GLabel 5550 2200 0    60   BiDi ~ 0
+SDA
+Wire Wire Line
+	5550 2100 5750 2100
+Wire Wire Line
+	5550 2200 5750 2200
+Wire Wire Line
+	5250 1800 5250 2200
+Connection ~ 5250 2200
 $Comp
-L Connector_Generic:Conn_01x13 J2
-U 1 1 5BF1F3F6
+L lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import #U$?
+U 1 0 5C1DDB0D
+P 7550 1000
+AR Path="/5BCFDB7D/5C1DDB0D" Ref="#U$?"  Part="1" 
+AR Path="/5C1DDB0D" Ref="#U$0104"  Part="1" 
+F 0 "#U$0104" H 7550 1000 50  0001 C CNN
+F 1 "GND" H 7450 900 59  0000 L BNN
+F 2 "" H 7550 1000 50  0001 C CNN
+F 3 "" H 7550 1000 50  0001 C CNN
+	1    7550 1000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7450 1000 7300 1000
+$Comp
+L lab64_SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #+3V?
+U 1 0 5C1F12C1
+P 7550 1100
+AR Path="/5BCFDB7D/5C1F12C1" Ref="#+3V?"  Part="1" 
+AR Path="/5C1F12C1" Ref="#+3V0101"  Part="1" 
+F 0 "#+3V0101" H 7550 1100 50  0001 C CNN
+F 1 "+3V3" H 7400 1150 59  0000 L BNN
+F 2 "" H 7550 1100 50  0001 C CNN
+F 3 "" H 7550 1100 50  0001 C CNN
+	1    7550 1100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7450 1100 7300 1100
+Text GLabel 7450 1200 2    60   BiDi ~ 0
+D49
+Text GLabel 7450 1400 2    60   BiDi ~ 0
+D59
+Text GLabel 7450 1500 2    60   BiDi ~ 0
+D60
+Wire Wire Line
+	7450 1500 7300 1500
+Text GLabel 7450 1600 2    60   BiDi ~ 0
+D64
+Text GLabel 7450 1900 2    59   BiDi ~ 0
+AIN7
+Text GLabel 7450 1800 2    59   BiDi ~ 0
+AIN6
+Text GLabel 7450 2100 2    59   BiDi ~ 0
+AIN9
+Text GLabel 7450 2000 2    59   BiDi ~ 0
+AIN8
+Text GLabel 7450 2200 2    60   BiDi ~ 0
+AIN0
+Text GLabel 7450 2300 2    60   BiDi ~ 0
+AIN1
+Wire Wire Line
+	7450 1600 7300 1600
+Text GLabel 7450 1700 2    59   BiDi ~ 0
+DAC0
+Text GLabel 7450 1300 2    59   BiDi ~ 0
+DAC1
+$Comp
+L Connector_Generic:Conn_01x14 J2
+U 1 1 5C2AA09B
 P 7100 1600
 F 0 "J2" H 7020 2417 50  0000 C CNN
-F 1 "Conn_01x13" H 7020 2326 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical" H 7100 1600 50  0001 C CNN
+F 1 "Conn_01x14" H 7020 2326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 7100 1600 50  0001 C CNN
 F 3 "~" H 7100 1600 50  0001 C CNN
 	1    7100 1600
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	7450 1700 7300 1700
+Wire Wire Line
+	7450 1800 7300 1800
+Wire Wire Line
+	7450 1400 7300 1400
+Wire Wire Line
+	7450 1900 7300 1900
+Wire Wire Line
+	7450 2000 7300 2000
+Wire Wire Line
+	7450 2100 7300 2100
+Wire Wire Line
+	7450 2200 7300 2200
+Wire Wire Line
+	7450 2300 7300 2300
+Wire Wire Line
+	7450 1200 7300 1200
+Wire Wire Line
+	7300 1300 7450 1300
+$Comp
+L Adafruit_Feather_M4_Express-eagle-import:TESTPOINTPAD2MM TP2
+U 1 1 5C3CF7C0
+P 2800 1600
+F 0 "TP2" H 2700 1750 42  0000 R CNN
+F 1 "TESTPOINTPAD2MM" H 2720 1733 42  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2800 1600 50  0001 C CNN
+F 3 "" H 2800 1600 50  0001 C CNN
+	1    2800 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Adafruit_Feather_M4_Express-eagle-import:TESTPOINTPAD2MM TP1
+U 1 1 5C3CFA0E
+P 2650 1600
+F 0 "TP1" H 2850 1750 42  0000 R CNN
+F 1 "TESTPOINTPAD2MM" H 2570 1733 42  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2650 1600 50  0001 C CNN
+F 3 "" H 2650 1600 50  0001 C CNN
+	1    2650 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 1500 2650 1600
+Wire Wire Line
+	2650 1500 3100 1500
+Connection ~ 2650 1500
+Wire Wire Line
+	2800 1600 3100 1600
+Text Label 2850 1500 0    39   ~ 0
+SWCLK
+Text Label 2850 1600 0    39   ~ 0
+SWDIO
 $EndSCHEMATC
