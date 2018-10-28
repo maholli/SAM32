@@ -10,7 +10,7 @@ Feather-sized SAMD51 with M4 core serving as UART bridge to WROOM ESP32 + microS
 * 512 KB flash, 192 KB SRAM (SAMD51)
 * 802.11b/g/n HT40 Wi-Fi transceiver
 * Dual mode Bluetooth (normal and BLE)
-* **42 individually accessible I/O!**
+* **42 individually accessible I/O pins!**
 * Dual 1 MSPS 12 bit true analog DAC (can be used to play 12-bit stereo audio clips)
 * Dual 1 MSPS 12 bit ADC (10+ analog pins some on ADC0 and some on ADC1)
 * 10 Hardware Serial, hardware I2C, hardware SPI support
