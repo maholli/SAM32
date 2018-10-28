@@ -500,14 +500,14 @@ $EndComp
 $Comp
 L lab64_SAM32-rescue:GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue #GND?
 U 1 0 5BD44DCD
-P 1650 5450
+P 1950 5700
 AR Path="/5BD3B1CE/5BD44DCD" Ref="#GND?"  Part="1" 
 AR Path="/5BD44DCD" Ref="#GND01"  Part="1" 
-F 0 "#GND01" H 1650 5450 50  0001 C CNN
-F 1 "GND" H 1550 5350 59  0000 L BNN
-F 2 "" H 1650 5450 50  0001 C CNN
-F 3 "" H 1650 5450 50  0001 C CNN
-	1    1650 5450
+F 0 "#GND01" H 1950 5700 50  0001 C CNN
+F 1 "GND" H 1850 5600 59  0000 L BNN
+F 2 "" H 1950 5700 50  0001 C CNN
+F 3 "" H 1950 5700 50  0001 C CNN
+	1    1950 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -735,51 +735,15 @@ Wire Wire Line
 Wire Wire Line
 	1000 2300 1000 2700
 Connection ~ 1000 2700
-$Comp
-L lab64_SAM32-rescue:MAX3202EETT+T-symbols-lab64_SAM32-rescue U1
-U 1 1 5C54C068
-P 1100 6100
-F 0 "U1" H 1100 6150 60  0000 C CNN
-F 1 "MAX3202EETT+T" H 1350 5700 60  0000 C CNN
-F 2 "custom-footprints:WLP-4-0.5" H 2200 6340 60  0001 C CNN
-F 3 "" H 1100 6100 60  0000 C CNN
-	1    1100 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	650  6150 650  6000
-$Comp
-L lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import #U$?
-U 1 0 5C608AA6
-P 650 6450
-AR Path="/5BCFDB7D/5C608AA6" Ref="#U$?"  Part="1" 
-AR Path="/5C608AA6" Ref="#U$02"  Part="1" 
-F 0 "#U$02" H 650 6450 50  0001 C CNN
-F 1 "GND" H 550 6350 59  0000 L BNN
-F 2 "" H 650 6450 50  0001 C CNN
-F 3 "" H 650 6450 50  0001 C CNN
-	1    650  6450
-	1    0    0    -1  
-$EndComp
 Text Label 2850 5150 0    50   ~ 0
 LED1
 Wire Wire Line
-	1650 5050 2150 5050
+	1650 5050 2200 5050
 Wire Wire Line
-	1650 4950 1900 4950
-Wire Wire Line
-	1900 6150 1900 4950
-Connection ~ 1900 4950
-Wire Wire Line
-	1550 6350 2150 6350
-Wire Wire Line
-	2150 6350 2150 5050
-Connection ~ 2150 5050
-Wire Wire Line
-	1900 6150 1550 6150
+	1650 4950 2100 4950
 Text Notes 850  5850 0    79   ~ 0
 ESD PROT.
-Text Notes 800  4650 0    79   ~ 0
+Text Notes 800  4500 0    79   ~ 0
 USB CONN.
 Wire Wire Line
 	2450 6250 2450 6550
@@ -802,10 +766,6 @@ Wire Wire Line
 	2450 1950 2450 1500
 Wire Wire Line
 	2450 1200 2550 1200
-Wire Wire Line
-	1900 4950 3100 4950
-Wire Wire Line
-	2150 5050 3100 5050
 Connection ~ 2550 1200
 Wire Wire Line
 	2550 1200 2650 1200
@@ -1527,9 +1487,9 @@ $Comp
 L 10118194-0001LF:10118194-0001LF J1
 U 1 1 5BD4F36A
 P 1150 5050
-F 0 "J1" H 1200 5050 50  0000 C CNN
-F 1 "10118194-0001LF" H 1150 4700 50  0000 C CNN
-F 2 "FRAMATOME_10118194-0001LF" H 1150 5050 50  0001 L BNN
+F 0 "J1" H 1100 5450 50  0000 C CNN
+F 1 "10118194-0001LF" H 1050 5350 50  0000 C CNN
+F 2 "custom-footprints:10118194-0001LF" H 1150 5050 50  0001 L BNN
 F 3 "Amphenol FCI" H 1150 5050 50  0001 L BNN
 F 4 "Micro Usb, 2.0 Type b, Rcpt, Smt" H 1150 5050 50  0001 L BNN "Field4"
 F 5 "10118194-0001LF" H 1150 5050 50  0001 L BNN "Field5"
@@ -1539,8 +1499,6 @@ F 8 "Unavailable" H 1150 5050 50  0001 L BNN "Field8"
 	1    1150 5050
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 5250 1650 5350
 Wire Wire Line
 	2050 1500 1400 1500
 $Comp
@@ -1695,17 +1653,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 5800 2450 5950
 $Comp
-L power:VUSB #PWR0101
-U 1 1 5BD49F19
-P 650 6000
-F 0 "#PWR0101" H 650 5850 50  0001 C CNN
-F 1 "VUSB" H 665 6173 50  0000 C CNN
-F 2 "" H 650 6000 50  0001 C CNN
-F 3 "" H 650 6000 50  0001 C CNN
-	1    650  6000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VUSB #PWR0102
 U 1 1 5BD4A1CD
 P 1650 4750
@@ -1751,8 +1698,6 @@ Wire Wire Line
 	1700 3350 1700 3500
 Wire Wire Line
 	2450 5500 2450 5150
-Wire Wire Line
-	2450 5150 3100 5150
 $Comp
 L Adafruit_HUZZAH32_ESP32_Feather-eagle-import:MOUNTINGHOLE2.5 U$1
 U 1 0 5BF0655F
@@ -2088,4 +2033,113 @@ Text Label 2850 1500 0    39   ~ 0
 SWCLK
 Text Label 2850 1600 0    39   ~ 0
 SWDIO
+Wire Wire Line
+	2450 5150 3100 5150
+$Comp
+L power:VUSB #PWR0101
+U 1 1 5BD49F19
+P 650 5750
+F 0 "#PWR0101" H 650 5600 50  0001 C CNN
+F 1 "VUSB" H 665 5923 50  0000 C CNN
+F 2 "" H 650 5750 50  0001 C CNN
+F 3 "" H 650 5750 50  0001 C CNN
+	1    650  5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  6050 650  5750
+$Comp
+L lab64_SAM32-rescue:MAX3202EETT+T-symbols-lab64_SAM32-rescue U1
+U 1 1 5C54C068
+P 1100 6100
+F 0 "U1" H 1100 6150 60  0000 C CNN
+F 1 "MAX3202EETT+T" H 1350 5700 60  0000 C CNN
+F 2 "custom-footprints:WLP-4-0.5" H 2200 6340 60  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3202E-MAX3206E.pdf" H 1100 6100 60  0001 C CNN
+	1    1100 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5050 3100 5050
+Connection ~ 2200 5050
+Wire Wire Line
+	2100 4950 3100 4950
+Connection ~ 2100 4950
+$Comp
+L lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import #U$?
+U 1 0 5C6784F1
+P 5650 2300
+AR Path="/5BCFDB7D/5C6784F1" Ref="#U$?"  Part="1" 
+AR Path="/5C6784F1" Ref="#U$0105"  Part="1" 
+F 0 "#U$0105" H 5650 2300 50  0001 C CNN
+F 1 "GND" H 5550 2200 59  0000 L BNN
+F 2 "" H 5650 2300 50  0001 C CNN
+F 3 "" H 5650 2300 50  0001 C CNN
+	1    5650 2300
+	0    1    -1   0   
+$EndComp
+$Comp
+L lab64_SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import C?
+U 1 0 5C6906A6
+P 1800 5350
+AR Path="/5BCFDB7D/5C6906A6" Ref="C?"  Part="1" 
+AR Path="/5C6906A6" Ref="C15"  Part="1" 
+F 0 "C15" H 1750 5500 50  0000 C CNN
+F 1 "4.5 nF" H 1750 5300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1800 5350 50  0001 C CNN
+F 3 "" H 1800 5350 50  0001 C CNN
+	1    1800 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 5250 1950 5250
+Wire Wire Line
+	1950 5250 1950 5600
+$Comp
+L Device:R_US R6
+U 1 1 5C6BD422
+P 1650 5400
+F 0 "R6" H 1750 5350 50  0000 C CNN
+F 1 "1M" H 1750 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1690 5390 50  0001 C CNN
+F 3 "~" H 1650 5400 50  0001 C CNN
+	1    1650 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 5250 1800 5250
+Connection ~ 1650 5250
+Connection ~ 1800 5250
+Wire Wire Line
+	1250 5600 1650 5600
+Wire Wire Line
+	1650 5600 1650 5550
+Wire Wire Line
+	1650 5600 1800 5600
+Wire Wire Line
+	1800 5600 1800 5550
+Connection ~ 1650 5600
+Wire Wire Line
+	2200 6350 2200 5050
+Wire Wire Line
+	1550 6350 2200 6350
+Wire Wire Line
+	650  6350 650  6500
+$Comp
+L lab64_SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import #U$?
+U 1 0 5C608AA6
+P 650 6600
+AR Path="/5BCFDB7D/5C608AA6" Ref="#U$?"  Part="1" 
+AR Path="/5C608AA6" Ref="#U$02"  Part="1" 
+F 0 "#U$02" H 650 6600 50  0001 C CNN
+F 1 "GND" H 550 6500 59  0000 L BNN
+F 2 "" H 650 6600 50  0001 C CNN
+F 3 "" H 650 6600 50  0001 C CNN
+	1    650  6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6050 2100 4950
+Wire Wire Line
+	2100 6050 1550 6050
 $EndSCHEMATC
