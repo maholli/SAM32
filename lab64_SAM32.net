@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "D:\\Users\\Max5TB\\Documents\\OneDrive - Leland Stanford Junior University\\Research\\KiCAD_Designs\\lab64_SAM32\\lab64_SAM32\\lab64_SAM32.sch")
-    (date "10/28/2018 12:42:49 PM")
+    (date "10/28/2018 2:33:01 PM")
     (tool "Eeschema (5.0.0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -16,7 +16,7 @@
         (comment (number 4) (value "")))))
   (components
     (comp (ref C4)
-      (value 10µF)
+      (value 10uF)
       (footprint Capacitor_SMD:C_0603_1608Metric)
       (libsource (lib lab64_SAM32-rescue) (part CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import) (description ""))
       (sheetpath (names /) (tstamps /))
@@ -28,7 +28,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5BD0AF63))
     (comp (ref C2)
-      (value 10µF)
+      (value 10uF)
       (footprint Capacitor_SMD:C_0603_1608Metric)
       (libsource (lib lab64_SAM32-rescue) (part CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import) (description ""))
       (sheetpath (names /) (tstamps /))
@@ -88,7 +88,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5BD0C014))
     (comp (ref C7)
-      (value 10µF)
+      (value 10uF)
       (footprint Capacitor_SMD:C_0603_1608Metric)
       (libsource (lib lab64_SAM32-rescue) (part CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import) (description ""))
       (sheetpath (names /) (tstamps /))
