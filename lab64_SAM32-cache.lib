@@ -214,6 +214,27 @@ X Pin_9 9 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device:Crystal
+#
+DEF Device:Crystal Y 0 40 N N 1 F N
+F0 "Y" 0 150 50 H V C CNN
+F1 "Device:Crystal" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -45 100 45 -100 0 1 12 N
+P 2 0 1 0 -100 0 -75 0 N
+P 2 0 1 20 -75 -50 -75 50 N
+P 2 0 1 20 75 -50 75 50 N
+P 2 0 1 0 100 0 75 0 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device:R_US
 #
 DEF Device:R_US R 0 0 N Y 1 F N
@@ -911,25 +932,6 @@ X GND 2 -400 -100 100 R 50 50 1 0 W
 X EN 3 -400 0 100 R 50 50 1 0 I
 X P4 4 400 -100 100 L 50 50 1 0 U
 X OUT 5 400 100 100 L 50 50 1 0 W
-ENDDRAW
-ENDDEF
-#
-# lab64_SAM32-rescue:XTAL-3.2X1.5-Adafruit_Feather_M4_Express-eagle-import
-#
-DEF lab64_SAM32-rescue:XTAL-3.2X1.5-Adafruit_Feather_M4_Express-eagle-import X 0 40 Y Y 1 L N
-F0 "X" -100 150 50 H V L BNN
-F1 "lab64_SAM32-rescue:XTAL-3.2X1.5-Adafruit_Feather_M4_Express-eagle-import" -150 -200 50 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 0 0 -100 100 -100 -100 N
-P 2 1 0 0 -50 -100 50 -100 N
-P 2 1 0 0 -50 100 -50 -100 N
-P 2 1 0 0 50 -100 50 100 N
-P 2 1 0 0 50 100 -50 100 N
-P 2 1 0 0 100 100 100 -100 N
-X P$1 P$1 -200 0 100 R 0 0 1 0 U
-X P$2 P$2 200 0 100 L 0 0 1 0 U
 ENDDRAW
 ENDDEF
 #
