@@ -301,8 +301,8 @@ L lab64_SAM32-rescue:LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import 
 U 1 0 5BD0C014
 P 8150 2000
 AR Path="/5BCFDB7D/5BD0C014" Ref="CHG?"  Part="1" 
-AR Path="/5BD0C014" Ref="D2"  Part="1" 
-F 0 "D2" V 8150 2250 42  0000 C CNN
+AR Path="/5BD0C014" Ref="CHRG"  Part="1" 
+F 0 "CHRG" V 8150 2250 42  0000 C CNN
 F 1 "ORANGE" V 8050 2200 42  0000 C CNN
 F 2 "Diode_SMD:D_0805_2012Metric" H 8150 2000 50  0001 C CNN
 F 3 "" H 8150 2000 50  0001 C CNN
@@ -363,9 +363,9 @@ L lab64_SAM32-rescue:LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import 
 U 1 0 5BD110C0
 P 2450 6150
 AR Path="/5BCFDB7D/5BD110C0" Ref="L?"  Part="1" 
-AR Path="/5BD110C0" Ref="D3"  Part="1" 
-F 0 "D3" V 2350 6000 42  0000 C CNN
-F 1 "RED" V 2450 6000 42  0000 C CNN
+AR Path="/5BD110C0" Ref="RED"  Part="1" 
+F 0 "RED" V 2350 6000 42  0000 C CNN
+F 1 "LED" V 2450 6000 42  0000 C CNN
 F 2 "Diode_SMD:D_0805_2012Metric" H 2450 6150 50  0001 C CNN
 F 3 "" H 2450 6150 50  0001 C CNN
 	1    2450 6150
@@ -1664,18 +1664,11 @@ Wire Wire Line
 Wire Wire Line
 	7800 2550 7800 2750
 Wire Wire Line
-	8150 2200 7800 2200
-Wire Wire Line
-	7800 2200 7800 2550
+	7800 2350 7800 2550
 Connection ~ 7800 2550
 Wire Wire Line
-	9250 2350 8150 2350
-Wire Wire Line
-	8150 2350 8150 2200
-Connection ~ 8150 2200
-Wire Wire Line
-	7800 2200 7800 1300
-Connection ~ 7800 2200
+	7800 2350 7800 1300
+Connection ~ 7800 2350
 Connection ~ 7800 1300
 Wire Wire Line
 	1700 3350 1700 3500
@@ -2141,4 +2134,11 @@ Connection ~ 1000 2600
 Wire Wire Line
 	1000 2600 1000 3500
 Connection ~ 1400 2600
+Wire Wire Line
+	7800 2350 8150 2350
+Wire Wire Line
+	8150 2200 8150 2350
+Connection ~ 8150 2350
+Wire Wire Line
+	8150 2350 9250 2350
 $EndSCHEMATC
