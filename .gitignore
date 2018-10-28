@@ -2,6 +2,7 @@
 *.bak
 *.dcm
 *.kicad_pcb-bak
+*.bck
 
 #VisualStudio Files
 
