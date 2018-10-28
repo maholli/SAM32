@@ -858,8 +858,8 @@ Wire Wire Line
 	4300 3800 4400 3800
 Text Notes 5000 4150 0    59   ~ 0
 UART\nCOM5
-Text Notes 2200 4450 1    59   ~ 0
-CAMERA INTERFACE
+Text Notes 2150 4450 1    59   ~ 0
+(CAMERA INTERFACE)
 Wire Notes Line
 	5250 4150 4000 4150
 Wire Notes Line
@@ -895,9 +895,9 @@ Wire Notes Line
 Wire Notes Line
 	3400 3450 3400 4700
 Wire Notes Line
-	3400 4700 2050 4700
+	3400 4700 1950 4700
 Wire Notes Line
-	2050 3400 2900 3400
+	1950 3400 2900 3400
 Text Notes 3850 4000 0    35   ~ 0
 TC6
 Text Notes 3850 4100 0    35   ~ 0
@@ -1586,7 +1586,7 @@ Wire Notes Line
 Wire Notes Line
 	3650 2750 4950 2750
 Wire Notes Line
-	2050 3400 2050 4700
+	1950 3400 1950 4700
 Text Notes 3800 4250 0    35   ~ 0
 CAN Tx
 Text Notes 3800 4350 0    35   ~ 0
@@ -2127,4 +2127,6 @@ Text Notes 5850 1100 0    79   ~ 0
 SURFACE MOUNT HEADER\n      (ESP32 I/O)
 Wire Wire Line
 	2500 5150 3100 5150
+Text Notes 2050 4700 1    59   ~ 0
+PARALLEL CAPTURE CONTROL
 $EndSCHEMATC
