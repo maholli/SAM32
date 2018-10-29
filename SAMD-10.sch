@@ -1221,7 +1221,7 @@ Wire Notes Line
 Wire Notes Line
 	3400 1100 3400 1650
 Text Notes 7450 7500 0    79   ~ 16
-SAM32-10
+SAMD-10
 Text Notes 8100 6950 0    79   ~ 16
 SAMD51 +ESP32-WROOM + microSD
 Text Notes 10550 7650 0    79   ~ 16
