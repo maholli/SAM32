@@ -25,7 +25,7 @@ SAMD51 with M4 core serving as UART bridge to WROOM ESP32 + microSD card
 * Built in 100mA lipoly charger
 
 ## Interactive BOM
-Through the magic of python and the [interactive BOM project](https://github.com/openscopeproject/InteractiveHtmlBom), you can now view the SAMD_10 BOM here: https://maholli.github.io/SAMD/
+Through the magic of python and the [interactive BOM project](https://github.com/openscopeproject/InteractiveHtmlBom), you can now view the SAMD_10 BOM here: https://maholli.github.io/SAM32/
 
 
 
