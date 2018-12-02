@@ -1,5 +1,8 @@
 # SAM32
 SAMD51 with M4 core serving as UART bridge to WROOM ESP32 + microSD card
+<p align="middle">
+  <img width="700" src="https://github.com/maholli/SAM32/blob/master/hardware/boadpics.jpg">
+</p>
 
 ## Features
 * Arduino / circuitpython / mircopython compatible
