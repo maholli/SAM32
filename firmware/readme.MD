@@ -1,6 +1,14 @@
 # Firmware Instructions
 If you soldered a fresh SAMD51, then a UF2-compatible bootloader must first be flashed.
 1.  flash [bootloader.bin](https://github.com/maholli/SAM32/blob/master/firmware/bootloader.bin) using JTAG via Atmel Studio 7 (or equivalent).
-  * necessary JTAG connections: TCK, TDIO, GND, VREF
+ * necessary JTAG connections: TCK, TDIO, GND, VREF
+ * if atmel studio 7 reports "unable to halt CPU," click reset button twice in quick succession. and try to read the device signature again. keep trying this process until it doesn't encounter the error
+```
+if you corrupt the drive:
+get drive to be recognised (but don't open any files on it)
+open terminal and get into REPL (if possible)
+>>> import storage
+>>> storage.erase_filesystem()
+```
 2. Once you are able to put the board into bootloader mode (double tap reset button), it will present as a `METROM4BOOT` USB device. Drag the [firmware_v1c.uf2](https://github.com/maholli/SAM32/blob/master/firmware/firmware_v1c.uf2) file onto the drive and it will reboot upon successful upload.
 3. Congratulations! You should now see a `CIRCUITPY` USB device. Copy [blink.py](https://github.com/maholli/SAM32/blob/master/firmware/blink.py) onto the USB drive and rename to "main.py" to run a simple blink routine.
