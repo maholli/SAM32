@@ -1,6 +1,10 @@
 # Firmware Instructions
 
 
+<p align="middle">
+  <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/board.jpg">
+</p>
+
 If you soldered a fresh SAMD51, then a UF2-compatible bootloader must first be flashed.
 1.  flash [bootloader-SAM32_v1.bin](https://github.com/maholli/SAM32/blob/master/firmware/bootloader-SAM32_v1.bin) using JTAG via Atmel Studio 7 (or equivalent).
  * necessary JTAG connections: TCK, TDIO, GND, VREF
