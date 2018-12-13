@@ -1,4 +1,4 @@
-# Firmware Instructions
+# SAM32
 
 
 <p align="middle">
