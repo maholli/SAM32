@@ -16,7 +16,7 @@ rts.value = 1
 dtr.value = 1
 
 # UART setup
-uart = busio.UART(board.D0,board.D1, baudrate=115200, timeout=500)
+uart = busio.UART(board.D0,board.D1, baudrate=115200, timeout=0.5)
 
 # SPI and SD card setup
 try:
@@ -86,7 +86,14 @@ while True:
 			pass
 	if supervisor.runtime.serial_bytes_available:
 		call = input()
-		# print('echo:',call)
-		uart.write(call)
+		# print('echo:',bytearray(call))
+		uart.write(bytearray(call))
+		try:
+			data = uart.read()
+			data_string = ''.join([chr(b) for b in data])
+			print(data_string)
+			# uart.reset_input_buffer
+		except:
+			pass
 	led.value = 0
 	time.sleep(0.2) # make bigger to slow down
