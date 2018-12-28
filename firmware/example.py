@@ -80,20 +80,21 @@ while True:
 		try:
 			data = uart.read()
 			data_string = ''.join([chr(b) for b in data])
-			print(data_string)
+			print(data_string, end='')
 			# uart.reset_input_buffer
 		except:
 			pass
 	if supervisor.runtime.serial_bytes_available:
 		call = input()
-		# print('echo:',bytearray(call))
-		uart.write(bytearray(call))
+		uart.write(bytes(call, 'utf-8'))
+		uart.write(b'\x0d\x0a')
+		# uart.reset_input_buffer
 		try:
 			data = uart.read()
 			data_string = ''.join([chr(b) for b in data])
-			print(data_string)
+			print(data_string, end='')
 			# uart.reset_input_buffer
 		except:
 			pass
 	led.value = 0
-	time.sleep(0.2) # make bigger to slow down
+	time.sleep(0.01) # make bigger to slow down
