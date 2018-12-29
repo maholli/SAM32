@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
-LIBS:SAMD-10-cache
-EELAYER 26 0
+LIBS:SAM32-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -29,10 +29,6 @@ GND
 Wire Wire Line
 	9500 2750 9500 3150
 Text Label 9500 2750 0    10   ~ 0
-GND
-Wire Wire Line
-	7800 3150 7800 3050
-Text Label 7800 3150 0    10   ~ 0
 GND
 Wire Wire Line
 	2350 2600 3100 2600
@@ -64,20 +60,20 @@ Wire Wire Line
 	8900 2550 8900 2750
 Connection ~ 8900 2550
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD0AF5C
 P 8900 2950
 AR Path="/5BCFDB7D/5BD0AF5C" Ref="C?"  Part="1" 
 AR Path="/5BD0AF5C" Ref="C4"  Part="1" 
 F 0 "C4" H 8750 3050 50  0000 C CNN
 F 1 "10uF" H 8750 2950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8900 2950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8900 2950 50  0001 C CNN
 F 3 "" H 8900 2950 50  0001 C CNN
 	1    8900 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD0AF63
 P 10700 2950
 AR Path="/5BCFDB7D/5BD0AF63" Ref="C?"  Part="1" 
@@ -90,7 +86,7 @@ F 3 "" H 10700 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BD0AF6A
 P 8900 3250
 AR Path="/5BCFDB7D/5BD0AF6A" Ref="#U$?"  Part="1" 
@@ -103,7 +99,7 @@ F 3 "" H 8900 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BD0AF70
 P 10700 3250
 AR Path="/5BCFDB7D/5BD0AF70" Ref="#U$?"  Part="1" 
@@ -116,20 +112,20 @@ F 3 "" H 10700 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD0AF76
 P 10400 2950
 AR Path="/5BCFDB7D/5BD0AF76" Ref="C?"  Part="1" 
 AR Path="/5BD0AF76" Ref="C2"  Part="1" 
 F 0 "C2" V 10310 2999 50  0000 C CNN
 F 1 "10uF" V 10490 2999 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10400 2950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10400 2950 50  0001 C CNN
 F 3 "" H 10400 2950 50  0001 C CNN
 	1    10400 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BD0AF7D
 P 10400 3250
 AR Path="/5BCFDB7D/5BD0AF7D" Ref="#U$?"  Part="1" 
@@ -142,7 +138,7 @@ F 3 "" H 10400 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BD0AF83
 P 9500 3250
 AR Path="/5BCFDB7D/5BD0AF83" Ref="#U$?"  Part="1" 
@@ -155,7 +151,7 @@ F 3 "" H 9500 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD0AF8F
 P 2150 2600
 AR Path="/5BCFDB7D/5BD0AF8F" Ref="C?"  Part="1" 
@@ -168,7 +164,7 @@ F 3 "" H 2150 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L SAMD-10-rescue:VREG_SOT23-5-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue U?
+L SAM32-rescue:VREG_SOT23-5-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue U?
 U 1 0 5BD0AF9C
 P 9900 2650
 AR Path="/5BCFDB7D/5BD0AF9C" Ref="U?"  Part="1" 
@@ -181,20 +177,20 @@ F 3 "" H 9900 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD0AFB6
 P 5250 1700
 AR Path="/5BCFDB7D/5BD0AFB6" Ref="C?"  Part="1" 
 AR Path="/5BD0AFB6" Ref="C6"  Part="1" 
 F 0 "C6" H 5200 1850 50  0000 C CNN
 F 1 "10uF" H 5200 1650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5250 1700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5250 1700 50  0001 C CNN
 F 3 "" H 5250 1700 50  0001 C CNN
 	1    5250 1700
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD0AFC9
 P 5050 1700
 AR Path="/5BCFDB7D/5BD0AFC9" Ref="C?"  Part="1" 
@@ -207,7 +203,7 @@ F 3 "" H 5050 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD0AFD0
 P 4850 1700
 AR Path="/5BCFDB7D/5BD0AFD0" Ref="C?"  Part="1" 
@@ -220,7 +216,7 @@ F 3 "" H 4850 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BD0AFDD
 P 9450 950
 AR Path="/5BCFDB7D/5BD0AFDD" Ref="#U$?"  Part="1" 
@@ -233,7 +229,7 @@ F 3 "" H 9450 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:DIODE-SCHOTTKYSOD-123-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue D?
+L SAM32-rescue:DIODE-SCHOTTKYSOD-123-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue D?
 U 1 0 5BD0AFE3
 P 8000 2550
 AR Path="/5BCFDB7D/5BD0AFE3" Ref="D?"  Part="1" 
@@ -246,7 +242,7 @@ F 3 "" H 8000 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:MOSFET-P-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue Q?
+L SAM32-rescue:MOSFET-P-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue Q?
 U 1 0 5BD0AFEA
 P 9450 2250
 AR Path="/5BCFDB7D/5BD0AFEA" Ref="Q?"  Part="1" 
@@ -257,19 +253,6 @@ F 2 "Adafruit Feather M4 Express:SOT23-R" H 9450 2250 50  0001 C CNN
 F 3 "" H 9450 2250 50  0001 C CNN
 	1    9450 2250
 	1    0    0    1   
-$EndComp
-$Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
-U 1 0 5BD0AFF1
-P 7800 3250
-AR Path="/5BCFDB7D/5BD0AFF1" Ref="#U$?"  Part="1" 
-AR Path="/5BD0AFF1" Ref="#U$011"  Part="1" 
-F 0 "#U$011" H 7800 3250 50  0001 C CNN
-F 1 "GND" H 7700 3150 59  0000 L BNN
-F 2 "" H 7800 3250 50  0001 C CNN
-F 3 "" H 7800 3250 50  0001 C CNN
-	1    7800 3250
-	1    0    0    -1  
 $EndComp
 Text Notes 9750 2250 0    79   ~ 0
 REGULATOR\n
@@ -284,7 +267,7 @@ GND
 Wire Wire Line
 	9250 1400 9350 1400
 $Comp
-L SAMD-10-rescue:MCP73831_2-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue U?
+L SAM32-rescue:MCP73831_2-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue U?
 U 1 0 5BD0C00D
 P 8750 1400
 AR Path="/5BCFDB7D/5BD0C00D" Ref="U?"  Part="1" 
@@ -297,33 +280,33 @@ F 3 "" H 8750 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue CHG?
+L SAM32-rescue:LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue CHG?
 U 1 0 5BD0C014
 P 8150 2000
 AR Path="/5BCFDB7D/5BD0C014" Ref="CHG?"  Part="1" 
 AR Path="/5BD0C014" Ref="CHRG1"  Part="1" 
 F 0 "CHRG1" V 8150 2250 42  0000 C CNN
 F 1 "ORANGE LED" V 8050 2200 42  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 8150 2000 50  0001 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 8150 2000 50  0001 C CNN
 F 3 "" H 8150 2000 50  0001 C CNN
 	1    8150 2000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD0C022
 P 9700 1500
 AR Path="/5BCFDB7D/5BD0C022" Ref="C?"  Part="1" 
 AR Path="/5BD0C022" Ref="C7"  Part="1" 
 F 0 "C7" H 9550 1550 50  0000 C CNN
 F 1 "10uF" H 9600 1450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9700 1500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9700 1500 50  0001 C CNN
 F 3 "" H 9700 1500 50  0001 C CNN
 	1    9700 1500
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BD0C048
 P 1700 2500
 AR Path="/5BCFDB7D/5BD0C048" Ref="#U$?"  Part="1" 
@@ -336,7 +319,7 @@ F 3 "" H 1700 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #GND?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #GND?
 U 1 0 5BD0C04E
 P 1700 3600
 AR Path="/5BCFDB7D/5BD0C04E" Ref="#GND?"  Part="1" 
@@ -358,19 +341,6 @@ Text Notes 8400 2300 0    49   ~ 0
 1.0K  = 1000mA
 Text Notes 8200 700  0    79   ~ 0
 BATTERY CHARGING
-$Comp
-L SAMD-10-rescue:LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue L?
-U 1 0 5BD110C0
-P 2500 7100
-AR Path="/5BCFDB7D/5BD110C0" Ref="L?"  Part="1" 
-AR Path="/5BD110C0" Ref="RED1"  Part="1" 
-F 0 "RED1" V 2400 6950 42  0000 C CNN
-F 1 "RED LED" V 2550 6950 42  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 2500 7100 50  0001 C CNN
-F 3 "" H 2500 7100 50  0001 C CNN
-	1    2500 7100
-	0    1    1    0   
-$EndComp
 Text Label 2750 1950 0    59   ~ 0
 ~RESET
 Wire Wire Line
@@ -378,7 +348,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 2000 4700 2100
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD13B19
 P 2050 1600
 AR Path="/5BCFDB7D/5BD13B19" Ref="C?"  Part="1" 
@@ -391,7 +361,7 @@ F 3 "" H 2050 1600 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BD13B20
 P 2050 1900
 AR Path="/5BCFDB7D/5BD13B20" Ref="#U$?"  Part="1" 
@@ -404,20 +374,20 @@ F 3 "" H 2050 1900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0805-NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD13B57
 P 4850 2000
 AR Path="/5BCFDB7D/5BD13B57" Ref="C?"  Part="1" 
 AR Path="/5BD13B57" Ref="C12"  Part="1" 
 F 0 "C12" H 4950 1950 50  0000 C CNN
 F 1 "10uF" H 4950 2150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4850 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4850 2000 50  0001 C CNN
 F 3 "" H 4850 2000 50  0001 C CNN
 	1    4850 2000
 	1    0    0    1   
 $EndComp
 $Comp
-L SAMD-10-rescue:INDUCTOR-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue L?
+L SAM32-rescue:INDUCTOR-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue L?
 U 1 0 5BD13B64
 P 4500 2100
 AR Path="/5BCFDB7D/5BD13B64" Ref="L?"  Part="1" 
@@ -430,7 +400,7 @@ F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_powe
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5BD13B6B
 P 5050 2100
 AR Path="/5BCFDB7D/5BD13B6B" Ref="C?"  Part="1" 
@@ -458,7 +428,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 6800 3100 6800
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue #GND03
+L SAM32-rescue:GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #GND03
 U 1 0 5BD3CC5B
 P 4300 7600
 F 0 "#GND03" H 4300 7600 50  0001 C CNN
@@ -469,7 +439,7 @@ F 3 "" H 4300 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:+3V3-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue #+3V07
+L SAM32-rescue:+3V3-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V07
 U 1 0 5BD3CC61
 P 4300 5750
 F 0 "#+3V07" H 4300 5750 50  0001 C CNN
@@ -482,7 +452,7 @@ $EndComp
 Text Notes 3300 5600 0    79   ~ 0
 MICROSD CARD
 $Comp
-L SAMD-10-rescue:503182-1853-503182-1853-lab64_SAM32-rescue-lab64_SAM32-rescue J3
+L SAM32-rescue:503182-1853-503182-1853-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue J3
 U 1 1 5BD3CC6D
 P 3700 6700
 F 0 "J3" H 3700 7667 50  0000 C CNN
@@ -498,7 +468,7 @@ F 8 "Unavailable" H 3700 6700 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue #GND?
+L SAM32-rescue:GND-Adafruit_Feather_M0_Adalogger-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #GND?
 U 1 0 5BD44DCD
 P 1950 5700
 AR Path="/5BD3B1CE/5BD44DCD" Ref="#GND?"  Part="1" 
@@ -512,60 +482,20 @@ F 3 "" H 1950 5700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 4750 1650 4850
-Text Label 6350 3950 1    59   ~ 0
-RESET
-Text Label 6650 3950 1    59   ~ 0
-GPIO0
-Wire Wire Line
-	6400 3350 6150 3150
-Wire Wire Line
-	5350 3000 5650 3000
 Text Label 5000 3400 0    59   ~ 0
 RTS
-Wire Wire Line
-	6400 3150 6150 3250
 Text Label 5000 3500 0    59   ~ 0
 DTR
-$Comp
-L SAMD-10-rescue:TRANSISTOR_NPNSOT23-3-Adafruit_HUZZAH32_ESP32_Feather-eagle-import-lab64_SAM32-rescue Q?
-U 1 0 5BD750CF
-P 6300 3500
-AR Path="/5BCFDB41/5BD750CF" Ref="Q?"  Part="1" 
-AR Path="/5BD750CF" Ref="Q2"  Part="1" 
-F 0 "Q2" H 6150 3400 59  0000 L BNN
-F 1 "mmbt2222" H 5950 3550 39  0000 L BNN
-F 2 "Adafruit HUZZAH32 ESP32 Feather:SOT23-3" H 6300 3500 50  0001 C CNN
-F 3 "" H 6300 3500 50  0001 C CNN
-	1    6300 3500
-	1    0    0    1   
-$EndComp
-$Comp
-L SAMD-10-rescue:TRANSISTOR_NPNSOT23-3-Adafruit_HUZZAH32_ESP32_Feather-eagle-import-lab64_SAM32-rescue Q?
-U 1 0 5BD750D6
-P 6300 3000
-AR Path="/5BCFDB41/5BD750D6" Ref="Q?"  Part="1" 
-AR Path="/5BD750D6" Ref="Q1"  Part="1" 
-F 0 "Q1" H 6150 3050 59  0000 L BNN
-F 1 "mmbt2222" H 5950 2950 39  0000 L CNN
-F 2 "Adafruit HUZZAH32 ESP32 Feather:SOT23-3" H 6300 3000 50  0001 C CNN
-F 3 "" H 6300 3000 50  0001 C CNN
-	1    6300 3000
-	1    0    0    -1  
-$EndComp
 Text Label 2850 5050 0    50   ~ 0
 USB+
 Text Label 2850 4950 0    50   ~ 0
 USB-
-Text Label 4300 4000 0    50   ~ 0
-TX
-Text Label 4300 4100 0    50   ~ 0
-RX
 Wire Wire Line
-	4300 3700 4400 3700
+	4300 3800 4400 3800
 Wire Wire Line
 	4300 3600 4400 3600
 $Comp
-L SAMD-10-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue #+3V?
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
 U 1 0 5BD13B45
 P 4400 950
 AR Path="/5BCFDB7D/5BD13B45" Ref="#+3V?"  Part="1" 
@@ -602,7 +532,7 @@ Connection ~ 4400 1800
 Wire Wire Line
 	4400 1800 4400 1700
 $Comp
-L SAMD-10-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue #+3V?
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
 U 1 0 5C1A91F5
 P 2550 950
 AR Path="/5BCFDB7D/5C1A91F5" Ref="#+3V?"  Part="1" 
@@ -615,7 +545,7 @@ F 3 "" H 2550 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue SW?
+L SAM32-rescue:SWITCH_TACT_SMT4.6X2.8-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue SW?
 U 1 0 5BD0BFF9
 P 1200 1500
 AR Path="/5BCFDB7D/5BD0BFF9" Ref="SW?"  Part="1" 
@@ -654,7 +584,7 @@ Connection ~ 4350 5100
 Wire Wire Line
 	4350 5100 4350 5250
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C2A18C3
 P 4350 5350
 AR Path="/5BCFDB7D/5C2A18C3" Ref="#U$?"  Part="1" 
@@ -667,17 +597,11 @@ F 3 "" H 4350 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 3250 6150 3250
-Wire Wire Line
-	5350 3150 6150 3150
-Wire Wire Line
-	5350 3000 5350 3150
-Wire Wire Line
 	4800 4000 4300 4000
 Wire Wire Line
 	4300 4100 4700 4100
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5C3CBE48
 P 1100 2300
 AR Path="/5BCFDB7D/5C3CBE48" Ref="C?"  Part="1" 
@@ -690,7 +614,7 @@ F 3 "" H 1100 2300 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5C3CBE4F
 P 1100 2600
 AR Path="/5BCFDB7D/5C3CBE4F" Ref="C?"  Part="1" 
@@ -703,7 +627,7 @@ F 3 "" H 1100 2600 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C3CBE5C
 P 1000 3600
 AR Path="/5BCFDB7D/5C3CBE5C" Ref="#U$?"  Part="1" 
@@ -732,21 +656,6 @@ ESD PROT.
 Text Notes 800  4500 0    79   ~ 0
 USB CONN.
 Wire Wire Line
-	2500 7200 2500 7550
-$Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
-U 1 0 5C98B339
-P 2500 7650
-AR Path="/5BCFDB7D/5C98B339" Ref="#U$?"  Part="1" 
-AR Path="/5C98B339" Ref="#U$06"  Part="1" 
-F 0 "#U$06" H 2500 7650 50  0001 C CNN
-F 1 "GND" H 2400 7550 59  0000 L BNN
-F 2 "" H 2500 7650 50  0001 C CNN
-F 3 "" H 2500 7650 50  0001 C CNN
-	1    2500 7650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	3100 1950 2450 1950
 Wire Wire Line
 	2450 1950 2450 1500
@@ -757,7 +666,7 @@ Wire Wire Line
 	2550 1200 2650 1200
 NoConn ~ 15350 18150
 $Comp
-L SAMD-10-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue #+3V?
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
 U 1 0 5CCC6F9B
 P 10700 950
 AR Path="/5BCFDB7D/5CCC6F9B" Ref="#+3V?"  Part="1" 
@@ -771,7 +680,7 @@ F 3 "" H 10700 950 50  0001 C CNN
 $EndComp
 Connection ~ 4850 1500
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5CDFD672
 P 5250 2300
 AR Path="/5BCFDB7D/5CDFD672" Ref="#U$?"  Part="1" 
@@ -786,7 +695,7 @@ $EndComp
 Text Notes 4650 1400 0    59   ~ 0
 DECOUPLING\n
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BD0C029
 P 9700 1700
 AR Path="/5BCFDB7D/5BD0C029" Ref="#U$?"  Part="1" 
@@ -822,7 +731,7 @@ NoConn ~ 3100 7100
 Text Notes 5450 4900 0    79   ~ 0
 WROOM ESP32
 $Comp
-L SAMD-10-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue #+3V?
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
 U 1 0 5BDA8860
 P 1950 2500
 AR Path="/5BCFDB7D/5BDA8860" Ref="#+3V?"  Part="1" 
@@ -854,8 +763,6 @@ Text Notes 2250 4550 0    59   ~ 0
 PCCD6
 Text Notes 2250 4650 0    59   ~ 0
 PCCD7
-Wire Wire Line
-	4300 3800 4400 3800
 Text Notes 5000 4150 0    59   ~ 0
 UART\nCOM5
 Text Notes 2150 4450 1    59   ~ 0
@@ -902,7 +809,6 @@ Text Notes 3850 4000 0    35   ~ 0
 TC6
 Text Notes 3850 4100 0    35   ~ 0
 TC6
-Connection ~ 5350 3150
 Wire Wire Line
 	3000 2800 3100 2800
 Wire Wire Line
@@ -933,9 +839,9 @@ Wire Notes Line
 	4000 3550 5250 3550
 Text GLabel 4400 3600 2    59   Output ~ 0
 MOSI
-Text GLabel 4400 3700 2    59   Input ~ 0
+Text GLabel 4400 3800 2    59   Input ~ 0
 MISO
-Text GLabel 4400 3800 2    59   Output ~ 0
+Text GLabel 4400 3700 2    59   Output ~ 0
 SCK
 Wire Notes Line
 	5250 3550 5250 3850
@@ -982,42 +888,16 @@ Wire Wire Line
 Text GLabel 4400 3900 2    59   Output ~ 0
 SD_CS
 Wire Wire Line
-	6500 3650 6500 2850
-Wire Wire Line
-	6400 2850 6500 2850
-Wire Wire Line
 	4300 2400 7200 2400
 Wire Wire Line
 	7250 5450 7150 5450
-$Comp
-L Device:R_US R14
-U 1 1 5BF9748E
-P 6500 3800
-F 0 "R14" V 6450 3650 50  0000 C CNN
-F 1 "0" V 6450 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 6540 3790 50  0001 C CNN
-F 3 "~" H 6500 3800 50  0001 C CNN
-	1    6500 3800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R13
-U 1 1 5BF975A7
-P 6400 3800
-F 0 "R13" V 6350 3650 50  0000 C CNN
-F 1 "0" V 6350 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 6440 3790 50  0001 C CNN
-F 3 "~" H 6400 3800 50  0001 C CNN
-	1    6400 3800
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:R_US R3
 U 1 1 5C02C9DB
 P 1700 2850
 F 0 "R3" H 1550 2900 50  0000 C CNN
 F 1 "100K" H 1550 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402" V 1740 2840 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1740 2840 50  0001 C CNN
 F 3 "~" H 1700 2850 50  0001 C CNN
 	1    1700 2850
 	1    0    0    -1  
@@ -1045,23 +925,12 @@ F 3 "~" H 8150 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R1
-U 1 1 5C02CC5C
-P 7800 2900
-F 0 "R1" H 7650 2950 50  0000 C CNN
-F 1 "100K" H 7650 2850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 7840 2890 50  0001 C CNN
-F 3 "~" H 7800 2900 50  0001 C CNN
-	1    7800 2900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R4
 U 1 1 5C042500
 P 9250 2650
 F 0 "R4" V 9350 2600 50  0000 C CNN
 F 1 "10K" V 9450 2600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9290 2640 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9290 2640 50  0001 C CNN
 F 3 "~" H 9250 2650 50  0001 C CNN
 	1    9250 2650
 	0    1    1    0   
@@ -1113,17 +982,6 @@ F 3 "~" H 1700 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 1800 5050 1800
-$Comp
-L Device:R_US R2
-U 1 1 5C152BF9
-P 2500 5900
-F 0 "R2" H 2600 5850 50  0000 C CNN
-F 1 "2.2K" H 2600 5950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 2540 5890 50  0001 C CNN
-F 3 "~" H 2500 5900 50  0001 C CNN
-	1    2500 5900
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4300 4200 4400 4200
 Wire Wire Line
@@ -1176,8 +1034,6 @@ Text GLabel 3000 3700 0    60   BiDi ~ 0
 D31
 Wire Wire Line
 	3100 3800 3000 3800
-Text GLabel 3000 3800 0    60   BiDi ~ 0
-D32
 Text GLabel 3000 3900 0    60   BiDi ~ 0
 D35
 Text GLabel 3000 4000 0    60   BiDi ~ 0
@@ -1225,9 +1081,9 @@ SAM32
 Text Notes 8100 6950 0    79   ~ 16
 SAMD51 +ESP32-WROOM + microSD
 Text Notes 10550 7650 0    79   ~ 16
-1
+2
 $Comp
-L SAMD-10-rescue:ESP32_WROOM32_SKINNY-Adafruit_HUZZAH32_ESP32_Feather-eagle-import U3
+L SAM32-rescue:ESP32_WROOM32_SKINNY-Adafruit_HUZZAH32_ESP32_Feather-eagle-import-SAMD-10-rescue U3
 U 1 1 5BD2F1EA
 P 6050 5550
 F 0 "U3" H 6050 5550 50  0001 C CNN
@@ -1350,7 +1206,7 @@ NoConn ~ 5150 5750
 NoConn ~ 5150 5850
 NoConn ~ 5150 5950
 $Comp
-L SAMD-10-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue #+3V?
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
 U 1 0 5BEDF373
 P 6050 3850
 AR Path="/5BCFDB7D/5BEDF373" Ref="#+3V?"  Part="1" 
@@ -1363,7 +1219,7 @@ F 3 "" H 6050 3850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BEDF576
 P 6050 6750
 AR Path="/5BCFDB7D/5BEDF576" Ref="#U$?"  Part="1" 
@@ -1386,24 +1242,7 @@ IO39
 Wire Wire Line
 	7150 5550 7250 5550
 Wire Wire Line
-	4700 4450 4700 4100
-Wire Wire Line
-	4800 4000 4800 4350
-Wire Wire Line
-	5650 3500 5450 3500
-Wire Wire Line
-	6200 3500 5950 3500
-Wire Wire Line
-	5450 3250 5450 3500
-Connection ~ 5450 3500
-Wire Wire Line
-	5450 3500 4300 3500
-Wire Wire Line
-	4300 3400 5350 3400
-Wire Wire Line
-	5350 3400 5350 3150
-Wire Wire Line
-	5950 3000 6200 3000
+	4700 4350 4700 4100
 Wire Wire Line
 	7900 4850 7900 3650
 Wire Wire Line
@@ -1411,7 +1250,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 3650 7200 2400
 $Comp
-L SAMD-10-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C269BEE
 P 10200 950
 AR Path="/5BCFDB7D/5C269BEE" Ref="#U$?"  Part="1" 
@@ -1424,7 +1263,7 @@ F 3 "" H 10200 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C269CFD
 P 10200 1700
 AR Path="/5BCFDB7D/5C269CFD" Ref="#U$?"  Part="1" 
@@ -1485,7 +1324,7 @@ $EndComp
 Wire Wire Line
 	2050 1500 1400 1500
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BE0AD46
 P 1000 1900
 AR Path="/5BCFDB7D/5BE0AD46" Ref="#U$?"  Part="1" 
@@ -1513,20 +1352,20 @@ Wire Wire Line
 $Comp
 L Device:R_US R11
 U 1 1 5BE54B27
-P 5800 3000
-F 0 "R11" V 5900 3100 50  0000 C CNN
-F 1 "10K" V 5750 3100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5840 2990 50  0001 C CNN
-F 3 "~" H 5800 3000 50  0001 C CNN
-	1    5800 3000
+P 5800 3400
+F 0 "R11" V 5850 3550 50  0000 C CNN
+F 1 "10K" V 5850 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5840 3390 50  0001 C CNN
+F 3 "~" H 5800 3400 50  0001 C CNN
+	1    5800 3400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_US R12
 U 1 1 5BE54BE6
 P 5800 3500
-F 0 "R12" V 5900 3600 50  0000 C CNN
-F 1 "10K" V 5750 3600 50  0000 C CNN
+F 0 "R12" V 5850 3650 50  0000 C CNN
+F 1 "10K" V 5850 3300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 5840 3490 50  0001 C CNN
 F 3 "~" H 5800 3500 50  0001 C CNN
 	1    5800 3500
@@ -1554,7 +1393,7 @@ TC7
 Text Notes 3850 2400 0    35   ~ 0
 TC7
 $Comp
-L SAMD-10-rescue:ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue-lab64_SAM32-rescue U2
+L SAM32-rescue:ATSAMD51J20A-AU-ATSAMD51J20A-AU-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue U2
 U 1 1 5BD7190E
 P 3700 3300
 F 0 "U2" H 3850 5350 50  0000 C CNN
@@ -1592,7 +1431,7 @@ CAN Tx
 Text Notes 3800 4350 0    35   ~ 0
 CAN Rx
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5C0E1C57
 P 4650 1700
 AR Path="/5BCFDB7D/5C0E1C57" Ref="C?"  Part="1" 
@@ -1633,10 +1472,8 @@ Wire Wire Line
 Connection ~ 4650 1500
 Wire Wire Line
 	4400 1500 4650 1500
-Wire Wire Line
-	2500 6050 2500 6900
 $Comp
-L SAMD-10-rescue:VUSB-power #PWR0102
+L SAM32-rescue:VUSB-power-SAMD-10-rescue #PWR0102
 U 1 1 5BD4A1CD
 P 1650 4750
 F 0 "#PWR0102" H 1650 4600 50  0001 C CNN
@@ -1647,7 +1484,7 @@ F 3 "" H 1650 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:VUSB-power #PWR0103
+L SAM32-rescue:VUSB-power-SAMD-10-rescue #PWR0103
 U 1 1 5BD4A8A9
 P 7800 1050
 F 0 "#PWR0103" H 7800 900 50  0001 C CNN
@@ -1662,20 +1499,15 @@ VUSB
 Wire Wire Line
 	7900 2550 7800 2550
 Wire Wire Line
-	7800 2550 7800 2750
-Wire Wire Line
 	7800 2350 7800 2550
-Connection ~ 7800 2550
 Wire Wire Line
 	7800 2350 7800 1300
 Connection ~ 7800 2350
 Connection ~ 7800 1300
 Wire Wire Line
 	1700 3350 1700 3500
-Wire Wire Line
-	2500 5750 2500 5150
 $Comp
-L SAMD-10-rescue:MOUNTINGHOLE2.5-Adafruit_HUZZAH32_ESP32_Feather-eagle-import J97
+L SAM32-rescue:MOUNTINGHOLE2.5-Adafruit_HUZZAH32_ESP32_Feather-eagle-import-SAMD-10-rescue J97
 U 1 0 5BF2445F
 P 6550 7500
 F 0 "J97" H 6550 7500 50  0001 C CNN
@@ -1686,7 +1518,7 @@ F 3 "" H 6550 7500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SAMD-10-rescue:MOUNTINGHOLE2.5-Adafruit_HUZZAH32_ESP32_Feather-eagle-import J96
+L SAM32-rescue:MOUNTINGHOLE2.5-Adafruit_HUZZAH32_ESP32_Feather-eagle-import-SAMD-10-rescue J96
 U 1 0 5BF244D2
 P 6550 7250
 F 0 "J96" H 6550 7250 50  0001 C CNN
@@ -1712,27 +1544,19 @@ F 3 "~" H 9200 5050 50  0001 C CNN
 	1    9200 5050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10200 1050 10200 1300
 $Comp
-L SAMD-10-rescue:CON_JST_PH_2PINSH2-Adafruit_Feather_M0_Adalogger-eagle-import J4
+L SAM32-rescue:CON_JST_PH_2PINSH2-Adafruit_Feather_M0_Adalogger-eagle-import-SAMD-10-rescue J4
 U 1 1 5BE0D3BF
 P 10300 1300
 F 0 "J4" H 10200 1120 59  0000 C CNN
 F 1 "B2B-PH-SM4-TB" H 10200 1581 59  0001 C CNN
-F 2 "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical" H 10300 1300 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 10300 1300 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 10300 1300 50  0001 C CNN
 	1    10300 1300
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	10200 1400 10200 1600
-Wire Wire Line
-	4800 4350 5150 4350
-Wire Wire Line
-	4700 4450 5150 4450
 $Comp
-L SAMD-10-rescue:NPPC_0.100in_2ROW-SMD_Headers J5
+L SAM32-rescue:NPPC_0.100in_2ROW-SMD_Headers-SAMD-10-rescue J5
 U 1 1 5BEAAC6F
 P 6550 1750
 F 0 "J5" H 6547 2307 60  0000 C CNN
@@ -1866,7 +1690,7 @@ Wire Wire Line
 	5250 1800 5250 2200
 Connection ~ 5250 2200
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C1DDB0D
 P 10300 4250
 AR Path="/5BCFDB7D/5C1DDB0D" Ref="#U$?"  Part="1" 
@@ -1881,7 +1705,7 @@ $EndComp
 Wire Wire Line
 	10200 4250 10050 4250
 $Comp
-L SAMD-10-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue #+3V?
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
 U 1 0 5C1F12C1
 P 10300 4350
 AR Path="/5BCFDB7D/5C1F12C1" Ref="#+3V?"  Part="1" 
@@ -1955,7 +1779,7 @@ Wire Wire Line
 Wire Wire Line
 	10050 4550 10200 4550
 $Comp
-L SAMD-10-rescue:TESTPOINTPAD2MM-Adafruit_Feather_M4_Express-eagle-import TP2
+L SAM32-rescue:TESTPOINTPAD2MM-Adafruit_Feather_M4_Express-eagle-import-SAMD-10-rescue TP2
 U 1 1 5C3CF7C0
 P 2800 1600
 F 0 "TP2" H 2700 1750 42  0000 R CNN
@@ -1966,7 +1790,7 @@ F 3 "" H 2800 1600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SAMD-10-rescue:TESTPOINTPAD2MM-Adafruit_Feather_M4_Express-eagle-import TP1
+L SAM32-rescue:TESTPOINTPAD2MM-Adafruit_Feather_M4_Express-eagle-import-SAMD-10-rescue TP1
 U 1 1 5C3CFA0E
 P 2650 1600
 F 0 "TP1" H 2850 1750 42  0000 R CNN
@@ -1988,7 +1812,7 @@ SWCLK
 Text Label 2850 1600 0    39   ~ 0
 SWDIO
 $Comp
-L SAMD-10-rescue:VUSB-power #PWR0101
+L SAM32-rescue:VUSB-power-SAMD-10-rescue #PWR0101
 U 1 1 5BD49F19
 P 850 5750
 F 0 "#PWR0101" H 850 5600 50  0001 C CNN
@@ -2001,7 +1825,7 @@ $EndComp
 Wire Wire Line
 	850  6050 850  5750
 $Comp
-L SAMD-10-rescue:MAX3202EETT+T-symbols-lab64_SAM32-rescue-lab64_SAM32-rescue U1
+L SAM32-rescue:MAX3202EETT+T-symbols-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue U1
 U 1 1 5C54C068
 P 1300 6100
 F 0 "U1" H 1300 6150 60  0000 C CNN
@@ -2018,7 +1842,7 @@ Wire Wire Line
 	2100 4950 3100 4950
 Connection ~ 2100 4950
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C6784F1
 P 8850 5950
 AR Path="/5BCFDB7D/5C6784F1" Ref="#U$?"  Part="1" 
@@ -2031,7 +1855,7 @@ F 3 "" H 8850 5950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SAMD-10-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue C?
+L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
 U 1 0 5C6906A6
 P 1800 5350
 AR Path="/5BCFDB7D/5C6906A6" Ref="C?"  Part="1" 
@@ -2078,7 +1902,7 @@ Wire Wire Line
 Wire Wire Line
 	850  6350 850  6500
 $Comp
-L SAMD-10-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue #U$?
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C608AA6
 P 850 6600
 AR Path="/5BCFDB7D/5C608AA6" Ref="#U$?"  Part="1" 
@@ -2126,7 +1950,129 @@ THRU-HOLE HEADERS\n    (SAMD51 I/O)
 Text Notes 5850 1100 0    79   ~ 0
 SURFACE MOUNT HEADER\n      (ESP32 I/O)
 Wire Wire Line
-	2500 5150 3100 5150
+	2850 5150 3100 5150
 Text Notes 2050 4700 1    59   ~ 0
 PARALLEL CAPTURE CONTROL
+$Comp
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
+U 1 0 5C043D7B
+P 9350 1800
+AR Path="/5BCFDB7D/5C043D7B" Ref="#U$?"  Part="1" 
+AR Path="/5C043D7B" Ref="#U$0106"  Part="1" 
+F 0 "#U$0106" H 9350 1800 50  0001 C CNN
+F 1 "GND" H 9250 1700 59  0000 L BNN
+F 2 "" H 9350 1800 50  0001 C CNN
+F 3 "" H 9350 1800 50  0001 C CNN
+	1    9350 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 9350 1700
+Wire Wire Line
+	4300 3700 4400 3700
+Wire Wire Line
+	4800 4450 5150 4450
+Wire Wire Line
+	4800 4000 4800 4450
+Wire Wire Line
+	4700 4350 5150 4350
+Text Notes 3750 3450 0    59   ~ 0
+MISO
+$Comp
+L LED:WS2812B D2
+U 1 1 5C0F5F1A
+P 1700 7150
+F 0 "D2" H 2044 7196 50  0000 L CNN
+F 1 "WS2812B" H 2044 7105 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 1750 6850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 1800 6775 50  0001 L TNN
+	1    1700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
+U 1 0 5C13A6A2
+P 1700 7550
+AR Path="/5BCFDB7D/5C13A6A2" Ref="#U$?"  Part="1" 
+AR Path="/5C13A6A2" Ref="#U$0107"  Part="1" 
+F 0 "#U$0107" H 1700 7550 50  0001 C CNN
+F 1 "GND" H 1600 7450 59  0000 L BNN
+F 2 "" H 1700 7550 50  0001 C CNN
+F 3 "" H 1700 7550 50  0001 C CNN
+	1    1700 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
+U 1 0 5C15136C
+P 1700 6750
+AR Path="/5BCFDB7D/5C15136C" Ref="#+3V?"  Part="1" 
+AR Path="/5C15136C" Ref="#+3V0102"  Part="1" 
+F 0 "#+3V0102" H 1700 6750 50  0001 C CNN
+F 1 "+3V3" H 1550 6800 59  0000 L BNN
+F 2 "" H 1700 6750 50  0001 C CNN
+F 3 "" H 1700 6750 50  0001 C CNN
+	1    1700 6750
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 3800 0    60   Output ~ 0
+NEOPIXEL
+Wire Wire Line
+	1400 7150 1300 7150
+Text GLabel 1300 7150 0    60   Input ~ 0
+NEOPIXEL
+$Comp
+L Device:R_US R2
+U 1 1 5C24DD14
+P 2850 5300
+F 0 "R2" H 3100 5250 50  0000 C CNN
+F 1 "2.2K" H 3050 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2890 5290 50  0001 C CNN
+F 3 "~" H 2850 5300 50  0001 C CNN
+	1    2850 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L SAM32-rescue:LED0805_NOOUTLINE-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue CHRG?
+U 1 0 5C265087
+P 2650 5450
+AR Path="/5BCFDB7D/5C265087" Ref="CHRG?"  Part="1" 
+AR Path="/5C265087" Ref="GRN1"  Part="1" 
+F 0 "GRN1" H 2450 5600 42  0000 C CNN
+F 1 "GREEN LED" H 2550 5650 42  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2650 5450 50  0001 C CNN
+F 3 "" H 2650 5450 50  0001 C CNN
+	1    2650 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
+U 1 0 5C2675DA
+P 2400 5550
+AR Path="/5BCFDB7D/5C2675DA" Ref="#U$?"  Part="1" 
+AR Path="/5C2675DA" Ref="#U$0108"  Part="1" 
+F 0 "#U$0108" H 2400 5550 50  0001 C CNN
+F 1 "GND" H 2300 5450 59  0000 L BNN
+F 2 "" H 2400 5550 50  0001 C CNN
+F 3 "" H 2400 5550 50  0001 C CNN
+	1    2400 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5450 2400 5450
+Wire Wire Line
+	10200 1050 10200 1300
+Wire Wire Line
+	10200 1400 10200 1600
+Wire Wire Line
+	4300 3500 5650 3500
+Wire Wire Line
+	6400 3500 6400 3950
+Wire Wire Line
+	5950 3500 6400 3500
+Wire Wire Line
+	4300 3400 5650 3400
+Wire Wire Line
+	6500 3400 6500 3950
+Wire Wire Line
+	5950 3400 6500 3400
 $EndSCHEMATC
