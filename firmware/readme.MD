@@ -41,3 +41,4 @@ ap_if.active(True)
 ap_if.config('all')
 ```
 10. the esp32 should now be hosting an open wifi access-point named "ESP_XXXXX" (note it wont have internet access if you connect to it.)   
+11. to learn more about the version of micropython running on the ESP32, see https://github.com/loboris/MicroPython_ESP32_psRAM_LoBo/wiki
