@@ -260,18 +260,29 @@ class miniesptool: # pylint: disable=invalid-name
             erase_size = self.get_erase_size(offset, size)
         else:
             erase_size = size
-        timeout = 5
+        timeout = 10
         stamp = time.monotonic()
         buffer = struct.pack('<IIII', erase_size, num_blocks,
                              self.FLASH_WRITE_SIZE, offset)
         print("Erase size %d, num_blocks %d, size %d, offset 0x%04x" %
               (erase_size, num_blocks, self.FLASH_WRITE_SIZE, offset))
+        try:
+            self.check_command(ESP_FLASH_BEGIN, buffer, timeout=timeout)
+            if size != 0:
+                print("Took %.2fs to erase %d flash blocks" %
+                      (time.monotonic()-stamp, num_blocks))
+            return num_blocks
+        except:
+            pass
+        try:
+            self.check_command(ESP_FLASH_BEGIN, buffer, timeout=timeout)
+            if size != 0:
+                print("Took %.2fs to erase %d flash blocks" %
+                      (time.monotonic()-stamp, num_blocks))
+            return num_blocks
+        except:
+            pass
 
-        self.check_command(ESP_FLASH_BEGIN, buffer, timeout=timeout)
-        if size != 0:
-            print("Took %.2fs to erase %d flash blocks" %
-                  (time.monotonic()-stamp, num_blocks))
-        return num_blocks
 
     def check_command(self, opcode, buffer, checksum=0, timeout=0.1): # pylint: disable=unused-argument
         """Send a command packet, check that the command succeeded and
@@ -382,7 +393,7 @@ class miniesptool: # pylint: disable=invalid-name
         self._resetpin.value = False
         time.sleep(0.1)
         self._resetpin.value = True
-        time.sleep(0.2)
+        time.sleep(1.0)
 
     def flash_block(self, data, seq, timeout=0.1):
         """Send one block of data to program into SPI Flash memory"""
