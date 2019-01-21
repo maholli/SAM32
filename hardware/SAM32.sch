@@ -482,10 +482,6 @@ F 3 "" H 1950 5700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 4750 1650 4850
-Text Label 5000 3400 0    59   ~ 0
-RTS
-Text Label 5000 3500 0    59   ~ 0
-DTR
 Text Label 2850 5050 0    50   ~ 0
 USB+
 Text Label 2850 4950 0    50   ~ 0
@@ -2075,4 +2071,8 @@ Wire Wire Line
 	6500 3400 6500 3950
 Wire Wire Line
 	5950 3400 6500 3400
+Text Label 5000 3400 0    59   ~ 0
+DTR
+Text Label 5000 3500 0    59   ~ 0
+RTS
 $EndSCHEMATC
