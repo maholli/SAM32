@@ -4,3 +4,4 @@
 *.kicad_pcb-bak
 *.bck
 *.xml
+*.DC_STORE
