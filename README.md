@@ -7,7 +7,6 @@
 
 ## you can command this board with python or arduino!
 * to learn more about interacting with microcontrollers through python, start here: https://learn.adafruit.com/adafruit-circuit-playground-express/what-is-circuitpython
-* for details on going back and forth between circuitpython and arduino, see https://github.com/maholli/SAM32/tree/master/firmware
-
+* for details on going back and forth between circuitpython and arduino, see [firmware](https://github.com/maholli/SAM32/blob/master/firmware/readme.MD#this-board-can-be-programmed-with-arduino-or-circuitpython-default)
 ## want to help out?
 visit https://github.com/maholli/SAM32/projects/1 for an up-to-date list of software issues that are in need of YOUR help! :point_left:
