@@ -5,7 +5,13 @@
   <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/board.jpg">
 </p>
 
-If you soldered a fresh SAMD51, then a UF2-compatible bootloader must first be flashed.
+## This board can be programmed with arduino or circuitpython (default).
+
+If you'd like to switch to arduino, plug it into your computer via USB, and quickly double-click the "RST" button. A new drive called SAM32BOOT will appear. You can now flash it normally using the Arduino IDE and choosing "Adafruit Feather M4" as the board.
+
+    To switch back to circuitpython, put the board into SAM32BOOT mode again, and drag the [firmware_v2a.uf2](https://github.com/maholli/SAM32/blob/master/firmware/firmware_v2a.uf2) file onto the drive. It will automatically reset once the transfer is complete.
+
+## If you soldered a fresh SAMD51, then a UF2-compatible bootloader must first be flashed.
 1.  flash [bootloader-SAM32_v2.bin](https://github.com/maholli/SAM32/blob/master/firmware/bootloader-SAM32_v2.bin) using JTAG via Atmel Studio 7 (or equivalent).
  * necessary JTAG connections: TCK, TDIO, GND, VREF
  * if atmel studio 7 reports "unable to halt CPU," click reset button twice in quick succession. and try to read the device signature again. keep trying this process until it doesn't encounter the error
