@@ -16,12 +16,12 @@ open terminal and get into REPL (if possible)
 >>> import storage
 >>> storage.erase_filesystem()
 ```
-2. Once you are able to put the board into bootloader mode (double tap reset button), it will present as a `SAM32BOOT` USB device. Drag the [firmware_v1g.uf2](https://github.com/maholli/SAM32/blob/master/firmware/firmware_v2a.uf2) file onto the drive and it will reboot upon successful upload.
+2. Once you are able to put the board into bootloader mode (double tap reset button), it will present as a `SAM32BOOT` USB device. Drag the [firmware_v2a.uf2](https://github.com/maholli/SAM32/blob/master/firmware/firmware_v2a.uf2) file onto the drive and it will reboot upon successful upload.
 3. Congratulations! You should now see a `CIRCUITPY` USB device. Copy [blink.py](https://github.com/maholli/SAM32/blob/master/firmware/blink.py) onto the USB drive and rename to "main.py" to run a simple blink routine. 
 
 ## if your board says `METROM4BOOT` rather than `SAM32BOOT`
-1. drag [update-bootloader-SAM32_v1.uf2](https://github.com/maholli/SAM32/blob/master/firmware/update-bootloader-SAM32_v1.uf2) onto the drive while in bootloader mode, after it's complete, you may need to toggle the reset button in order for `SAM32BOOT` to present
-2. Once you're able to see `SAM32BOOT`, drag [firmware_v1g.uf2](https://github.com/maholli/SAM32/blob/master/firmware/firmware_v1g.uf2), it should now automatically reset.
+1. drag [update-bootloader-SAM32_v2.uf2](https://github.com/maholli/SAM32/blob/master/firmware/update-bootloader-SAM32_v1.uf2) onto the drive while in bootloader mode, after it's complete, you may need to toggle the reset button in order for `SAM32BOOT` to present
+2. Once you're able to see `SAM32BOOT`, drag [firmware_v2a.uf2](https://github.com/maholli/SAM32/blob/master/firmware/firmware_v1g.uf2), it should now automatically reset.
 
 ## programming the esp32
 the SAMD51 can be used to program the ESP32 module with micropython as well! To do this, we're going to leverage (modified) [adafruit miniESPtool](https://github.com/adafruit/Adafruit_CircuitPython_miniesptool) and the SD card. (assuming circuitpython is already running on the SAMD51)
