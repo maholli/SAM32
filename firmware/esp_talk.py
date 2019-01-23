@@ -11,16 +11,14 @@ led.direction = digitalio.Direction.OUTPUT
 rts.direction = digitalio.Direction.OUTPUT
 dtr.direction = digitalio.Direction.OUTPUT
 
-led.value = 1
+led.value = 0
 rts.value = 1
 dtr.value = 1
 
-# UART setup
-uart = busio.UART(board.D0,board.D1, baudrate=115200, timeout=0.5)
 
 # SPI and SD card setup
 try:
-	spi = busio.SPI(board.MISO, board.MOSI, board.SCK)
+	spi = busio.SPI(board.SCK, board.MOSI, board.MISO)
 	cs = digitalio.DigitalInOut(board.xSDCS)
 	sdcard = adafruit_sdcard.SDCard(spi, cs)
 	vfs = storage.VfsFat(sdcard)
@@ -37,7 +35,7 @@ test=[]
 
 # Use the filesystem as normal! Our files are under /sd 
 # This helper function will print the contents of the SD 
-def print_directory(path, tabs=0):
+def print_directory(path, tabs=0):    
     for file in os.listdir(path):
         stats = os.stat(path + "/" + file)
         filesize = stats[6]
@@ -59,42 +57,48 @@ def print_directory(path, tabs=0):
         if isdir:
             print_directory(path + "/" + file, tabs + 1)
 
-
-
-######################### MAIN LOOP ##############################
-
-while True:
-	led.value = 1
-	time.sleep(0.2)
-	if startUP:
-		time.sleep(1)
-		if SD_IN:
-			print("Files on filesystem:")
-			print("====================")
-			print_directory("/sd")
-		rts.value = 0
-		time.sleep(0.1)
-		rts.value = 1
-		startUP = False
-	if uart.in_waiting:
+def espREPL():
+	
+	if uart.in_waiting: 
 		try:
 			data = uart.read()
-			data_string = ''.join([chr(b) for b in data])
+			data_string = ''.join([chr(b) for b in data]) 
 			print(data_string, end='')
-			# uart.reset_input_buffer
 		except:
 			pass
 	if supervisor.runtime.serial_bytes_available:
 		call = input()
-		uart.write(bytes(call, 'utf-8'))
-		uart.write(b'\x0d\x0a')
-		# uart.reset_input_buffer
+		if call == 'exit':
+			print('=== exiting ESP32 REPL ===')
+			return False
+		uart.write(bytes(call, 'utf-8')+b'\x0d\x0a') #add CR+LF to end of call
 		try:
 			data = uart.read()
 			data_string = ''.join([chr(b) for b in data])
 			print(data_string, end='')
-			# uart.reset_input_buffer
 		except:
 			pass
-	led.value = 0
-	time.sleep(0.01) # make bigger to slow down
+	return True
+
+if SD_IN:
+	print("Files on filesystem:")
+	print("====================")
+	print_directory("/sd")
+	rts.value = 0
+	time.sleep(0.1)
+	rts.value = 1
+
+######################### MAIN LOOP ##############################
+
+#start UART to ESP32
+uart = busio.UART(board.TX,board.RX, baudrate=115200, timeout=1)
+
+while True: # runs forever
+	
+	print('\n=== entering ESP32 REPL ===\n')
+	while espREPL(): 
+		pass
+	
+	# do things not in ESP32 REPL
+	
+	

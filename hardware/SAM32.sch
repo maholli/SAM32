@@ -53,8 +53,6 @@ Wire Wire Line
 Text Label 9400 2650 0    47   ~ 0
 EN
 Wire Wire Line
-	8100 2550 8900 2550
-Wire Wire Line
 	9500 2550 9450 2550
 Wire Wire Line
 	8900 2550 8900 2750
@@ -229,19 +227,6 @@ F 3 "" H 9450 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAM32-rescue:DIODE-SCHOTTKYSOD-123-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue D?
-U 1 0 5BD0AFE3
-P 8000 2550
-AR Path="/5BCFDB7D/5BD0AFE3" Ref="D?"  Part="1" 
-AR Path="/5BD0AFE3" Ref="D1"  Part="1" 
-F 0 "D1" H 8000 2650 42  0000 C CNN
-F 1 "MBR120" H 8000 2452 42  0000 C CNN
-F 2 "Adafruit Feather M4 Express:SOD-123" H 8000 2550 50  0001 C CNN
-F 3 "" H 8000 2550 50  0001 C CNN
-	1    8000 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L SAM32-rescue:MOSFET-P-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue Q?
 U 1 0 5BD0AFEA
 P 9450 2250
@@ -308,27 +293,14 @@ $EndComp
 $Comp
 L SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5BD0C048
-P 1700 2500
+P 1700 2450
 AR Path="/5BCFDB7D/5BD0C048" Ref="#U$?"  Part="1" 
 AR Path="/5BD0C048" Ref="#U$04"  Part="1" 
-F 0 "#U$04" H 1700 2500 50  0001 C CNN
-F 1 "VBAT" H 1600 2500 42  0000 L BNN
-F 2 "" H 1700 2500 50  0001 C CNN
-F 3 "" H 1700 2500 50  0001 C CNN
-	1    1700 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #GND?
-U 1 0 5BD0C04E
-P 1700 3600
-AR Path="/5BCFDB7D/5BD0C04E" Ref="#GND?"  Part="1" 
-AR Path="/5BD0C04E" Ref="#GND02"  Part="1" 
-F 0 "#GND02" H 1700 3600 50  0001 C CNN
-F 1 "GND" H 1600 3500 59  0000 L BNN
-F 2 "" H 1700 3600 50  0001 C CNN
-F 3 "" H 1700 3600 50  0001 C CNN
-	1    1700 3600
+F 0 "#U$04" H 1700 2450 50  0001 C CNN
+F 1 "VBAT" H 1600 2450 42  0000 L BNN
+F 2 "" H 1700 2450 50  0001 C CNN
+F 3 "" H 1700 2450 50  0001 C CNN
+	1    1700 2450
 	1    0    0    -1  
 $EndComp
 Text Notes 8400 2000 0    49   ~ 0
@@ -482,6 +454,10 @@ F 3 "" H 1950 5700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 4750 1650 4850
+Text Label 5000 3400 0    59   ~ 0
+~RTS
+Text Label 5000 3500 0    59   ~ 0
+DTR
 Text Label 2850 5050 0    50   ~ 0
 USB+
 Text Label 2850 4950 0    50   ~ 0
@@ -625,14 +601,14 @@ $EndComp
 $Comp
 L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C3CBE5C
-P 1000 3600
+P 1000 3000
 AR Path="/5BCFDB7D/5C3CBE5C" Ref="#U$?"  Part="1" 
 AR Path="/5C3CBE5C" Ref="#U$03"  Part="1" 
-F 0 "#U$03" H 1000 3600 50  0001 C CNN
-F 1 "GND" H 900 3500 59  0000 L BNN
-F 2 "" H 1000 3600 50  0001 C CNN
-F 3 "" H 1000 3600 50  0001 C CNN
-	1    1000 3600
+F 0 "#U$03" H 1000 3000 50  0001 C CNN
+F 1 "GND" H 900 2900 59  0000 L BNN
+F 2 "" H 1000 3000 50  0001 C CNN
+F 3 "" H 1000 3000 50  0001 C CNN
+	1    1000 3000
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -647,9 +623,9 @@ Wire Wire Line
 	1650 5050 2200 5050
 Wire Wire Line
 	1650 4950 2100 4950
-Text Notes 1050 5850 0    79   ~ 0
+Text Notes 1000 5900 0    79   ~ 0
 ESD PROT.
-Text Notes 800  4500 0    79   ~ 0
+Text Notes 850  4600 0    79   ~ 0
 USB CONN.
 Wire Wire Line
 	3100 1950 2450 1950
@@ -715,9 +691,9 @@ Wire Wire Line
 Wire Wire Line
 	8250 1500 8150 1500
 Wire Wire Line
-	7800 1300 8250 1300
+	7950 1300 8250 1300
 Wire Wire Line
-	7800 1300 7800 1050
+	7950 1300 7950 1050
 Connection ~ 9450 2550
 NoConn ~ 10300 2750
 NoConn ~ 3100 6600
@@ -857,8 +833,6 @@ Text GLabel 3000 3000 0    59   BiDi ~ 0
 SDA
 Text GLabel 3000 2700 0    59   BiDi ~ 0
 SCL
-Wire Wire Line
-	2600 2900 3100 2900
 NoConn ~ 1650 5150
 Connection ~ 1400 2300
 Wire Wire Line
@@ -875,7 +849,7 @@ Text GLabel 3000 6500 0    59   Input ~ 0
 MISO
 Text GLabel 3000 6800 0    59   Input ~ 0
 SD_CS
-Text Notes 7950 4850 0    59   ~ 0
+Text Notes 7850 4850 0    59   ~ 0
 ESP\nJTAG
 Wire Notes Line
 	8200 4600 8200 4900
@@ -884,18 +858,18 @@ Wire Wire Line
 Text GLabel 4400 3900 2    59   Output ~ 0
 SD_CS
 Wire Wire Line
-	4300 2400 7200 2400
+	4300 2400 7800 2400
 Wire Wire Line
 	7250 5450 7150 5450
 $Comp
 L Device:R_US R3
 U 1 1 5C02C9DB
-P 1700 2850
-F 0 "R3" H 1550 2900 50  0000 C CNN
-F 1 "100K" H 1550 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1740 2840 50  0001 C CNN
-F 3 "~" H 1700 2850 50  0001 C CNN
-	1    1700 2850
+P 1700 2750
+F 0 "R3" H 1550 2650 50  0000 C CNN
+F 1 "100K" H 1850 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1740 2740 50  0001 C CNN
+F 3 "~" H 1700 2750 50  0001 C CNN
+	1    1700 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -968,13 +942,13 @@ Wire Wire Line
 $Comp
 L Device:R_US R5
 U 1 1 5C08F158
-P 1700 3200
-F 0 "R5" H 1550 3250 50  0000 C CNN
-F 1 "100K" H 1550 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402" V 1740 3190 50  0001 C CNN
-F 3 "~" H 1700 3200 50  0001 C CNN
-	1    1700 3200
-	1    0    0    -1  
+P 1550 2900
+F 0 "R5" V 1250 3150 50  0000 C CNN
+F 1 "100K" V 1650 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402" V 1590 2890 50  0001 C CNN
+F 3 "~" H 1550 2900 50  0001 C CNN
+	1    1550 2900
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	4850 1800 5050 1800
@@ -1028,8 +1002,6 @@ Text GLabel 3000 3600 0    60   BiDi ~ 0
 D30
 Text GLabel 3000 3700 0    60   BiDi ~ 0
 D31
-Wire Wire Line
-	3100 3800 3000 3800
 Text GLabel 3000 3900 0    60   BiDi ~ 0
 D35
 Text GLabel 3000 4000 0    60   BiDi ~ 0
@@ -1058,7 +1030,7 @@ Text GLabel 4400 2700 2    60   BiDi ~ 0
 D64
 Wire Notes Line
 	4000 3950 5250 3950
-Text Label 7900 4450 1    60   ~ 0
+Text Label 7800 4450 1    60   ~ 0
 TMS
 Text Label 4400 2400 0    60   ~ 0
 TMS
@@ -1077,7 +1049,7 @@ SAM32
 Text Notes 8100 6950 0    79   ~ 16
 SAMD51 +ESP32-WROOM + microSD
 Text Notes 10550 7650 0    79   ~ 16
-2
+2.1
 $Comp
 L SAM32-rescue:ESP32_WROOM32_SKINNY-Adafruit_HUZZAH32_ESP32_Feather-eagle-import-SAMD-10-rescue U3
 U 1 1 5BD2F1EA
@@ -1142,44 +1114,44 @@ IO26
 Text GLabel 7250 5950 2    60   BiDi ~ 0
 IO27
 Wire Wire Line
-	7150 4850 7400 4850
+	7150 4850 7300 4850
 Wire Wire Line
-	7150 4650 7400 4650
+	7150 4650 7300 4650
 Wire Wire Line
-	7150 4750 7400 4750
+	7150 4750 7300 4750
 Wire Wire Line
-	7700 4850 7900 4850
+	7600 4850 7800 4850
 $Comp
 L Device:R_US R15
 U 1 1 5BD8D583
-P 7550 4650
-F 0 "R15" V 7500 4500 50  0000 C CNN
-F 1 "0" V 7500 4750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 7590 4640 50  0001 C CNN
-F 3 "~" H 7550 4650 50  0001 C CNN
-	1    7550 4650
+P 7450 4650
+F 0 "R15" V 7400 4500 50  0000 C CNN
+F 1 "0" V 7400 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7490 4640 50  0001 C CNN
+F 3 "~" H 7450 4650 50  0001 C CNN
+	1    7450 4650
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R16
 U 1 1 5BD8D58A
-P 7550 4750
-F 0 "R16" V 7500 4600 50  0000 C CNN
-F 1 "0" V 7500 4850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 7590 4740 50  0001 C CNN
-F 3 "~" H 7550 4750 50  0001 C CNN
-	1    7550 4750
+P 7450 4750
+F 0 "R16" V 7400 4600 50  0000 C CNN
+F 1 "0" V 7400 4850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7490 4740 50  0001 C CNN
+F 3 "~" H 7450 4750 50  0001 C CNN
+	1    7450 4750
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R17
 U 1 1 5BD8D591
-P 7550 4850
-F 0 "R17" V 7500 4700 50  0000 C CNN
-F 1 "0" V 7500 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 7590 4840 50  0001 C CNN
-F 3 "~" H 7550 4850 50  0001 C CNN
-	1    7550 4850
+P 7450 4850
+F 0 "R17" V 7400 4700 50  0000 C CNN
+F 1 "0" V 7400 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7490 4840 50  0001 C CNN
+F 3 "~" H 7450 4850 50  0001 C CNN
+	1    7450 4850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1239,12 +1211,6 @@ Wire Wire Line
 	7150 5550 7250 5550
 Wire Wire Line
 	4700 4350 4700 4100
-Wire Wire Line
-	7900 4850 7900 3650
-Wire Wire Line
-	7900 3650 7200 3650
-Wire Wire Line
-	7200 3650 7200 2400
 $Comp
 L SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C269BEE
@@ -1273,29 +1239,15 @@ F 3 "" H 10200 1700 50  0001 C CNN
 $EndComp
 Text Notes 9800 700  0    79   ~ 0
 LIPO CONN.
-Text Notes 5450 2750 0    79   ~ 0
-ESP32 AUTORESET
 Wire Wire Line
-	7700 4750 7800 4750
+	7600 4750 7700 4750
 Wire Wire Line
-	7800 4750 7800 3750
+	7700 2500 4300 2500
 Wire Wire Line
-	7800 3750 7100 3750
-Wire Wire Line
-	7100 3750 7100 2500
-Wire Wire Line
-	7100 2500 4300 2500
-Wire Wire Line
-	7700 4650 7700 3850
-Wire Wire Line
-	7700 3850 7000 3850
-Wire Wire Line
-	7000 3850 7000 2600
-Wire Wire Line
-	7000 2600 4300 2600
-Text Label 7800 4450 1    60   ~ 0
-TCK
+	7600 2600 4300 2600
 Text Label 7700 4450 1    60   ~ 0
+TCK
+Text Label 7600 4450 1    60   ~ 0
 TDI
 Text Label 4400 2500 0    60   ~ 0
 TCK
@@ -1375,15 +1327,7 @@ Wire Notes Line
 	6500 4900 8200 4900
 Wire Wire Line
 	9450 2450 9450 2550
-Wire Wire Line
-	1700 2600 1700 2700
-Wire Wire Line
-	2600 2900 2600 3050
-Wire Wire Line
-	2600 3050 1700 3050
-Wire Wire Line
-	1700 3000 1700 3050
-Connection ~ 1700 3050
+Connection ~ 1700 2900
 Text Notes 3850 2500 0    35   ~ 0
 TC7
 Text Notes 3850 2400 0    35   ~ 0
@@ -1482,26 +1426,24 @@ $EndComp
 $Comp
 L SAM32-rescue:VUSB-power-SAMD-10-rescue #PWR0103
 U 1 1 5BD4A8A9
-P 7800 1050
-F 0 "#PWR0103" H 7800 900 50  0001 C CNN
-F 1 "VUSB" H 7815 1223 50  0000 C CNN
-F 2 "" H 7800 1050 50  0001 C CNN
-F 3 "" H 7800 1050 50  0001 C CNN
-	1    7800 1050
+P 7950 1050
+F 0 "#PWR0103" H 7950 900 50  0001 C CNN
+F 1 "VUSB" H 7965 1223 50  0000 C CNN
+F 2 "" H 7950 1050 50  0001 C CNN
+F 3 "" H 7950 1050 50  0001 C CNN
+	1    7950 1050
 	1    0    0    -1  
 $EndComp
 Text Label 7950 1300 0    60   ~ 0
 VUSB
 Wire Wire Line
-	7900 2550 7800 2550
+	8050 2550 7950 2550
 Wire Wire Line
-	7800 2350 7800 2550
+	7950 2350 7950 2550
 Wire Wire Line
-	7800 2350 7800 1300
-Connection ~ 7800 2350
-Connection ~ 7800 1300
-Wire Wire Line
-	1700 3350 1700 3500
+	7950 2350 7950 1300
+Connection ~ 7950 2350
+Connection ~ 7950 1300
 $Comp
 L SAM32-rescue:MOUNTINGHOLE2.5-Adafruit_HUZZAH32_ESP32_Feather-eagle-import-SAMD-10-rescue J97
 U 1 0 5BF2445F
@@ -1525,7 +1467,7 @@ F 3 "" H 6550 7250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 5250 1800
-Text Label 1950 3050 0    60   ~ 0
+Text Label 2000 2900 0    60   ~ 0
 VBAT_MES
 Text Label 9300 1400 0    10   ~ 0
 PROG
@@ -1828,6 +1770,7 @@ F 0 "U1" H 1300 6150 60  0000 C CNN
 F 1 "MAX3202EETT+T" H 1550 5700 60  0000 C CNN
 F 2 "custom-footprints:WLP-4-0.5" H 2400 6340 60  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3202E-MAX3206E.pdf" H 1300 6100 60  0001 C CNN
+F 4 "DNI" H 1300 6000 50  0000 C CNN "DNI"
 	1    1300 6100
 	1    0    0    -1  
 $EndComp
@@ -1928,10 +1871,10 @@ F 4 "32.768" V 1400 2450 39  0000 C CNN "Freq"
 $EndComp
 Connection ~ 1000 2600
 Wire Wire Line
-	1000 2600 1000 3500
+	1000 2600 1000 2900
 Connection ~ 1400 2600
 Wire Wire Line
-	7800 2350 8150 2350
+	7950 2350 8150 2350
 Wire Wire Line
 	8150 2200 8150 2350
 Connection ~ 8150 2350
@@ -1966,56 +1909,48 @@ Connection ~ 9350 1700
 Wire Wire Line
 	4300 3700 4400 3700
 Wire Wire Line
-	4800 4450 5150 4450
+	4800 4450 4900 4450
 Wire Wire Line
 	4800 4000 4800 4450
 Wire Wire Line
 	4700 4350 5150 4350
-Text Notes 3750 3450 0    59   ~ 0
-MISO
 $Comp
 L LED:WS2812B D2
 U 1 1 5C0F5F1A
-P 1700 7150
-F 0 "D2" H 2044 7196 50  0000 L CNN
-F 1 "WS2812B" H 2044 7105 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 1750 6850 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 1800 6775 50  0001 L TNN
-	1    1700 7150
-	1    0    0    -1  
+P 1150 3800
+F 0 "D2" H 1494 3846 50  0000 L CNN
+F 1 "WS2812B" H 1350 3500 50  0000 L CNN
+F 2 "custom-footprints:LED3535" H 1200 3500 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 1250 3425 50  0001 L TNN
+	1    1150 3800
+	-1   0    0    -1  
 $EndComp
 $Comp
 L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C13A6A2
-P 1700 7550
+P 1150 4200
 AR Path="/5BCFDB7D/5C13A6A2" Ref="#U$?"  Part="1" 
 AR Path="/5C13A6A2" Ref="#U$0107"  Part="1" 
-F 0 "#U$0107" H 1700 7550 50  0001 C CNN
-F 1 "GND" H 1600 7450 59  0000 L BNN
-F 2 "" H 1700 7550 50  0001 C CNN
-F 3 "" H 1700 7550 50  0001 C CNN
-	1    1700 7550
-	1    0    0    -1  
+F 0 "#U$0107" H 1150 4200 50  0001 C CNN
+F 1 "GND" H 1050 4100 59  0000 L BNN
+F 2 "" H 1150 4200 50  0001 C CNN
+F 3 "" H 1150 4200 50  0001 C CNN
+	1    1150 4200
+	-1   0    0    -1  
 $EndComp
 $Comp
 L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
 U 1 0 5C15136C
-P 1700 6750
+P 1150 3400
 AR Path="/5BCFDB7D/5C15136C" Ref="#+3V?"  Part="1" 
 AR Path="/5C15136C" Ref="#+3V0102"  Part="1" 
-F 0 "#+3V0102" H 1700 6750 50  0001 C CNN
-F 1 "+3V3" H 1550 6800 59  0000 L BNN
-F 2 "" H 1700 6750 50  0001 C CNN
-F 3 "" H 1700 6750 50  0001 C CNN
-	1    1700 6750
-	1    0    0    -1  
+F 0 "#+3V0102" H 1150 3400 50  0001 C CNN
+F 1 "+3V3" H 1000 3450 59  0000 L BNN
+F 2 "" H 1150 3400 50  0001 C CNN
+F 3 "" H 1150 3400 50  0001 C CNN
+	1    1150 3400
+	-1   0    0    -1  
 $EndComp
-Text GLabel 3000 3800 0    60   Output ~ 0
-NEOPIXEL
-Wire Wire Line
-	1400 7150 1300 7150
-Text GLabel 1300 7150 0    60   Input ~ 0
-NEOPIXEL
 $Comp
 L Device:R_US R2
 U 1 1 5C24DD14
@@ -2071,8 +2006,63 @@ Wire Wire Line
 	6500 3400 6500 3950
 Wire Wire Line
 	5950 3400 6500 3400
-Text Label 5000 3400 0    59   ~ 0
-DTR
-Text Label 5000 3500 0    59   ~ 0
-RTS
+$Comp
+L Device:R_US R1
+U 1 1 5C4971ED
+P 4900 4300
+F 0 "R1" H 4750 4350 50  0000 C CNN
+F 1 "10K" H 4750 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4940 4290 50  0001 C CNN
+F 3 "~" H 4900 4300 50  0001 C CNN
+	1    4900 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 4450
+Wire Wire Line
+	4900 4450 5150 4450
+$Comp
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
+U 1 0 5C4986BA
+P 4900 4050
+AR Path="/5BCFDB7D/5C4986BA" Ref="#+3V?"  Part="1" 
+AR Path="/5C4986BA" Ref="#+3V0103"  Part="1" 
+F 0 "#+3V0103" H 4900 4050 50  0001 C CNN
+F 1 "+3V3" H 4800 4100 59  0000 L BNN
+F 2 "" H 4900 4050 50  0001 C CNN
+F 3 "" H 4900 4050 50  0001 C CNN
+	1    4900 4050
+	-1   0    0    -1  
+$EndComp
+Text Notes 5300 3700 0    47   ~ 0
+Hold DTR low during boot\nfor serial bootloader access
+Wire Wire Line
+	7800 2400 7800 4850
+Wire Wire Line
+	7700 2500 7700 4750
+Wire Wire Line
+	7600 2600 7600 4650
+Wire Wire Line
+	1400 2900 1000 2900
+Connection ~ 1000 2900
+Wire Wire Line
+	1450 3800 3100 3800
+Text Notes 1200 3550 0    79   ~ 0
+NEOPIXEL
+Wire Wire Line
+	1700 2550 1700 2600
+Wire Wire Line
+	1700 2900 3100 2900
+$Comp
+L Device:D D1
+U 1 1 5C48F23F
+P 8200 2550
+F 0 "D1" H 8200 2450 50  0000 C CNN
+F 1 "MBR120" H 8200 2650 50  0000 C CNN
+F 2 "Diode_SMD:D_SC-80" H 8200 2550 50  0001 C CNN
+F 3 "~" H 8200 2550 50  0001 C CNN
+	1    8200 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8350 2550 8900 2550
 $EndSCHEMATC
