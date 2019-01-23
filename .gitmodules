@@ -1,0 +1,3 @@
+[submodule "firmware/Adafruit_CircuitPython_Bundle"]
+	path = firmware/Adafruit_CircuitPython_Bundle
+	url = https://github.com/adafruit/Adafruit_CircuitPython_Bundle
