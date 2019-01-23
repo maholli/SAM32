@@ -2,7 +2,7 @@
 
 
 <p align="middle">
-  <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/board.jpg">
+  <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/boardv2.PNG">
 </p>
 
 ## This board can be programmed with arduino or circuitpython (default).
