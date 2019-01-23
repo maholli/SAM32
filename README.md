@@ -2,6 +2,7 @@
 <p align="middle">
   <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/board.jpg">
   <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/boardv2.jpg">
+  <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/boardv2.PNG">
 </p>
 
 :star: see firmware directory for programming & usage instructions 
