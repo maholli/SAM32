@@ -764,9 +764,9 @@ Wire Wire Line
 Wire Wire Line
 	3100 4600 3000 4600
 Wire Wire Line
-	3100 3600 3000 3600
-Wire Wire Line
 	3100 3500 3000 3500
+Wire Wire Line
+	3100 3600 3000 3600
 Wire Notes Line
 	2900 3400 2900 3450
 Wire Notes Line
@@ -826,12 +826,12 @@ Wire Wire Line
 Wire Wire Line
 	4300 3100 4400 3100
 Wire Wire Line
-	3100 3000 3000 3000
+	3100 3100 3000 3100
 Wire Wire Line
-	3100 2700 3000 2700
-Text GLabel 3000 3000 0    59   BiDi ~ 0
+	3100 3200 3000 3200
+Text GLabel 3000 3100 0    59   BiDi ~ 0
 SDA
-Text GLabel 3000 2700 0    59   BiDi ~ 0
+Text GLabel 3000 3200 0    59   BiDi ~ 0
 SCL
 NoConn ~ 1650 5150
 Connection ~ 1400 2300
@@ -853,12 +853,6 @@ Text Notes 7850 4850 0    59   ~ 0
 ESP\nJTAG
 Wire Notes Line
 	8200 4600 8200 4900
-Wire Wire Line
-	4400 3900 4300 3900
-Text GLabel 4400 3900 2    59   Output ~ 0
-SD_CS
-Wire Wire Line
-	4300 2400 7800 2400
 Wire Wire Line
 	7250 5450 7150 5450
 $Comp
@@ -961,15 +955,11 @@ Wire Wire Line
 Wire Wire Line
 	4300 4500 4400 4500
 Wire Wire Line
-	4300 3200 4400 3200
+	6400 3100 6500 3100
 Wire Wire Line
-	4300 3300 4400 3300
+	6400 3200 6500 3200
 Wire Wire Line
 	4300 2700 4400 2700
-Wire Wire Line
-	3100 3100 3000 3100
-Wire Wire Line
-	3100 3200 3000 3200
 Wire Wire Line
 	3100 3300 3000 3300
 Wire Wire Line
@@ -982,24 +972,20 @@ Text GLabel 4400 3100 2    59   BiDi ~ 0
 AIN9
 Text GLabel 4400 3000 2    59   BiDi ~ 0
 AIN8
-Text GLabel 4400 3200 2    60   BiDi ~ 0
+Text GLabel 6500 3100 2    60   BiDi ~ 0
 AIN0
-Text GLabel 4400 3300 2    60   BiDi ~ 0
+Text GLabel 6500 3200 2    60   BiDi ~ 0
 AIN1
-Text GLabel 3000 3100 0    60   BiDi ~ 0
-AIN2
-Text GLabel 3000 3200 0    60   BiDi ~ 0
-AIN3
 Text Notes 4700 3100 0    59   ~ 0
 ADC1
 Text GLabel 3000 3300 0    60   BiDi ~ 0
 D19
 Text GLabel 3000 3400 0    60   BiDi ~ 0
 D20
-Text GLabel 3000 3500 0    60   BiDi ~ 0
-D29
 Text GLabel 3000 3600 0    60   BiDi ~ 0
-D30
+RX
+Text GLabel 3000 3500 0    60   BiDi ~ 0
+TX
 Text GLabel 3000 3700 0    60   BiDi ~ 0
 D31
 Text GLabel 3000 3900 0    60   BiDi ~ 0
@@ -1030,8 +1016,6 @@ Text GLabel 4400 2700 2    60   BiDi ~ 0
 D64
 Wire Notes Line
 	4000 3950 5250 3950
-Text Label 7800 4450 1    60   ~ 0
-TMS
 Text Label 4400 2400 0    60   ~ 0
 TMS
 Text Notes 2950 1350 0    59   ~ 0
@@ -1114,44 +1098,27 @@ IO26
 Text GLabel 7250 5950 2    60   BiDi ~ 0
 IO27
 Wire Wire Line
-	7150 4850 7300 4850
-Wire Wire Line
-	7150 4650 7300 4650
-Wire Wire Line
-	7150 4750 7300 4750
-Wire Wire Line
-	7600 4850 7800 4850
-$Comp
-L Device:R_US R15
-U 1 1 5BD8D583
-P 7450 4650
-F 0 "R15" V 7400 4500 50  0000 C CNN
-F 1 "0" V 7400 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7490 4640 50  0001 C CNN
-F 3 "~" H 7450 4650 50  0001 C CNN
-	1    7450 4650
-	0    1    1    0   
-$EndComp
+	7650 4850 7850 4850
 $Comp
 L Device:R_US R16
 U 1 1 5BD8D58A
-P 7450 4750
-F 0 "R16" V 7400 4600 50  0000 C CNN
-F 1 "0" V 7400 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7490 4740 50  0001 C CNN
-F 3 "~" H 7450 4750 50  0001 C CNN
-	1    7450 4750
+P 7500 4750
+F 0 "R16" V 7450 4600 50  0000 C CNN
+F 1 "0" V 7450 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7540 4740 50  0001 C CNN
+F 3 "~" H 7500 4750 50  0001 C CNN
+	1    7500 4750
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R17
 U 1 1 5BD8D591
-P 7450 4850
-F 0 "R17" V 7400 4700 50  0000 C CNN
-F 1 "0" V 7400 4950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7490 4840 50  0001 C CNN
-F 3 "~" H 7450 4850 50  0001 C CNN
-	1    7450 4850
+P 7500 4850
+F 0 "R17" V 7450 4700 50  0000 C CNN
+F 1 "0" V 7450 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7540 4840 50  0001 C CNN
+F 3 "~" H 7500 4850 50  0001 C CNN
+	1    7500 4850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1240,15 +1207,9 @@ $EndComp
 Text Notes 9800 700  0    79   ~ 0
 LIPO CONN.
 Wire Wire Line
-	7600 4750 7700 4750
+	7650 4750 7750 4750
 Wire Wire Line
-	7700 2500 4300 2500
-Wire Wire Line
-	7600 2600 4300 2600
-Text Label 7700 4450 1    60   ~ 0
-TCK
-Text Label 7600 4450 1    60   ~ 0
-TDI
+	7350 2500 4300 2500
 Text Label 4400 2500 0    60   ~ 0
 TCK
 Text Label 4400 2600 0    60   ~ 0
@@ -1349,21 +1310,9 @@ F 8 "Unavailable" H 3700 3300 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	3650 2750 3650 3050
-Wire Notes Line
-	3650 3050 2700 3050
-Wire Notes Line
-	2700 3050 2700 3250
-Wire Notes Line
-	2700 3250 4000 3250
-Wire Notes Line
-	4000 3250 4000 3350
-Wire Notes Line
 	4000 3350 4950 3350
 Wire Notes Line
 	4950 3350 4950 2750
-Wire Notes Line
-	3650 2750 4950 2750
 Wire Notes Line
 	1950 3400 1950 4700
 Text Notes 3800 4250 0    35   ~ 0
@@ -1485,13 +1434,13 @@ $EndComp
 $Comp
 L SAM32-rescue:CON_JST_PH_2PINSH2-Adafruit_Feather_M0_Adalogger-eagle-import-SAMD-10-rescue J4
 U 1 1 5BE0D3BF
-P 10300 1300
-F 0 "J4" H 10200 1120 59  0000 C CNN
-F 1 "B2B-PH-SM4-TB" H 10200 1581 59  0001 C CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 10300 1300 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 10300 1300 50  0001 C CNN
-	1    10300 1300
-	1    0    0    1   
+P 10100 1400
+F 0 "J4" H 10000 1220 59  0000 C CNN
+F 1 "B2B-PH-SM4-TB" H 10000 1681 59  0001 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 10100 1400 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 10100 1400 50  0001 C CNN
+	1    10100 1400
+	-1   0    0    -1  
 $EndComp
 $Comp
 L SAM32-rescue:NPPC_0.100in_2ROW-SMD_Headers-SAMD-10-rescue J5
@@ -1540,124 +1489,76 @@ Wire Wire Line
 	6300 1750 6200 1750
 Wire Wire Line
 	6900 1650 6800 1650
-Text GLabel 6200 1850 0    60   BiDi ~ 0
-IO32
-Wire Wire Line
-	6200 1850 6300 1850
-Text GLabel 6200 1950 0    60   BiDi ~ 0
+Text GLabel 6900 1550 2    60   BiDi ~ 0
 IO25
 Wire Wire Line
-	6200 1950 6300 1950
-Text GLabel 6200 2050 0    60   BiDi ~ 0
+	6900 1550 6800 1550
+Text GLabel 6200 1850 0    60   BiDi ~ 0
 IO26
 Wire Wire Line
-	6200 2050 6300 2050
-Text GLabel 6900 1550 2    60   BiDi ~ 0
-IO33
-Wire Wire Line
-	6900 1550 6800 1550
-Text GLabel 6900 1450 2    60   BiDi ~ 0
-IO27
-Wire Wire Line
-	6900 1450 6800 1450
-Text GLabel 8800 4550 0    60   BiDi ~ 0
-D41
+	6200 1850 6300 1850
 Text GLabel 8800 4450 0    60   BiDi ~ 0
 D42
-Text GLabel 8800 4350 0    60   BiDi ~ 0
-D43
 Text GLabel 8800 4250 0    60   BiDi ~ 0
 D44
 Wire Wire Line
 	9000 4250 8800 4250
 Wire Wire Line
-	8800 4350 9000 4350
-Wire Wire Line
 	9000 4450 8800 4450
-Wire Wire Line
-	9000 4550 8800 4550
-Text GLabel 8800 4950 0    60   BiDi ~ 0
-D35
-Text GLabel 8800 4850 0    60   BiDi ~ 0
-D36
-Text GLabel 8800 4750 0    60   BiDi ~ 0
-D37
-Text GLabel 8800 4650 0    60   BiDi ~ 0
-D38
-Text GLabel 8800 5250 0    60   BiDi ~ 0
-D29
-Text GLabel 8800 5150 0    60   BiDi ~ 0
-D30
-Text GLabel 8800 5050 0    60   BiDi ~ 0
-D31
-Wire Wire Line
-	9000 4650 8800 4650
-Wire Wire Line
-	9000 4750 8800 4750
-Wire Wire Line
-	9000 4850 8800 4850
-Wire Wire Line
-	9000 4950 8800 4950
-Wire Wire Line
-	9000 5050 8800 5050
-Wire Wire Line
-	9000 5150 8800 5150
-Wire Wire Line
-	9000 5250 8800 5250
-Text GLabel 8800 5350 0    59   Output ~ 0
+Text GLabel 8800 5250 0    59   Output ~ 0
 SCK
-Text GLabel 8800 5450 0    59   Output ~ 0
+Text GLabel 8800 5350 0    59   Output ~ 0
 MOSI
-Text GLabel 8800 5550 0    59   Input ~ 0
+Text GLabel 8800 5450 0    59   Input ~ 0
 MISO
+Wire Wire Line
+	8800 5250 9000 5250
 Wire Wire Line
 	8800 5350 9000 5350
 Wire Wire Line
 	8800 5450 9000 5450
-Wire Wire Line
-	8800 5550 9000 5550
-Text GLabel 8800 5650 0    60   Output ~ 0
+Text GLabel 10900 5450 2    60   Output ~ 0
 SCL
-Text GLabel 8800 5750 0    60   BiDi ~ 0
+Text GLabel 10900 5550 2    60   BiDi ~ 0
 SDA
 Wire Wire Line
-	8800 5650 9000 5650
+	10900 5450 10800 5450
 Wire Wire Line
-	8800 5750 9000 5750
+	10900 5550 10650 5550
 Wire Wire Line
 	5250 1800 5250 2200
 Connection ~ 5250 2200
 $Comp
 L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C1DDB0D
-P 10300 4250
+P 8750 4550
 AR Path="/5BCFDB7D/5C1DDB0D" Ref="#U$?"  Part="1" 
 AR Path="/5C1DDB0D" Ref="#U$0104"  Part="1" 
-F 0 "#U$0104" H 10300 4250 50  0001 C CNN
-F 1 "GND" H 10200 4150 59  0000 L BNN
-F 2 "" H 10300 4250 50  0001 C CNN
-F 3 "" H 10300 4250 50  0001 C CNN
-	1    10300 4250
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	10200 4250 10050 4250
-$Comp
-L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
-U 1 0 5C1F12C1
-P 10300 4350
-AR Path="/5BCFDB7D/5C1F12C1" Ref="#+3V?"  Part="1" 
-AR Path="/5C1F12C1" Ref="#+3V0101"  Part="1" 
-F 0 "#+3V0101" H 10300 4350 50  0001 C CNN
-F 1 "+3V3" H 10150 4400 59  0000 L BNN
-F 2 "" H 10300 4350 50  0001 C CNN
-F 3 "" H 10300 4350 50  0001 C CNN
-	1    10300 4350
+F 0 "#U$0104" H 8750 4550 50  0001 C CNN
+F 1 "GND" H 8650 4450 59  0000 L BNN
+F 2 "" H 8750 4550 50  0001 C CNN
+F 3 "" H 8750 4550 50  0001 C CNN
+	1    8750 4550
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	10200 4350 10050 4350
-Text GLabel 10200 4450 2    60   BiDi ~ 0
+	8850 4550 9000 4550
+$Comp
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
+U 1 0 5C1F12C1
+P 8750 4350
+AR Path="/5BCFDB7D/5C1F12C1" Ref="#+3V?"  Part="1" 
+AR Path="/5C1F12C1" Ref="#+3V0101"  Part="1" 
+F 0 "#+3V0101" H 8750 4350 50  0001 C CNN
+F 1 "+3V3" H 8600 4400 59  0000 L BNN
+F 2 "" H 8750 4350 50  0001 C CNN
+F 3 "" H 8750 4350 50  0001 C CNN
+	1    8750 4350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8850 4350 9000 4350
+Text GLabel 10200 4350 2    60   BiDi ~ 0
 D49
 Text GLabel 10200 4650 2    60   BiDi ~ 0
 D59
@@ -1675,10 +1576,6 @@ Text GLabel 10200 5350 2    59   BiDi ~ 0
 AIN9
 Text GLabel 10200 5250 2    59   BiDi ~ 0
 AIN8
-Text GLabel 10200 5450 2    60   BiDi ~ 0
-AIN0
-Text GLabel 10200 5550 2    60   BiDi ~ 0
-AIN1
 Wire Wire Line
 	10200 4850 10050 4850
 Text GLabel 10200 4950 2    59   BiDi ~ 0
@@ -1709,11 +1606,7 @@ Wire Wire Line
 Wire Wire Line
 	10200 5350 10050 5350
 Wire Wire Line
-	10200 5450 10050 5450
-Wire Wire Line
-	10200 5550 10050 5550
-Wire Wire Line
-	10200 4450 10050 4450
+	10200 4350 10050 4350
 Wire Wire Line
 	10050 4550 10200 4550
 $Comp
@@ -1783,15 +1676,15 @@ Connection ~ 2100 4950
 $Comp
 L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C6784F1
-P 8850 5950
+P 8900 5750
 AR Path="/5BCFDB7D/5C6784F1" Ref="#U$?"  Part="1" 
 AR Path="/5C6784F1" Ref="#U$0105"  Part="1" 
-F 0 "#U$0105" H 8850 5950 50  0001 C CNN
-F 1 "GND" H 8750 5850 59  0000 L BNN
-F 2 "" H 8850 5950 50  0001 C CNN
-F 3 "" H 8850 5950 50  0001 C CNN
-	1    8850 5950
-	-1   0    0    -1  
+F 0 "#U$0105" H 8900 5750 50  0001 C CNN
+F 1 "GND" H 8800 5650 59  0000 L BNN
+F 2 "" H 8900 5750 50  0001 C CNN
+F 3 "" H 8900 5750 50  0001 C CNN
+	1    8900 5750
+	0    1    -1   0   
 $EndComp
 $Comp
 L SAM32-rescue:CAP_CERAMIC0603_NO-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue C?
@@ -1882,8 +1775,6 @@ Wire Wire Line
 	8150 2350 9250 2350
 Text Notes 6250 7100 0    79   ~ 0
 MOUNTING\n  HOLES
-Wire Wire Line
-	8850 5850 9000 5850
 Text Notes 8850 4000 0    79   ~ 0
 THRU-HOLE HEADERS\n    (SAMD51 I/O)
 Text Notes 5850 1100 0    79   ~ 0
@@ -2036,12 +1927,6 @@ $EndComp
 Text Notes 5300 3700 0    47   ~ 0
 Hold DTR low during boot\nfor serial bootloader access
 Wire Wire Line
-	7800 2400 7800 4850
-Wire Wire Line
-	7700 2500 7700 4750
-Wire Wire Line
-	7600 2600 7600 4650
-Wire Wire Line
 	1400 2900 1000 2900
 Connection ~ 1000 2900
 Wire Wire Line
@@ -2065,4 +1950,189 @@ F 3 "~" H 8200 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8350 2550 8900 2550
+Wire Wire Line
+	10050 4250 10200 4250
+Wire Wire Line
+	10200 4250 10200 4200
+$Comp
+L SAM32-rescue:VBAT-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
+U 1 0 5C736103
+P 10200 4100
+AR Path="/5BCFDB7D/5C736103" Ref="#U$?"  Part="1" 
+AR Path="/5C736103" Ref="#U$0109"  Part="1" 
+F 0 "#U$0109" H 10200 4100 50  0001 C CNN
+F 1 "VBAT" H 10140 4140 42  0000 L BNN
+F 2 "" H 10200 4100 50  0001 C CNN
+F 3 "" H 10200 4100 50  0001 C CNN
+	1    10200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2500 7350 1450
+Wire Wire Line
+	7350 1450 6800 1450
+$Comp
+L Device:R_US R15
+U 1 1 5BD8D583
+P 7500 4650
+F 0 "R15" V 7450 4500 50  0000 C CNN
+F 1 "0" V 7450 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7540 4640 50  0001 C CNN
+F 3 "~" H 7500 4650 50  0001 C CNN
+	1    7500 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 4650 7150 4650
+Wire Wire Line
+	7350 4750 7150 4750
+Wire Wire Line
+	7350 4850 7150 4850
+Wire Wire Line
+	7650 4650 7650 2700
+Wire Wire Line
+	7650 2700 6150 2700
+Wire Wire Line
+	7750 4750 7750 2500
+Wire Wire Line
+	7750 2500 7350 2500
+Connection ~ 7350 2500
+Wire Wire Line
+	7850 2400 7850 4850
+Wire Wire Line
+	6150 2050 6150 2600
+Wire Wire Line
+	4300 2600 6150 2600
+Connection ~ 6150 2600
+Wire Wire Line
+	6150 2600 6150 2700
+Text Label 7850 4200 1    60   ~ 0
+TMS
+Text Label 7750 4200 1    60   ~ 0
+TCK
+Text Label 7650 4200 1    60   ~ 0
+TDI
+Wire Wire Line
+	4300 2400 6050 2400
+Wire Wire Line
+	6050 2400 6050 1950
+Wire Wire Line
+	6050 1950 6300 1950
+Connection ~ 6050 2400
+Wire Wire Line
+	6050 2400 7850 2400
+Wire Wire Line
+	6150 2050 6300 2050
+Wire Notes Line
+	4000 2750 4000 3350
+Wire Notes Line
+	4000 2750 4950 2750
+$Comp
+L Device:R_US R13
+U 1 1 5CBF9E86
+P 10800 5300
+F 0 "R13" V 10850 5450 50  0000 C CNN
+F 1 "10K" V 10850 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10840 5290 50  0001 C CNN
+F 3 "~" H 10800 5300 50  0001 C CNN
+	1    10800 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R14
+U 1 1 5CC3A8E9
+P 10650 5400
+F 0 "R14" V 10700 5550 50  0000 C CNN
+F 1 "10K" V 10700 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10690 5390 50  0001 C CNN
+F 3 "~" H 10650 5400 50  0001 C CNN
+	1    10650 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 5450 10050 5450
+Connection ~ 10800 5450
+Connection ~ 10650 5550
+Wire Wire Line
+	10650 5550 10050 5550
+$Comp
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
+U 1 0 5CC920E4
+P 10800 5050
+AR Path="/5BCFDB7D/5CC920E4" Ref="#+3V?"  Part="1" 
+AR Path="/5CC920E4" Ref="#+3V0104"  Part="1" 
+F 0 "#+3V0104" H 10800 5050 50  0001 C CNN
+F 1 "+3V3" H 10650 5100 59  0000 L BNN
+F 2 "" H 10800 5050 50  0001 C CNN
+F 3 "" H 10800 5050 50  0001 C CNN
+	1    10800 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L SAM32-rescue:+3V3-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue #+3V?
+U 1 0 5CC92D7A
+P 10650 5150
+AR Path="/5BCFDB7D/5CC92D7A" Ref="#+3V?"  Part="1" 
+AR Path="/5CC92D7A" Ref="#+3V0105"  Part="1" 
+F 0 "#+3V0105" H 10650 5150 50  0001 C CNN
+F 1 "+3V3" H 10500 5200 59  0000 L BNN
+F 2 "" H 10650 5150 50  0001 C CNN
+F 3 "" H 10650 5150 50  0001 C CNN
+	1    10650 5150
+	1    0    0    -1  
+$EndComp
+Text Label 8550 2550 0    60   ~ 0
+VIN
+Text Label 10100 4450 0    60   ~ 0
+VIN
+Wire Wire Line
+	10050 4450 10300 4450
+Wire Wire Line
+	3000 2700 3100 2700
+Text GLabel 3000 2700 0    59   Input ~ 0
+SD_CS
+Wire Wire Line
+	3100 3000 3000 3000
+Text GLabel 3000 3000 0    60   BiDi ~ 0
+D16
+Wire Wire Line
+	9000 5850 8900 5850
+Text GLabel 8900 5850 0    60   BiDi ~ 0
+D16
+Wire Wire Line
+	9000 5650 8900 5650
+Wire Wire Line
+	9000 5550 8900 5550
+Text GLabel 8900 5550 0    60   BiDi ~ 0
+RX
+Text GLabel 8900 5650 0    60   BiDi ~ 0
+TX
+Wire Wire Line
+	9000 5150 8800 5150
+Wire Wire Line
+	9000 5050 8800 5050
+Wire Wire Line
+	9000 4950 8800 4950
+Wire Wire Line
+	9000 4850 8800 4850
+Text GLabel 8800 5150 0    60   BiDi ~ 0
+D31
+Text GLabel 8800 4850 0    60   BiDi ~ 0
+D37
+Text GLabel 8800 4950 0    60   BiDi ~ 0
+D36
+Text GLabel 8800 5050 0    60   BiDi ~ 0
+D35
+Wire Wire Line
+	9000 4650 8900 4650
+Text GLabel 8900 4650 0    60   BiDi ~ 0
+D43
+Text GLabel 4400 3300 2    60   BiDi ~ 0
+IO36
+Wire Wire Line
+	4400 3300 4300 3300
+Text GLabel 4400 3200 2    60   BiDi ~ 0
+IO39
+Wire Wire Line
+	4300 3200 4400 3200
 $EndSCHEMATC
