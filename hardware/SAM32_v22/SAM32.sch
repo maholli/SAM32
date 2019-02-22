@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "SAM32"
+Date "2019-02-21"
+Rev "2.2"
+Comp "MHolliday"
+Comment1 "https://github.com/maholli/SAM32"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -239,7 +239,7 @@ F 3 "" H 9450 2250 50  0001 C CNN
 	1    9450 2250
 	1    0    0    1   
 $EndComp
-Text Notes 9750 2250 0    79   ~ 0
+Text Notes 9600 2350 0    79   ~ 0
 REGULATOR\n
 Text Label 9700 1600 0    10   ~ 0
 GND
@@ -311,7 +311,7 @@ Text Notes 8400 2200 0    49   ~ 0
 2.0K  = 500mA
 Text Notes 8400 2300 0    49   ~ 0
 1.0K  = 1000mA
-Text Notes 8200 700  0    79   ~ 0
+Text Notes 8200 850  0    79   ~ 0
 BATTERY CHARGING
 Text Label 2750 1950 0    59   ~ 0
 ~RESET
@@ -421,7 +421,7 @@ F 3 "" H 4300 5750 50  0001 C CNN
 	1    4300 5750
 	-1   0    0    -1  
 $EndComp
-Text Notes 3300 5600 0    79   ~ 0
+Text Notes 3200 5650 0    79   ~ 0
 MICROSD CARD
 $Comp
 L SAM32-rescue:503182-1853-503182-1853-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue J3
@@ -619,12 +619,6 @@ Wire Wire Line
 	1000 2300 1000 2600
 Text Label 2850 5150 0    50   ~ 0
 LED1
-Wire Wire Line
-	1650 5050 2200 5050
-Wire Wire Line
-	1650 4950 2100 4950
-Text Notes 1000 5900 0    79   ~ 0
-ESD PROT.
 Text Notes 850  4600 0    79   ~ 0
 USB CONN.
 Wire Wire Line
@@ -955,10 +949,6 @@ Wire Wire Line
 Wire Wire Line
 	4300 4500 4400 4500
 Wire Wire Line
-	6400 3100 6500 3100
-Wire Wire Line
-	6400 3200 6500 3200
-Wire Wire Line
 	4300 2700 4400 2700
 Wire Wire Line
 	3100 3300 3000 3300
@@ -972,10 +962,6 @@ Text GLabel 4400 3100 2    59   BiDi ~ 0
 AIN9
 Text GLabel 4400 3000 2    59   BiDi ~ 0
 AIN8
-Text GLabel 6500 3100 2    60   BiDi ~ 0
-AIN0
-Text GLabel 6500 3200 2    60   BiDi ~ 0
-AIN1
 Text Notes 4700 3100 0    59   ~ 0
 ADC1
 Text GLabel 3000 3300 0    60   BiDi ~ 0
@@ -1028,12 +1014,8 @@ Wire Notes Line
 	2850 1100 3400 1100
 Wire Notes Line
 	3400 1100 3400 1650
-Text Notes 7450 7500 0    79   ~ 16
-SAM32
-Text Notes 8100 6950 0    79   ~ 16
+Text Notes 7950 6750 0    79   ~ 16
 SAMD51 +ESP32-WROOM + microSD
-Text Notes 10550 7650 0    79   ~ 16
-2.1
 $Comp
 L SAM32-rescue:ESP32_WROOM32_SKINNY-Adafruit_HUZZAH32_ESP32_Feather-eagle-import-SAMD-10-rescue U3
 U 1 1 5BD2F1EA
@@ -1204,12 +1186,10 @@ F 3 "" H 10200 1700 50  0001 C CNN
 	1    10200 1700
 	1    0    0    -1  
 $EndComp
-Text Notes 9800 700  0    79   ~ 0
+Text Notes 9850 800  0    79   ~ 0
 LIPO CONN.
 Wire Wire Line
 	7650 4750 7750 4750
-Wire Wire Line
-	7350 2500 4300 2500
 Text Label 4400 2500 0    60   ~ 0
 TCK
 Text Label 4400 2600 0    60   ~ 0
@@ -1497,14 +1477,14 @@ Text GLabel 6200 1850 0    60   BiDi ~ 0
 IO26
 Wire Wire Line
 	6200 1850 6300 1850
-Text GLabel 8800 4450 0    60   BiDi ~ 0
+Text GLabel 8800 4650 0    60   BiDi ~ 0
 D42
 Text GLabel 8800 4250 0    60   BiDi ~ 0
 D44
 Wire Wire Line
 	9000 4250 8800 4250
 Wire Wire Line
-	9000 4450 8800 4450
+	9000 4650 8800 4650
 Text GLabel 8800 5250 0    59   Output ~ 0
 SCK
 Text GLabel 8800 5350 0    59   Output ~ 0
@@ -1643,37 +1623,6 @@ SWCLK
 Text Label 2850 1600 0    39   ~ 0
 SWDIO
 $Comp
-L SAM32-rescue:VUSB-power-SAMD-10-rescue #PWR0101
-U 1 1 5BD49F19
-P 850 5750
-F 0 "#PWR0101" H 850 5600 50  0001 C CNN
-F 1 "VUSB" H 865 5923 50  0000 C CNN
-F 2 "" H 850 5750 50  0001 C CNN
-F 3 "" H 850 5750 50  0001 C CNN
-	1    850  5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	850  6050 850  5750
-$Comp
-L SAM32-rescue:MAX3202EETT+T-symbols-lab64_SAM32-rescue-lab64_SAM32-rescue-SAMD-10-rescue U1
-U 1 1 5C54C068
-P 1300 6100
-F 0 "U1" H 1300 6150 60  0000 C CNN
-F 1 "MAX3202EETT+T" H 1550 5700 60  0000 C CNN
-F 2 "custom-footprints:WLP-4-0.5" H 2400 6340 60  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3202E-MAX3206E.pdf" H 1300 6100 60  0001 C CNN
-F 4 "DNI" H 1300 6000 50  0000 C CNN "DNI"
-	1    1300 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 5050 3100 5050
-Connection ~ 2200 5050
-Wire Wire Line
-	2100 4950 3100 4950
-Connection ~ 2100 4950
-$Comp
 L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
 U 1 0 5C6784F1
 P 8900 5750
@@ -1727,29 +1676,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 5600 1800 5550
 Connection ~ 1650 5600
-Wire Wire Line
-	2200 6350 2200 5050
-Wire Wire Line
-	1750 6350 2200 6350
-Wire Wire Line
-	850  6350 850  6500
-$Comp
-L SAM32-rescue:GND-Adafruit_Feather_M4_Express-eagle-import-lab64_SAM32-rescue-SAMD-10-rescue #U$?
-U 1 0 5C608AA6
-P 850 6600
-AR Path="/5BCFDB7D/5C608AA6" Ref="#U$?"  Part="1" 
-AR Path="/5C608AA6" Ref="#U$02"  Part="1" 
-F 0 "#U$02" H 850 6600 50  0001 C CNN
-F 1 "GND" H 750 6500 59  0000 L BNN
-F 2 "" H 850 6600 50  0001 C CNN
-F 3 "" H 850 6600 50  0001 C CNN
-	1    850  6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 6050 2100 4950
-Wire Wire Line
-	2100 6050 1750 6050
 $Comp
 L Device:Crystal X1
 U 1 1 5C84B658
@@ -1967,10 +1893,6 @@ F 3 "" H 10200 4100 50  0001 C CNN
 	1    10200 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7350 2500 7350 1450
-Wire Wire Line
-	7350 1450 6800 1450
 $Comp
 L Device:R_US R15
 U 1 1 5BD8D583
@@ -1988,41 +1910,12 @@ Wire Wire Line
 	7350 4750 7150 4750
 Wire Wire Line
 	7350 4850 7150 4850
-Wire Wire Line
-	7650 4650 7650 2700
-Wire Wire Line
-	7650 2700 6150 2700
-Wire Wire Line
-	7750 4750 7750 2500
-Wire Wire Line
-	7750 2500 7350 2500
-Connection ~ 7350 2500
-Wire Wire Line
-	7850 2400 7850 4850
-Wire Wire Line
-	6150 2050 6150 2600
-Wire Wire Line
-	4300 2600 6150 2600
-Connection ~ 6150 2600
-Wire Wire Line
-	6150 2600 6150 2700
 Text Label 7850 4200 1    60   ~ 0
 TMS
 Text Label 7750 4200 1    60   ~ 0
 TCK
 Text Label 7650 4200 1    60   ~ 0
 TDI
-Wire Wire Line
-	4300 2400 6050 2400
-Wire Wire Line
-	6050 2400 6050 1950
-Wire Wire Line
-	6050 1950 6300 1950
-Connection ~ 6050 2400
-Wire Wire Line
-	6050 2400 7850 2400
-Wire Wire Line
-	6150 2050 6300 2050
 Wire Notes Line
 	4000 2750 4000 3350
 Wire Notes Line
@@ -2124,8 +2017,8 @@ D36
 Text GLabel 8800 5050 0    60   BiDi ~ 0
 D35
 Wire Wire Line
-	9000 4650 8900 4650
-Text GLabel 8900 4650 0    60   BiDi ~ 0
+	9000 4450 8800 4450
+Text GLabel 8800 4450 0    60   BiDi ~ 0
 D43
 Text GLabel 4400 3300 2    60   BiDi ~ 0
 IO36
@@ -2135,4 +2028,44 @@ Text GLabel 4400 3200 2    60   BiDi ~ 0
 IO39
 Wire Wire Line
 	4300 3200 4400 3200
+Wire Wire Line
+	9000 4750 8800 4750
+Text GLabel 8800 4750 0    60   BiDi ~ 0
+D41
+Wire Wire Line
+	1650 5050 3100 5050
+Wire Wire Line
+	1650 4950 3100 4950
+Wire Wire Line
+	6300 2050 6200 2050
+Text GLabel 6200 2050 0    60   BiDi ~ 0
+TDI
+Wire Wire Line
+	6300 1950 6200 1950
+Text GLabel 6200 1950 0    60   BiDi ~ 0
+TMS
+Wire Wire Line
+	6800 1450 6900 1450
+Text GLabel 6900 1450 2    60   BiDi ~ 0
+TCK
+Wire Wire Line
+	4300 2400 6800 2400
+Wire Wire Line
+	4300 2600 6700 2600
+Wire Wire Line
+	4300 2500 6750 2500
+Text Notes 3500 1150 0    79   ~ 0
+SAMD51
+Wire Wire Line
+	7650 3400 6700 2600
+Wire Wire Line
+	7650 3400 7650 4650
+Wire Wire Line
+	7750 3350 6750 2500
+Wire Wire Line
+	7750 3350 7750 4750
+Wire Wire Line
+	7850 3300 6800 2400
+Wire Wire Line
+	7850 3300 7850 4850
 $EndSCHEMATC

@@ -1,0 +1,54 @@
+### Module positions - created on 2/21/2019 8:13:33 PM ###
+### Printed by Pcbnew version kicad (6.0.0-rc1-dev-1614-ge850a482d)
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                   Package                                                PosX       PosY       Rot  Side
+C8        4.5_nF                C_0402_1005Metric                                  -58.5370  -100.2095    0.0000  bottom
+C9        1uF                   C_0402_1005Metric                                  -63.6930   -94.1629  180.0000  bottom
+C10       1uF                   C_0402_1005Metric                                  -63.1800  -105.0300   90.0000  bottom
+C11       1uF                   C_0402_1005Metric                                  -64.5795   -92.2655  180.0000  bottom
+C12       10uF                  C_0402_1005Metric                                  -64.5795   -91.0590    0.0000  bottom
+C13       22pF                  C_0402_1005Metric                                  -79.7115   -95.2940  270.0000  bottom
+C14       22pF                  C_0402_1005Metric                                  -79.7115   -97.6945  270.0000  bottom
+J3        5031821852            MOLEX_503182-1853                                  -94.8055   -99.2505   90.0000  bottom
+L1        10uH                  L_0806_2016Metric                                  -66.9925   -92.2020   90.0000  bottom
+R1        10K                   R_0402_1005Metric                                  -78.4900  -103.4500  180.0000  bottom
+R2        2.2K                  R_0402_1005Metric                                  -61.6458   -92.8370    0.0000  bottom
+R8        1M                    R_0402_1005Metric                                  -58.5370  -101.2890    0.0000  bottom
+R9        10K                   R_0402_1005Metric                                  -61.7220   -94.2035    0.0000  bottom
+R10       10K                   R_0402_1005Metric                                  -69.6595   -91.8210    0.0000  bottom
+R11       10K                   R_0402_1005Metric                                  -78.4860  -105.9900    0.0000  bottom
+R12       10K                   R_0402_1005Metric                                  -78.4900  -104.5600    0.0000  bottom
+R13       10K                   R_0402_1005Metric                                  -84.4200  -106.0900    0.0000  bottom
+R14       10K                   R_0402_1005Metric                                  -84.4500  -104.5900  180.0000  bottom
+R15       0                     R_0402_1005Metric                                  -79.2515   -92.0800    0.0000  bottom
+R16       0                     R_0402_1005Metric                                  -81.9850   -93.1600    0.0000  bottom
+R17       0                     R_0402_1005Metric                                  -79.2550   -93.2800    0.0000  bottom
+U2        ATSAMD51J20A-AU       QFP50P1200X1200X120-64N                            -69.5325   -99.4410  180.0000  bottom
+X1        ST3215SB              Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm   -77.8510   -96.0120   90.0000  bottom
+C1        1uF                   C_0402_1005Metric                                   67.8688   -97.0178  180.0000  top
+C2        10uF                  C_0402_1005Metric                                   67.8890   -95.9612    0.0000  top
+C3        1uF                   C_0402_1005Metric                                   70.1953   -94.1324  180.0000  top
+C4        10uF                  C_0402_1005Metric                                   69.8297   -96.7943   90.0000  top
+C5        1uF                   C_0402_1005Metric                                   71.7296   -99.0600    0.0000  top
+C6        10uF                  C_0402_1005Metric                                   73.2122   -99.3700  270.0000  top
+C7        10uF                  C_0402_1005Metric                                   68.5292  -103.9622  180.0000  top
+C15       0.1uF                 C_0402_1005Metric                                   72.9615  -105.7275    0.0000  top
+CHRG1     ORANGE_LED            LED_0402_1005Metric                                 70.0532  -104.4956   90.0000  top
+D1        MBR120                D_SC-80                                             67.6400   -98.6600  180.0000  top
+D2        WS2812B               LED3535                                             63.7700  -104.3900    0.0000  top
+GRN1      GREEN_LED             LED_0603_1608Metric                                 59.0296   -93.7558  180.0000  top
+J1        10118194-0001LF       10118194-0001LF                                     58.1609   -99.4054  270.0000  top
+J4        B2B-PH-SM4-TB         JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal    64.7192   -92.1512  180.0000  top
+J5        NPTC072KFMS-RC        NPPC_0.100in_headers_2ROW                           78.8035   -99.5045   90.0000  top
+Q3        DMG341                SOT23-R                                             67.7672  -101.1174    0.0000  top
+R3        100K                  R_0402_1005Metric                                   71.4732  -100.0506    0.0000  top
+R4        10K                   R_0402_1005Metric                                   72.7202   -94.1324  180.0000  top
+R5        100K                  R_0402_1005Metric                                   74.2315  -103.8225  270.0000  top
+R6        10K                   R_0402_1005Metric                                   74.2315  -101.6000  270.0000  top
+R7        1K                    R_0402_1005Metric                                   71.5264  -104.2670  180.0000  top
+SW1       KMR231NG_LFS          BTN_KMR2_4.6X2.8                                    64.2000   -99.7500  270.0000  top
+U3        ESP32_WROOM32_SKINNY  WROOM32_SKINNY                                      96.7461   -99.4054  270.0000  top
+U4        MCP73831T-2ACI/OT     SOT23-5                                             71.5010  -102.0445  270.0000  top
+U5        AP2112K-3.3TRG1       SOT23-5                                             72.6440   -96.6470   90.0000  top
+## End
