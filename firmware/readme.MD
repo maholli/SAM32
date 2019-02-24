@@ -53,7 +53,7 @@ open terminal and get into REPL (if possible)
 1. Drag [update-bootloader-SAM32_v2.uf2](https://github.com/maholli/SAM32/blob/master/firmware/update-bootloader-SAM32_v1.uf2) onto the drive while in bootloader mode, after it's complete, you may need to toggle the reset button in order for `SAM32BOOT` to present
 2. Once you're able to see `SAM32BOOT`, drag [firmware_v2a.uf2](https://github.com/maholli/SAM32/blob/master/firmware/firmware_v1g.uf2), it should now automatically reset.
 
-## Programming the esp32
+## Programming Micropython onto the esp32
 
 The SAMD51 can be used to program the ESP32 module with micropython as well! To do this, we're going to leverage (modified) [adafruit miniESPtool](https://github.com/adafruit/Adafruit_CircuitPython_miniesptool) and the SD card. (assuming circuitpython is already running on the SAMD51)
 1. If applicable, unplug the SAM32 board from your computer
@@ -68,7 +68,7 @@ The SAMD51 can be used to program the ESP32 module with micropython as well! To 
    import esp_prog
    ```
 
-   and then press the enter key. The esp32 programming process now begin. You can watch the progress in the terminal. **DO NOT REMOVE POWER** during programming, it can take up to 30 minutes!! (we should optimize this in the future)
+   and then press the enter key. The esp32 programming process now begin. You can watch the progress in the terminal. **DO NOT REMOVE POWER** during programming, it can take up to 30 minutes!! (we can and should optimize this in the future)
 
 5. The serial terminal will indicate when programming is finished by reaching the end of the main.py script.
 
@@ -89,3 +89,59 @@ ap_if.config('all')
 ```
 10. The esp32 should now be hosting an open wifi access-point named "ESP_XXXXX" (note it wont have internet access if you connect to it.)   
 11. To learn more about the version of micropython running on the ESP32, see https://github.com/loboris/MicroPython_ESP32_psRAM_LoBo/wiki
+
+## Programming Arduino onto the esp32 
+
+You can also program the ESP32 with arduino! We'll use the same method explained above, but substitute the binary files that were put on the SD card for arduino ones. 
+
+### Preparing your arduino files (windows)
+
+We start by compiling (verifying button) the arduino sketch.  When choosing pins and programming the ESP32, remember that the SAM32 really just has a WROOM32 module attached, so you can still use all the documentation and pinout information available online (like the pinout below):
+
+<p align="middle">
+  <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/wroom_pinout.PNG">
+</p>
+
+1. Open arduino, go to File -> Preferences, and make sure you have the "compilation" and "upload" are box checked under "Show verbose output during..." Then click OK in the Preferences window.
+
+2. **If you haven't programmed an ESP32 in arduino before:**
+
+   * [Follow the instructions here for getting arduino setup for ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+
+3. With your sketch open in arduino, go to Tools -> Board: -> and select "ESP32 Dev Module" from the dropdown list. Make sure all the other options look like the image below.
+
+   <p align="middle">
+     <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/toolsMenu.PNG">
+   </p>
+
+4. Even through we don't have a board plugged into our computer yet, click the "Upload" button in the top left corner (arrow pointing right) to compile and build your code.  (In this tutorial, I will use the File -> Examples -> ESP32 -> ChipID -> GetChipID example sketch)
+
+5. In arduino's output window, you should see a bunch of stuff scroll by, eventually ending with something that looks like this (more or less):
+
+   <p align="middle">
+     <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/doneCompiling.PNG">
+   </p>
+
+6. Copy and paste the text that is highlighted in the image above to a notepad or text-editor where it's easier to work with.
+
+7. Now we need to search for where each file is stored on your computer. This will vary for everyone. Below shows how I've manipulated the text we copied earlier to make it easier to see:
+
+   <p align="middle">
+     <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/fileHunting.PNG">
+   </p>
+
+8. Copy all 4 (or more) files from their respective directories onto the SAM32 SD card and then install the card into your board.
+
+9. Plug the SAM32 into your computer and copy the "adafruit_miniesptool.py" and "esp_ardu.py" files from this GitHub directory onto your SAM32.
+
+10. Open the "esp_ardu.py" text file and edit the last few lines to reflect the same file names you found earlier. 
+
+11. Now open the serial console and type:
+
+    ```
+    import esp_prog
+    ```
+
+    and then press the enter key. The esp32 programming process now begin. You can watch the progress in the terminal. **DO NOT REMOVE POWER** during programming, it can take quite a while!! (we can and should optimize this in the future)
+
+12. The serial terminal will indicate when programming is finished by reaching the end of the "esp_ardu.py" script.
