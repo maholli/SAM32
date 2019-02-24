@@ -7,9 +7,6 @@ import adafruit_miniesptool
 
 print("ESP32 mini prog")
 
-
-
-uart = busio.UART(board.TX, board.RX, baudrate=115200, timeout=5)
 resetpin = DigitalInOut(board.RTS)
 gpio0pin = DigitalInOut(board.DTR)
 resetpin.direction = Direction.OUTPUT
@@ -19,17 +16,12 @@ resetpin.value = 1
 gpio0pin.value = 1
 
 import adafruit_sdcard, storage
-try:
-    spi = busio.SPI(board.SCK, board.MOSI, board.MISO)
-    cs = DigitalInOut(board.xSDCS)
-    sdcard = adafruit_sdcard.SDCard(spi, cs)
-    vfs = storage.VfsFat(sdcard)
-    storage.mount(vfs, "/sd")
-    SD_IN = True
-except OSError:
-    SD_IN = False
-    print('\n---- No SD card found, proceeding without it ----\n')
-    pass
+
+spi = busio.SPI(board.SCK, board.MOSI, board.MISO)
+cs = DigitalInOut(board.xSDCS)
+sdcard = adafruit_sdcard.SDCard(spi, cs)
+vfs = storage.VfsFat(sdcard)
+storage.mount(vfs, "/sd")
 
 def print_directory(path, tabs=0):
     for file in os.listdir(path):
@@ -53,10 +45,8 @@ def print_directory(path, tabs=0):
         if isdir:
             print_directory(path + "/" + file, tabs + 1)
 
-print_directory("/sd")
-
 time.sleep(0.5)
-
+uart = busio.UART(board.TX, board.RX, baudrate=115200, timeout=100)
 esptool = adafruit_miniesptool.miniesptool(uart, gpio0pin, resetpin, flashsize=4*1024*1024)
 esptool.debug = True
 time.sleep(0.5)
@@ -67,13 +57,13 @@ print("Synced")
 print("Found:", esptool.chip_name)
 if esptool.chip_name != "ESP32":
     raise RuntimeError("for ESP32 only")
-# esptool.baudrate = 912600
+esptool.baudrate = 912600
 print("MAC ADDR: ", [hex(i) for i in esptool.mac_addr])
-esptool.flash_file('/sd/MicroPython.bin', 0x10000)
 
 esptool.flash_file('/sd/bootloader.bin', 0x1000)
 esptool.flash_file('/sd/phy_init_data.bin', 0xf000)
 esptool.flash_file('/sd/partitions_mpy.bin', 0x8000)
+esptool.flash_file('/sd/MicroPython.bin', 0x10000)
 
 esptool.reset()
 time.sleep(0.5)
