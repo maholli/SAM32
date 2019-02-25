@@ -101,7 +101,7 @@ class miniesptool: # pylint: disable=invalid-name
     boards, so you can burn ESP firmware direct from the CPy disk drive. Handy
     when you have an ESP module wired to a board and need to upload new AT
     firmware. Its slow! Expect a few minutes when programming 1 MB flash."""
-    FLASH_WRITE_SIZE = 0x200
+    FLASH_WRITE_SIZE = 0x200 # Changed from default 0x400 (see github issue)
     FLASH_SECTOR_SIZE = 0x1000 # Flash sector size, minimum unit of erase.
     ESP_ROM_BAUD = 115200
 
