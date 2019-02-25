@@ -99,7 +99,7 @@ You can also program the ESP32 with arduino! We'll use the same method explained
 We start by compiling (verifying button) the arduino sketch.  When choosing pins and programming the ESP32, remember that the SAM32 really just has a WROOM32 module attached, so you can still use all the documentation and pinout information available online (like the pinout below):
 
 <p align="middle">
-  <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/wroom_pinout.PNG">
+  <img width="700" src="https://github.com/maholli/SAM32/blob/master/references/wroom_pinout.png">
 </p>
 
 1. Open arduino, go to File -> Preferences, and make sure you have the "compilation" and "upload" are box checked under "Show verbose output during..." Then click OK in the Preferences window.
@@ -111,7 +111,7 @@ We start by compiling (verifying button) the arduino sketch.  When choosing pins
 3. With your sketch open in arduino, go to Tools -> Board: -> and select "ESP32 Dev Module" from the dropdown list. Make sure all the other options look like the image below.
 
    <p align="middle">
-     <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/toolsMenu.PNG">
+     <img width="200" src="https://github.com/maholli/SAM32/blob/master/references/toolsMenu.PNG">
    </p>
 
 4. Even through we don't have a board plugged into our computer yet, click the "Upload" button in the top left corner (arrow pointing right) to compile and build your code.  (In this tutorial, I will use the File -> Examples -> ESP32 -> ChipID -> GetChipID example sketch)
