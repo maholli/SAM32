@@ -1,7 +1,7 @@
 # SAM32
 
 <p align="middle">
-  <img width="400" src="https://github.com/maholli/SAM32/blob/master/references/boardv2.PNG"><img width="400" src="https://github.com/maholli/SAM32/blob/master/references/board.png">
+  <img width="700" src="https://github.com/maholli/SAM32/blob/master/references/boardv2.PNG">
 </p>
 
 
