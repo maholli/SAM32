@@ -1,8 +1,9 @@
 # SAM32
 
 <p align="middle">
-  <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/boardv2.PNG">
+  <img width="400" src="https://github.com/maholli/SAM32/blob/master/references/boardv2.PNG"><img width="400" src="https://github.com/maholli/SAM32/blob/master/references/board.PNG">
 </p>
+
 
 :star: see firmware directory for programming & usage instructions 
 
@@ -18,7 +19,7 @@
 Compatibility with [Adafruit Feather Wings](https://www.adafruit.com/category/814) makes adding sound, displays, and even GPS a breeze for the SAM32.
 
 <p align="middle">
-  <img width="700" src="https://github.com/maholli/SAM32/blob/master/references/wings.png">
+  <img width="800" src="https://github.com/maholli/SAM32/blob/master/references/wings.png">
 </p>
 
 ## Want to Help Out?
