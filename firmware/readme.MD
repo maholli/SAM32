@@ -1,17 +1,17 @@
 # SAM32
 
 <p align="middle">
-  <img width="800" src="https://github.com/maholli/SAM32/blob/master/references/board.png">
+  <img width="800" src="./references/board.png">
 </p>
 
 ## This board can be programmed with arduino or circuitpython (default).
 
 * If you'd like to switch to arduino, plug it into your computer via USB, and quickly double-click the "RST" button. A new drive called SAM32BOOT will appear. You can now flash it normally using the Arduino IDE and choosing "Adafruit Feather M4" as the board.
-* To switch back to circuitpython, put the board into SAM32BOOT mode again, and drag the [firmware_v2a.uf2](https://github.com/maholli/SAM32/blob/master/firmware/firmware_v2a.uf2) file onto the drive. It will automatically reset once the transfer is complete.
+* To switch back to circuitpython, put the board into SAM32BOOT mode again, and drag the [firmware](./firmware_v2b.uf2) file onto the drive. It will automatically reset once the transfer is complete.
 
 ## Useful resources
 
-* [Circuitpython libraries](https://github.com/maholli/SAM32/tree/master/firmware/useful_libraries)
+* [Circuitpython libraries](./firmware/useful_libraries)
 * The [adafruit circuitpython playground page](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-playground) has a lot of good tutorials for doing basic microcontroller things in CP
 * [Built-in "python" modules](https://circuitpython.readthedocs.io/en/latest/shared-bindings/index.html#modules) available in circuitpython
 * [Helpful interactive BOM](https://maholli.github.io/SAM32/) for ease of assembly
@@ -35,7 +35,7 @@ Nearly any terminal program can communicate with the SAM32 (baud=112500, data=8 
 6. Return to PuTTY and enter "COM___" in the "Serial Line" field, and then click "Open"
 
 ## If you soldered a fresh SAMD51, then a UF2-compatible bootloader must first be flashed.
-1.  flash [bootloader-SAM32_v2.bin](https://github.com/maholli/SAM32/blob/master/firmware/bootloader-SAM32_v2.bin) using JTAG via Atmel Studio 7 (or equivalent).
+1.  flash [bootloader.bin](./firmware/bootloader-SAM32_v2.bin) using JTAG via Atmel Studio 7 (or equivalent).
  * Necessary JTAG connections: TCK, TDIO, GND, VREF
  * If atmel studio 7 reports "unable to halt CPU," click reset button twice in quick succession. and try to read the device signature again. keep trying this process until it doesn't encounter the error
 ```
@@ -45,22 +45,22 @@ open terminal and get into REPL (if possible)
 >>> import storage
 >>> storage.erase_filesystem()
 ```
-2. Once you are able to put the board into bootloader mode (double tap reset button), it will present as a `SAM32BOOT` USB device. Drag the [firmware_v2a.uf2](https://github.com/maholli/SAM32/blob/master/firmware/firmware_v2a.uf2) file onto the drive and it will reboot upon successful upload.
-3. Congratulations! You should now see a `CIRCUITPY` USB device. Copy [blink.py](https://github.com/maholli/SAM32/blob/master/firmware/blink.py) onto the USB drive and rename to "main.py" to run a simple blink routine. 
+2. Once you are able to put the board into bootloader mode (double tap reset button), it will present as a `SAM32BOOT` USB device. Drag the [firmware](./firmware/firmware_v2b.uf2) file onto the drive and it will reboot upon successful upload.
+3. Congratulations! You should now see a `CIRCUITPY` USB device. Copy [blink.py](./firmware/blink.py) onto the USB drive and rename to "main.py" to run a simple blink routine. 
 
 ## If your board says `METROM4BOOT` rather than `SAM32BOOT`
 
-1. Drag [update-bootloader-SAM32_v2.uf2](https://github.com/maholli/SAM32/blob/master/firmware/update-bootloader-SAM32_v1.uf2) onto the drive while in bootloader mode, after it's complete, you may need to toggle the reset button in order for `SAM32BOOT` to present
-2. Once you're able to see `SAM32BOOT`, drag [firmware_v2a.uf2](https://github.com/maholli/SAM32/blob/master/firmware/firmware_v1g.uf2), it should now automatically reset.
+1. Drag [update-bootloader-SAM32_v2.uf2](./firmware/update-bootloader-SAM32_v2.uf2) onto the drive while in bootloader mode, after it's complete, you may need to toggle the reset button in order for `SAM32BOOT` to present
+2. Once you're able to see `SAM32BOOT`, drag [firmware](./firmware_v2b.uf2), it should now automatically reset.
 
 ## Programming Micropython onto the esp32
 
 The SAMD51 can be used to program the ESP32 module with micropython as well! To do this, we're going to leverage (modified) [adafruit miniESPtool](https://github.com/adafruit/Adafruit_CircuitPython_miniesptool) and the SD card. (assuming circuitpython is already running on the SAMD51)
 1. If applicable, unplug the SAM32 board from your computer
 
-2. Copy the contents of [esp32_firmware/sdcard](https://github.com/maholli/SAM32/blob/master/firmware/esp32_firmware/sdcard/) onto an SD card and insert into the SAM32 board.
+2. Copy the contents of [esp32_firmware/sdcard](./firmware/esp32_firmware/sdcard/) onto an SD card and insert into the SAM32 board.
 
-3. Plug the SAM32 board into your computer and copy everything in [esp32_firmware](https://github.com/maholli/SAM32/blob/master/firmware/esp32_firmware/) onto the CIRCUITPY **except** the /sdcard/ directory. 
+3. Plug the SAM32 board into your computer and copy everything in [esp32_firmware](./firmware/esp32_firmware/) onto the CIRCUITPY **except** the /sdcard/ directory. 
 
 4. Now open the serial console and type:
 
@@ -72,7 +72,7 @@ The SAMD51 can be used to program the ESP32 module with micropython as well! To 
 
 5. The serial terminal will indicate when programming is finished by reaching the end of the main.py script.
 
-6. Once programming is complete with no errors, copy [esp_talk.py](https://github.com/maholli/SAM32/blob/master/firmware/esp_talk.py) onto the CIRCUITPY drive and rename it to main.py (overwriting the previous main.py). 
+6. Once programming is complete with no errors, copy [esp_talk.py](./firmware/esp_talk.py) onto the CIRCUITPY drive and rename it to main.py (overwriting the previous main.py). 
 
 7. With the serial terminal open, the sketch will now print the contents of the SD card, then power-on the esp32 and print its boot messages. (if you aren't able to open the serial terminal in time to see the messages, press Ctrl+D twice once you've able to get into your terminal window)
 
@@ -99,7 +99,7 @@ You can also program the ESP32 with arduino! We'll use the same method explained
 We start by compiling (verifying button) the arduino sketch.  When choosing pins and programming the ESP32, remember that the SAM32 really just has a WROOM32 module attached, so you can still use all the documentation and pinout information available online (like the pinout below):
 
 <p align="middle">
-  <img width="700" src="https://github.com/maholli/SAM32/blob/master/references/wroom_pinout.png">
+  <img width="700" src="./references/wroom_pinout.png">
 </p>
 
 1. Open arduino, go to File -> Preferences, and make sure you have the "compilation" and "upload" are box checked under "Show verbose output during..." Then click OK in the Preferences window.
@@ -111,7 +111,7 @@ We start by compiling (verifying button) the arduino sketch.  When choosing pins
 3. With your sketch open in arduino, go to Tools -> Board: -> and select "ESP32 Dev Module" from the dropdown list. Make sure all the other options look like the image below.
 
    <p align="middle">
-     <img width="200" src="https://github.com/maholli/SAM32/blob/master/references/toolsMenu.PNG">
+     <img width="200" src="./references/toolsMenu.PNG">
    </p>
 
 4. Even through we don't have a board plugged into our computer yet, click the "Upload" button in the top left corner (arrow pointing right) to compile and build your code.  (In this tutorial, I will use the File -> Examples -> ESP32 -> ChipID -> GetChipID example sketch)
@@ -119,7 +119,7 @@ We start by compiling (verifying button) the arduino sketch.  When choosing pins
 5. In arduino's output window, you should see a bunch of stuff scroll by, eventually ending with something that looks like this (more or less):
 
    <p align="middle">
-     <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/doneCompiling.PNG">
+     <img width="600" src="./references/doneCompiling.PNG">
    </p>
 
 6. Copy and paste the text that is highlighted in the image above to a notepad or text-editor where it's easier to work with.
@@ -127,7 +127,7 @@ We start by compiling (verifying button) the arduino sketch.  When choosing pins
 7. Now we need to search for where each file is stored on your computer. This will vary for everyone. Below shows how I've manipulated the text we copied earlier to make it easier to see:
 
    <p align="middle">
-     <img width="600" src="https://github.com/maholli/SAM32/blob/master/references/fileHunting.PNG">
+     <img width="600" src="./references/fileHunting.PNG">
    </p>
 
 8. Copy all 4 (or more) files from their respective directories onto the SAM32 SD card and then install the card into your board.
