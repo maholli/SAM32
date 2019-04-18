@@ -7,11 +7,11 @@
 ## This board can be programmed with arduino or circuitpython (default).
 
 * If you'd like to switch to arduino, plug it into your computer via USB, and quickly double-click the "RST" button. A new drive called SAM32BOOT will appear. You can now flash it normally using the Arduino IDE and choosing "Adafruit Feather M4" as the board.
-* To switch back to circuitpython, put the board into SAM32BOOT mode again, and drag the [firmware](../firmware_v2b.uf2) file onto the drive. It will automatically reset once the transfer is complete.
+* To switch back to circuitpython, put the board into SAM32BOOT mode again, and drag the [firmware](../firmware/firmware_v2b.uf2) file onto the drive. It will automatically reset once the transfer is complete.
 
 ## Useful resources
 
-* [Circuitpython libraries](./firmware/useful_libraries)
+* [Circuitpython libraries](../firmware/useful_libraries)
 * The [adafruit circuitpython playground page](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-playground) has a lot of good tutorials for doing basic microcontroller things in CP
 * [Built-in "python" modules](https://circuitpython.readthedocs.io/en/latest/shared-bindings/index.html#modules) available in circuitpython
 * [Helpful interactive BOM](https://maholli.github.io/SAM32/) for ease of assembly
@@ -51,7 +51,7 @@ open terminal and get into REPL (if possible)
 ## If your board says `METROM4BOOT` rather than `SAM32BOOT`
 
 1. Drag [update-bootloader-SAM32_v2.uf2](../firmware/update-bootloader-SAM32_v2.uf2) onto the drive while in bootloader mode, after it's complete, you may need to toggle the reset button in order for `SAM32BOOT` to present
-2. Once you're able to see `SAM32BOOT`, drag [firmware](../firmware_v2b.uf2), it should now automatically reset.
+2. Once you're able to see `SAM32BOOT`, drag [firmware](../firmware/firmware_v2b.uf2), it should now automatically reset.
 
 ## Programming Micropython onto the esp32
 
