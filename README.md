@@ -1,9 +1,9 @@
 # SAM32
 
 <p align="middle">
-  <img width="400" src="https://github.com/maholli/SAM32/blob/master/references/boardv2.PNG">
+  <img width="400" src="./references/boardv2.PNG">
   <br><br>
-  <img width="700" src="https://github.com/maholli/SAM32/blob/master/references/sam32_block.PNG">
+  <img width="700" src="./references/sam32_block.PNG">
 </p>
 
 
@@ -14,14 +14,14 @@
 **You can control this board with python or arduino! A basic text-editor is all you need to get started.**
 
 * to learn more about interacting with microcontrollers through python, start here: [adafruit: what is circuitpython?](https://learn.adafruit.com/adafruit-circuit-playground-express/what-is-circuitpython)
-* for details on going back and forth between circuitpython and arduino, see [firmware.](https://github.com/maholli/SAM32/blob/master/firmware/readme.MD#this-board-can-be-programmed-with-arduino-or-circuitpython-default)
+* for details on going back and forth between circuitpython and arduino, see [firmware.](./firmware/readme.MD#this-board-can-be-programmed-with-arduino-or-circuitpython-default)
 
 ## Easily Add Hardware Capability
 
 Compatibility with [Adafruit Feather Wings](https://www.adafruit.com/category/814) makes adding sound, displays, and even GPS a breeze for the SAM32.
 
 <p align="middle">
-  <img width="800" src="https://github.com/maholli/SAM32/blob/master/references/wings.png">
+  <img width="800" src="./references/wings.png">
 </p>
 
 ## Want to Help Out?
