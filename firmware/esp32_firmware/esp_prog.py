@@ -46,7 +46,7 @@ def print_directory(path, tabs=0):
             print_directory(path + "/" + file, tabs + 1)
 
 time.sleep(0.5)
-uart = busio.UART(board.TX, board.RX, baudrate=115200, timeout=100)
+uart = busio.UART(board.TX2, board.RX2, baudrate=115200, timeout=100)
 esptool = adafruit_miniesptool.miniesptool(uart, gpio0pin, resetpin, flashsize=4*1024*1024)
 esptool.debug = True
 time.sleep(0.5)
