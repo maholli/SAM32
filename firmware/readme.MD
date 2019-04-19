@@ -2,6 +2,8 @@
 
 <p align="middle">
   <img width="800" src="../references/board.png">
+  <br><br>
+  <img width="1000" src="../references/sam32_block.PNG">
 </p>
 
 ## This board can be programmed with arduino or circuitpython (default).
