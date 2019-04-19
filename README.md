@@ -3,7 +3,7 @@
 <p align="middle">
   <img width="400" src="./references/boardv2.PNG">
   <br><br>
-  <img width="700" src="./references/sam32_block.PNG">
+  <img width="1000" src="./references/sam32_block.PNG">
 </p>
 
 
