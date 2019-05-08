@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:SAM32-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -969,9 +968,9 @@ D19
 Text GLabel 3000 3400 0    60   BiDi ~ 0
 D20
 Text GLabel 3000 3600 0    60   BiDi ~ 0
-RX
+RX1
 Text GLabel 3000 3500 0    60   BiDi ~ 0
-TX
+TX1
 Text GLabel 3000 3700 0    60   BiDi ~ 0
 D31
 Text GLabel 3000 3900 0    60   BiDi ~ 0
@@ -1982,9 +1981,9 @@ Wire Wire Line
 Wire Wire Line
 	9000 5550 8900 5550
 Text GLabel 8900 5550 0    60   BiDi ~ 0
-RX
+RX2
 Text GLabel 8900 5650 0    60   BiDi ~ 0
-TX
+TX2
 Wire Wire Line
 	9000 5150 8800 5150
 Wire Wire Line
@@ -2068,4 +2067,8 @@ Wire Wire Line
 	10050 4250 10200 4250
 Text GLabel 10200 4250 2    60   BiDi ~ 0
 D38
+Text Label 4350 4000 0    60   ~ 0
+TX2
+Text Label 4350 4100 0    60   ~ 0
+RX2
 $EndSCHEMATC
