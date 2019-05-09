@@ -18,6 +18,6 @@ Programming the ESP32 with this SAM32-specific firmware: [NINA_W102-1.3.0.bin](.
 ### Testing the ESP32SPI
 
 1. Copy [esp32spi_simpletest.py](./ESP32SPI/esp32spi_simpletest.py) onto your CIRCUITPY drive 
-2. Update `esp.connect_AP(b'MY_SSID_NAME', b'MY_SSID_PASSWORD')` with your specific wifi details
+2. Edit the file and update `esp.connect_AP(b'MY_SSID_NAME', b'MY_SSID_PASSWORD')` with your specific wifi details
 3. Rename the file to main.py
 4. Observe the output in the serial monitor
