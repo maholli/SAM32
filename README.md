@@ -1,7 +1,7 @@
 # SAM32
 
 <p align="middle">
-  <img width="500" src="./references/top2.jpg"><img width="500" src="./references/bottom.jpg">
+  <img width="400" src="./references/top2.jpg"><img width="400" src="./references/bottom.jpg">
   <br><br>
   <img width="1000" src="./references/sam32_block.PNG">
 </p>
