@@ -60,7 +60,7 @@ if esptool.chip_name != "ESP32":
 esptool.baudrate = 912600
 print("MAC ADDR: ", [hex(i) for i in esptool.mac_addr])
 
-esptool.flash_file('/sd/NINA_W102-1.3.0.bin', 0x00)
+esptool.flash_file('/sd/NINA_W102-1.3.0_sam32.bin', 0x00)
 
 esptool.reset()
 time.sleep(0.5)
