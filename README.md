@@ -1,7 +1,7 @@
 # SAM32
 
 <p align="middle">
-  <img width="400" src="./references/boardv2.PNG">
+  <img width="500" src="./references/top2.jpg"><img width="500" src="./references/bottom.jpg">
   <br><br>
   <img width="1000" src="./references/sam32_block.PNG">
 </p>
@@ -27,4 +27,10 @@ Compatibility with [Adafruit Feather Wings](https://www.adafruit.com/category/81
 ## Want to Help Out?
 
 visit https://github.com/maholli/SAM32/projects/1 for a current list of software tasks in need of YOUR help! :point_left:
+
+<br><br><br><br>
+
+#### Thank you Adafruit for the time/money spent developing CircuitPython! (and for the beautiful photos of the SAM32)
+
+
 
