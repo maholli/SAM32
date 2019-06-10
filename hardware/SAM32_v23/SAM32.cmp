@@ -1,0 +1,459 @@
+Cmp-Mod V01 Created by PcbNew   date = 12/8/2018 5:55:23 PM
+
+BeginCmp
+TimeStamp = 5BD3C25D
+Path = /5BD0C022
+Reference = C7;
+ValeurCmp = 10uF;
+IdModule  = Capacitor_SMD:C_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD3BFA8
+Path = /5BD0BFF9
+Reference = SW1;
+ValeurCmp = KMR231NG LFS;
+IdModule  = Adafruit Feather M4 Express:BTN_KMR2_4.6X2.8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD62EC7
+Path = /5BD0C014
+Reference = CHRG1;
+ValeurCmp = ORANGE LED;
+IdModule  = LED_SMD:LED_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BDA99A8
+Path = /5BD13B57
+Reference = C12;
+ValeurCmp = 10uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C0D4CF6
+Path = /5BD0AFB6
+Reference = C6;
+ValeurCmp = 10uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C0CFE46
+Path = /5BD0AF5C
+Reference = C4;
+ValeurCmp = 10uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BF21124
+Path = /5BD0AF76
+Reference = C2;
+ValeurCmp = 10uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C0C90BE
+Path = /5C042500
+Reference = R4;
+ValeurCmp = 10K;
+IdModule  = Resistor_SMD:R_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C0DA94C
+Path = /5C0DD42D
+Reference = D2;
+ValeurCmp = WS2812B;
+IdModule  = LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD8CA0B
+Path = /5BEAAC6F
+Reference = J5;
+ValeurCmp = NPTC072KFMS-RC;
+IdModule  = custom-footprints:NPPC_0.100in_headers_2ROW;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BDA2759
+Path = /5BFAEBA9
+Reference = J7;
+ValeurCmp = Conn_01x17;
+IdModule  = Connector_PinSocket_2.54mm:PinSocket_1x17_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BDCA1CB
+Path = /5C2AA09B
+Reference = J2;
+ValeurCmp = Conn_01x14;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BF1F6C4
+Path = /5C6BD422
+Reference = R8;
+ValeurCmp = 1M;
+IdModule  = Resistor_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD3FAC9
+Path = /5C02CA8D
+Reference = R10;
+ValeurCmp = 10K;
+IdModule  = Resistor_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BEE5CFF
+Path = /5C3CF7C0
+Reference = TP2;
+ValeurCmp = TESTPOINTPAD2MM;
+IdModule  = TestPoint:TestPoint_Pad_D1.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD89943
+Path = /5C152BF9
+Reference = R2;
+ValeurCmp = 2.2K;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C0D4315
+Path = /5BD0AF63
+Reference = C5;
+ValeurCmp = 1uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD57A80
+Path = /5BD0AF9C
+Reference = U5;
+ValeurCmp = AP2112K-3.3TRG1;
+IdModule  = Adafruit Feather M4 Express:SOT23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD2033D
+Path = /5BD8D58A
+Reference = R16;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BF25695
+Path = /5BD0AFD0
+Reference = C3;
+ValeurCmp = 1uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C0DA864
+Path = /5BD0AFEA
+Reference = Q3;
+ValeurCmp = DMG341;
+IdModule  = Adafruit Feather M4 Express:SOT23-R;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BF22B8A
+Path = /5BD13B6B
+Reference = C11;
+ValeurCmp = 1uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD6D1B0
+Path = /5C06E313
+Reference = R9;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD5783B
+Path = /5BF975A7
+Reference = R13;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD53F79
+Path = /5BF9748E
+Reference = R14;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD3E071
+Path = /5BD8D583
+Reference = R15;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD892FE
+Path = /5BD8D591
+Reference = R17;
+ValeurCmp = 0;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD39391
+Path = /5C02CC5C
+Reference = R1;
+ValeurCmp = 100K;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD27159
+Path = /5BD0AFE3
+Reference = D1;
+ValeurCmp = MBR120;
+IdModule  = Adafruit Feather M4 Express:SOD-123;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD20C1F
+Path = /5BD3CC6D
+Reference = J3;
+ValeurCmp = 5031821852;
+IdModule  = 503182-1853:MOLEX_503182-1853;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD3EF54
+Path = /5BD750D6
+Reference = Q1;
+ValeurCmp = mmbt2222;
+IdModule  = Adafruit HUZZAH32 ESP32 Feather:SOT23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD50E2D
+Path = /5BD750CF
+Reference = Q2;
+ValeurCmp = mmbt2222;
+IdModule  = Adafruit HUZZAH32 ESP32 Feather:SOT23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C0D4960
+Path = /5BD7190E
+Reference = U2;
+ValeurCmp = ATSAMD51J20A-AU;
+IdModule  = QFP50P1200X1200X120-64N;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD882C8
+Path = /5BD0C00D
+Reference = U4;
+ValeurCmp = MCP73831T-2ACI/OT;
+IdModule  = Adafruit Feather M4 Express:SOT23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD235EB
+Path = /5BD2F1EA
+Reference = U3;
+ValeurCmp = ESP32_WROOM32_SKINNY;
+IdModule  = Adafruit HUZZAH32 ESP32 Feather:WROOM32_SKINNY;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD4EE4D
+Path = /5BE54B27
+Reference = R11;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD3EFF2
+Path = /5BE54BE6
+Reference = R12;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD3CA0D
+Path = /5C3CBE48
+Reference = C13;
+ValeurCmp = 22pF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BF1E9BE
+Path = /5C3CBE4F
+Reference = C14;
+ValeurCmp = 22pF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD88003
+Path = /5BD0AF8F
+Reference = C1;
+ValeurCmp = 1uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C0D3EDF
+Path = /5BD13B19
+Reference = C9;
+ValeurCmp = 1uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD6F7B0
+Path = /5BD0AFC9
+Reference = C10;
+ValeurCmp = 1uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD8A776
+Path = /5C0E1C57
+Reference = C15;
+ValeurCmp = 0.1uF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BDA9473
+Path = /5BE0D3BF
+Reference = J4;
+ValeurCmp = B2B-PH-SM4-TB;
+IdModule  = Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BDBC494
+Path = /5BD13B64
+Reference = L1;
+ValeurCmp = 10uH;
+IdModule  = Inductor_SMD:L_0806_2016Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BEE5EC4
+Path = /5C3CFA0E
+Reference = TP1;
+ValeurCmp = TESTPOINTPAD2MM;
+IdModule  = TestPoint:TestPoint_Pad_D1.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BED6B9F
+Path = /5C54C068
+Reference = U1;
+ValeurCmp = MAX3202EETT+T;
+IdModule  = custom-footprints:WLP-4-0.5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BED8A64
+Path = /5C6906A6
+Reference = C8;
+ValeurCmp = 4.5 nF;
+IdModule  = Capacitor_SMD:C_0402_1005Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BEE4F40
+Path = /5BD4F36A
+Reference = J1;
+ValeurCmp = 10118194-0001LF;
+IdModule  = custom-footprints:10118194-0001LF;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BEE73E2
+Path = /5C84B658
+Reference = X1;
+ValeurCmp = ST3215SB;
+IdModule  = Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD5F6B3
+Path = /5BF244D2
+Reference = J96;
+ValeurCmp = MOUNTINGHOLE2.5;
+IdModule  = Adafruit HUZZAH32 ESP32 Feather:MOUNTINGHOLE_2.5_PLATED;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD5F6E9
+Path = /5BF2445F
+Reference = J97;
+ValeurCmp = MOUNTINGHOLE2.5;
+IdModule  = Adafruit HUZZAH32 ESP32 Feather:MOUNTINGHOLE_2.5_PLATED;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C0C7BDB
+Path = /5C02C9DB
+Reference = R3;
+ValeurCmp = 100K;
+IdModule  = Resistor_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD60261
+Path = /5C08F158
+Reference = R5;
+ValeurCmp = 100K;
+IdModule  = Resistor_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD60271
+Path = /5C042846
+Reference = R6;
+ValeurCmp = 10K;
+IdModule  = Resistor_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD60281
+Path = /5C02CBCA
+Reference = R7;
+ValeurCmp = 1K;
+IdModule  = Resistor_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BD62869
+Path = /5BD110C0
+Reference = RED1;
+ValeurCmp = RED LED;
+IdModule  = LED_SMD:LED_0805_2012Metric;
+EndCmp
+
+EndListe

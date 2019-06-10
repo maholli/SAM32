@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:SAM32-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -168,7 +169,7 @@ AR Path="/5BCFDB7D/5BD0AF9C" Ref="U?"  Part="1"
 AR Path="/5BD0AF9C" Ref="U5"  Part="1" 
 F 0 "U5" H 9600 2890 42  0000 L BNN
 F 1 "AP2112K-3.3TRG1" H 9600 2350 42  0000 L BNN
-F 2 "Adafruit Feather M4 Express:SOT23-5" H 9900 2650 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9900 2650 50  0001 C CNN
 F 3 "" H 9900 2650 50  0001 C CNN
 	1    9900 2650
 	1    0    0    -1  
@@ -233,7 +234,7 @@ AR Path="/5BCFDB7D/5BD0AFEA" Ref="Q?"  Part="1"
 AR Path="/5BD0AFEA" Ref="Q3"  Part="1" 
 F 0 "Q3" H 9200 2200 42  0000 L BNN
 F 1 "DMG341" H 9150 2050 42  0000 L BNN
-F 2 "Adafruit Feather M4 Express:SOT23-R" H 9450 2250 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9450 2250 50  0001 C CNN
 F 3 "" H 9450 2250 50  0001 C CNN
 	1    9450 2250
 	1    0    0    1   
@@ -258,7 +259,7 @@ AR Path="/5BCFDB7D/5BD0C00D" Ref="U?"  Part="1"
 AR Path="/5BD0C00D" Ref="U4"  Part="1" 
 F 0 "U4" H 8700 1400 42  0000 L BNN
 F 1 "MCP73831T-2ACI/OT" H 8400 900 42  0000 L BNN
-F 2 "Adafruit Feather M4 Express:SOT23-5" H 8750 1400 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8750 1400 50  0001 C CNN
 F 3 "" H 8750 1400 50  0001 C CNN
 	1    8750 1400
 	1    0    0    -1  
@@ -454,9 +455,9 @@ $EndComp
 Wire Wire Line
 	1650 4750 1650 4850
 Text Label 5000 3400 0    59   ~ 0
-~RTS
-Text Label 5000 3500 0    59   ~ 0
 DTR
+Text Label 5000 3500 0    59   ~ 0
+~RTS
 Text Label 2850 5050 0    50   ~ 0
 USB+
 Text Label 2850 4950 0    50   ~ 0
@@ -968,9 +969,9 @@ D19
 Text GLabel 3000 3400 0    60   BiDi ~ 0
 D20
 Text GLabel 3000 3600 0    60   BiDi ~ 0
-RX1
+RX
 Text GLabel 3000 3500 0    60   BiDi ~ 0
-TX1
+TX
 Text GLabel 3000 3700 0    60   BiDi ~ 0
 D31
 Text GLabel 3000 3900 0    60   BiDi ~ 0
@@ -1981,9 +1982,9 @@ Wire Wire Line
 Wire Wire Line
 	9000 5550 8900 5550
 Text GLabel 8900 5550 0    60   BiDi ~ 0
-RX2
+RX
 Text GLabel 8900 5650 0    60   BiDi ~ 0
-TX2
+TX
 Wire Wire Line
 	9000 5150 8800 5150
 Wire Wire Line
@@ -2067,8 +2068,4 @@ Wire Wire Line
 	10050 4250 10200 4250
 Text GLabel 10200 4250 2    60   BiDi ~ 0
 D38
-Text Label 4350 4000 0    60   ~ 0
-TX2
-Text Label 4350 4100 0    60   ~ 0
-RX2
 $EndSCHEMATC
