@@ -147,3 +147,26 @@ We start by compiling (verifying button) the arduino sketch.  When choosing pins
     and then press the enter key. The esp32 programming process now begin. You can watch the progress in the terminal. **DO NOT REMOVE POWER** during programming, it can take quite a while!! (we can and should optimize this in the future)
 
 12. The serial terminal will indicate when programming is finished by reaching the end of the "esp_ardu.py" script.
+
+## Configuring Mu to work with the SAM32
+[Mu is an editor](https://codewith.mu/) for embedded projects (Mu development is currently in alpha). Mu will work as a serial terminal to the SAM32, but we first need to add our board to the list of accepted circuitpython projects.
+
+### On Mac
+
+1. Close Mu (if it's open) and navigate to the Mu installation directory (might look something like this: `/Applications/mu-editor.app/Contents/Resources/app/mu/modes`)
+
+2. Open the adafruit.py file in a text editor and add `(0x04D8, 0xEDBE),` to the the `valid_boards` list (somewhere around line 54) and save. The file should now contain something like:
+  ```
+    ...
+    (0x239A, 0x802E),  # Adafruit CRICKit M0
+    (0x239A, 0xD1ED),  # Adafruit HalloWing M0
+    (0x04D8, 0xEDBE),
+    ]
+  ```
+3. After saving the adafruit.py file, open Mu again and it should now talk with the SAM32 board as expected.
+
+### On PC
+
+1. Follow the same steps as for the mac, except the adafruit.py file will be located in a director similar to...`C:\Users\USERNAME\AppData\Local\Mu\pkgs\mu\modes` (make sure to change 'USERNAME').
+
+
