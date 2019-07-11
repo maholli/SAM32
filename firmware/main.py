@@ -4,8 +4,18 @@
 # M.Holliday
 
 import time
-import board
-import neopixel
+import board, neopixel, digitalio
+
+sd_cs        =   digitalio.DigitalInOut(board.xSDCS)
+rts          =   digitalio.DigitalInOut(board.RTS)
+dtr          =   digitalio.DigitalInOut(board.DTR)
+sd_cs.direction        =  digitalio.Direction.OUTPUT
+rts.direction          =  digitalio.Direction.OUTPUT
+dtr.direction          =  digitalio.Direction.OUTPUT
+
+sd_cs.value     = 1
+rts.value       = 0
+dtr.value       = 0
 
 pixel = neopixel.NeoPixel(board.NEOPIXEL, 1, brightness=0.5, auto_write=False)
 
