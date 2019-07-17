@@ -26,7 +26,7 @@ Nearly any terminal program can communicate with the SAM32 (baud=112500, data=8 
 2. Now enter: `screen /dev/tty.YOURBOARDNAMEHERE 115200`
 3. You may or may not see a propmt, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to halt the board
 4. You can now enter the REPL by pressing any key, or hit <kbd>Ctrl</kbd>+<kbd>D</kbd> to reload the main.py
-5. Exit screen at any time by pressing <kbd>Ctrl</kbd>+<kbd>A</kbd>+<kbd>\</kbd>
+5. Exit screen at any time by pressing <kbd>Ctrl</kbd>+<kbd>A</kbd>+<kbd>\\</kbd>
 
 ### Windows 
 1. Windows doesn't have a built-in terminal program like MacOS. Personally, I like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), or [termite](https://www.compuphase.com/software_termite.htm). You can also use the arduino serial monitor if you'd like!
