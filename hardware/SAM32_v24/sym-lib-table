@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name SAM32)(type Legacy)(uri ${KIPRJMOD}/SAM32.lib)(options "")(descr ""))
+)
