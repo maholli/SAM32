@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:SAM32-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -710,7 +709,7 @@ Text Notes 2150 4450 1    59   ~ 0
 Wire Notes Line
 	5250 4150 4000 4150
 Wire Notes Line
-	4000 4150 4000 3950
+	4000 4150 4000 3900
 Text Notes 2250 3700 0    59   ~ 0
 PCCCLK
 Wire Wire Line
@@ -800,7 +799,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 2300 1400 2300
 Wire Notes Line
-	5250 3950 5250 4150
+	5250 3900 5250 4150
 Text GLabel 3000 6200 0    59   Output ~ 0
 SCK
 Text GLabel 3000 6300 0    59   Output ~ 0
@@ -967,7 +966,7 @@ D60
 Text GLabel 4400 2400 2    59   BiDi ~ 0
 D61
 Wire Notes Line
-	4000 3950 5250 3950
+	4000 3900 5250 3900
 Text Label 4700 2700 0    50   ~ 0
 IO14
 Text Notes 3250 1850 0    59   ~ 0
@@ -1638,7 +1637,7 @@ P 4900 4050
 AR Path="/5BCFDB7D/5C4986BA" Ref="#+3V?"  Part="1" 
 AR Path="/5C4986BA" Ref="#+3V0103"  Part="1" 
 F 0 "#+3V0103" H 4900 4050 50  0001 C CNN
-F 1 "+3V3" H 4800 4100 59  0000 L BNN
+F 1 "+3V3" H 4800 4100 50  0000 L BNN
 F 2 "" H 4900 4050 50  0001 C CNN
 F 3 "" H 4900 4050 50  0001 C CNN
 	1    4900 4050
@@ -2051,4 +2050,8 @@ Wire Wire Line
 	1250 5600 1650 5600
 Text Notes 3500 1150 0    79   ~ 0
 SAMD51
+Text Label 4400 4000 0    40   ~ 0
+TX2
+Text Label 4400 4100 0    40   ~ 0
+RX2
 $EndSCHEMATC
