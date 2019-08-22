@@ -7,14 +7,11 @@
 </p>
 
 
-:star: see firmware directory for programming & usage instructions 
+## [⭐ See the SAM32 Guide for tutorials, design resources, and more!](https://www.notion.so/maholli/SAM32-Guides-6b7e8ca318ff49418eec16e975d98f5d)
 
 ## New to Microcontrollers? No Problem!
 
 **You can control this board with python or arduino! A basic text-editor is all you need to get started.**
-
-* to learn more about interacting with microcontrollers through python, start here: [adafruit: what is circuitpython?](https://learn.adafruit.com/adafruit-circuit-playground-express/what-is-circuitpython)
-* for details on going back and forth between circuitpython and arduino, see [firmware.](./firmware/readme.MD#this-board-can-be-programmed-with-arduino-or-circuitpython-default)
 
 ## Easily Add Hardware Capability
 

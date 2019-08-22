@@ -20,3 +20,5 @@ make BOARD=sam32
 
 from a terminal in the `/uf2-samdx1/` directory.
 
+## [⭐ See the SAM32 Guide for more details](https://www.notion.so/maholli/SAM32-Guides-6b7e8ca318ff49418eec16e975d98f5d)
+

@@ -1,12 +1,14 @@
 # SAM32
 
+## [⭐ See the SAM32 Guide for tutorials, design resources, and more!](https://www.notion.so/maholli/SAM32-Guides-6b7e8ca318ff49418eec16e975d98f5d)
+
 <p align="middle">
   <img width="800" src="../references/board.png">
   <br><br>
   <img width="1000" src="../references/sam32_block.PNG">
 </p>
 
-## This board can be programmed with arduino or circuitpython (default).
+<!-- ## This board can be programmed with arduino or circuitpython (default).
 
 * If you'd like to switch to arduino, plug it into your computer via USB, and quickly double-click the "RST" button. A new drive called SAM32BOOT will appear. You can now flash it normally using the Arduino IDE and choosing "Adafruit Feather M4" as the board.
 * To switch back to circuitpython, put the board into SAM32BOOT mode again, and drag the [firmware](../firmware/firmware_v23.uf2) file onto the drive. It will automatically reset once the transfer is complete.
@@ -167,6 +169,6 @@ We start by compiling (verifying button) the arduino sketch.  When choosing pins
 
 ### On PC
 
-1. Follow the same steps as for the mac, except the adafruit.py file will be located in a director similar to...`C:\Users\USERNAME\AppData\Local\Mu\pkgs\mu\modes` (make sure to change 'USERNAME').
+1. Follow the same steps as for the mac, except the adafruit.py file will be located in a director similar to...`C:\Users\USERNAME\AppData\Local\Mu\pkgs\mu\modes` (make sure to change 'USERNAME'). -->
 
 
