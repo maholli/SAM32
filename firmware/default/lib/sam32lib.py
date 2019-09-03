@@ -197,6 +197,7 @@ class DevBoard:
             print('[WARNING]',e)
             self.neopixel.auto_write = True
 
+
     def battery_voltage(self):
         _voltage = self._vbatt.value * 3.3 / (2 ** 16)
         _voltage = _voltage / 2 # voltage divider
