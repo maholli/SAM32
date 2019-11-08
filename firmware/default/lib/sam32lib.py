@@ -28,7 +28,7 @@ class DevBoard:
         self._led.switch_to_output()
 
         # Define battery voltage
-        # self._vbatt = analogio.AnalogIn(board.BATTERY)
+        self._vbatt = analogio.AnalogIn(board.BATTERY)
 
         # Define SPI,I2C,UART
         self._spi  = busio.SPI(board.SCK,MOSI=board.MOSI,MISO=board.MISO)
@@ -38,18 +38,7 @@ class DevBoard:
         self._sdcs = digitalio.DigitalInOut(board.xSDCS)
         self._sdcs.direction = digitalio.Direction.OUTPUT
         self._sdcs.value = True
-        
-        # Initialize sdcard
-        try:
-            import adafruit_sdcard
-            self._sd  = adafruit_sdcard.SDCard(self._spi, self._sdcs)
-            self._vfs = storage.VfsFat(self._sd)
-            storage.mount(self._vfs, "/sd")
-            sys.path.append("/sd")
-            self.hardware['SDcard'] = True
-        except Exception as e:
-            print('[WARNING]',e)  
-        
+             
         # Define ESP32
         self._esp_dtr = digitalio.DigitalInOut(board.DTR)
         self._esp_rts = digitalio.DigitalInOut(board.RTS)
@@ -62,6 +51,16 @@ class DevBoard:
         self._esp_dtr.value = False
         self._esp_rts.value = False
 
+        # Initialize sdcard
+        try:
+            import adafruit_sdcard
+            self._sd  = adafruit_sdcard.SDCard(self._spi, self._sdcs)
+            self._vfs = storage.VfsFat(self._sd)
+            storage.mount(self._vfs, "/sd")
+            sys.path.append("/sd")
+            self.hardware['SDcard'] = True
+        except Exception as e:
+            print('[WARNING]',e) 
 
         # Initialize Neopixel
         try:
@@ -70,6 +69,7 @@ class DevBoard:
             self.hardware['Neopixel'] = True
         except Exception as e:
             print('[WARNING]',e) 
+
     def esp_init(self):
         from adafruit_esp32spi import adafruit_esp32spi
         # Initialize ESP32
@@ -187,7 +187,8 @@ class DevBoard:
                     if supervisor.runtime.serial_bytes_available:
                         self.neopixel.auto_write = True
                         self.neopixel[0] = (0,0,0)
-                        return
+                        time.sleep(10)
+                        return False
                     else:
                         pixel_index = (256 // 1) + j
                         self.neopixel[0] = self.wheel(pixel_index & 255)
@@ -196,7 +197,6 @@ class DevBoard:
         except Exception as e:
             print('[WARNING]',e)
             self.neopixel.auto_write = True
-
 
     def battery_voltage(self):
         _voltage = self._vbatt.value * 3.3 / (2 ** 16)
