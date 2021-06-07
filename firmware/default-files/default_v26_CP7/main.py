@@ -1,23 +1,17 @@
-# general blink routine for neopixel
-# should work on all boards with an "NEOPIXEL" pin defined in firmware
+# SAM32 color wheel routine
 #
 # M.Holliday
 
 import time
-import board, neopixel, digitalio
+import board, neopixel
 
-sd_cs        =   digitalio.DigitalInOut(board.xSDCS)
-rts          =   digitalio.DigitalInOut(board.RTS)
-dtr          =   digitalio.DigitalInOut(board.DTR)
-sd_cs.direction        =  digitalio.Direction.OUTPUT
-rts.direction          =  digitalio.Direction.OUTPUT
-dtr.direction          =  digitalio.Direction.OUTPUT
+from sam32lib import sam32
 
-sd_cs.value     = 1
-rts.value       = 0
-dtr.value       = 0
+sam32.esp_init()
 
-pixel = neopixel.NeoPixel(board.NEOPIXEL, 1, brightness=0.5, auto_write=False)
+pixel = sam32.neopixel
+pixel.auto_write=False
+
 
 def wheel(pos):
     # Input a value 0 to 255 to get a color value.

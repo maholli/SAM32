@@ -11,12 +11,12 @@ import busio, time
 import digitalio
 import storage, sys
 import analogio,microcontroller,supervisor
-import sdcardio
+import sdcardio, os
 from adafruit_esp32spi import adafruit_esp32spi
 class DevBoard:
     def __init__(self):
         """
-        Big init routine as the whole board is brought up. 
+        Big init routine as the whole board is brought up.
         """
         self.hardware = {
                        'SDcard':   False,
@@ -35,7 +35,7 @@ class DevBoard:
         # Define SPI,I2C,UART
         self._spi  = board.SPI()
         self._uart = busio.UART(board.TX2,board.RX2)
-        
+
         # Define ESP32
         self._esp_dtr = digitalio.DigitalInOut(board.DTR)
         self._esp_rts = digitalio.DigitalInOut(board.RTS)
@@ -51,13 +51,13 @@ class DevBoard:
 
         # Initialize sdcard (always try sdcard before anything else on the spi bus)
         try:
-            self._sd  = sdcardio.SDCard(self._spi, board.xSDCS)
+            self._sd  = sdcardio.SDCard(self._spi, board.xSDCS, baudrate=4000000)
             self._vfs = storage.VfsFat(self._sd)
             storage.mount(self._vfs, "/sd")
             sys.path.append("/sd")
             self.hardware['SDcard'] = True
         except Exception as e:
-            print('[WARNING]',e) 
+            print('[WARNING]',e)
 
 
         # Initialize Neopixel
@@ -66,7 +66,7 @@ class DevBoard:
             self.neopixel[0] = (0,0,0)
             self.hardware['Neopixel'] = True
         except Exception as e:
-            print('[WARNING]',e) 
+            print('[WARNING]',e)
     def esp_init(self):
         # Initialize ESP32
         try:
@@ -74,11 +74,11 @@ class DevBoard:
             if self._esp.status == adafruit_esp32spi.WL_IDLE_STATUS:
                 self.hardware['ESP32'] = True
         except Exception as e:
-            print('[WARNING]',e,'- have you programed the ESP32?') 
+            print('[WARNING]',e,'- have you programed the ESP32?')
 
     @property
     def temperature_cpu(self):
-        return microcontroller.cpu.temperature # Celsius 
+        return microcontroller.cpu.temperature # Celsius
 
     @property
     def LED(self):
@@ -108,10 +108,9 @@ class DevBoard:
                 self.neopixel.brightness = value
             except Exception as e:
                 print('[WARNING]',e)
-    
+
     def unique_file(self):
-        import os
-        if not self.hardware['SDcard']: 
+        if not self.hardware['SDcard']:
             return False
         try:
             name = 'DATA_000'
@@ -123,7 +122,7 @@ class DevBoard:
                         time.sleep(0.01)
                     self.filename = '/sd/'+_filename
                     print('filename is:',self.filename)
-                    return True                                  
+                    return True
         except Exception as e:
             print('--- SD card error ---', e)
             self.RGB = (255,0,0)
@@ -199,7 +198,7 @@ class DevBoard:
         _voltage = _voltage / 2 # voltage divider
         return _voltage # in volts
 
-    
+
 
     def esp_status(self):
         if self.hardware['ESP32']:
@@ -209,7 +208,7 @@ class DevBoard:
                 else:
                     print('\t',self._esp.status)
             except Exception as e:
-                print('[WARNING]',e) 
+                print('[WARNING]',e)
         else:
             print('[WARNING] ESP32 not initialized')
 
@@ -222,7 +221,7 @@ class DevBoard:
                 print('[WARNING]',e)
         else:
             print('[WARNING] ESP32 not initialized')
-    
+
     def wifi(self, enterprise=1):
         if self.hardware['ESP32']:
             try:
@@ -245,7 +244,7 @@ class DevBoard:
                 TIME_API = "http://worldtimeapi.org/api/ip"
                 the_rtc = rtc.RTC()
                 response = None
-                while True:
+                for _ in range(10): # 10 tries
                     try:
                         print("Fetching json from", TIME_API)
                         response = sam32.WIFI.get(TIME_API)
@@ -275,6 +274,14 @@ class DevBoard:
     def esp_prog(self):
         if self.hardware['SDcard']:
             try:
+                file=None
+                for f in os.listdir('/sd/'):
+                    if 'NINA_' in f:
+                        file='/sd/'+f
+                        break
+                if file is None:
+                    raise RuntimeError("\tCouldn't find ESP32 firmware on SD Card")
+
                 import adafruit_miniesptool
                 esptool = adafruit_miniesptool.miniesptool(self._uart, self._esp_dtr, self._esp_rts, flashsize=4*1024*1024)
                 esptool.debug = True
@@ -289,7 +296,7 @@ class DevBoard:
                 esptool.baudrate = 912600
                 print("\tMAC ADDR: ", [hex(i) for i in esptool.mac_addr])
 
-                esptool.flash_file('/sd/NINA_W102-1.7.3_sam32.bin', 0x00)
+                esptool.flash_file(file, 0x00)
 
                 esptool.reset()
                 time.sleep(0.5)
